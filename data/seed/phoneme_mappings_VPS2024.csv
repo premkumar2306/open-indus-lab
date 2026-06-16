@@ -1,0 +1,10 @@
+hypothesis,parpola_sign,mahadevan_approx,phoneme,phoneme_ipa,tamil_grapheme,tamil_grapheme_name,morpheme,derivation_type,confidence,supporting_seals,derivation_notes,is_vowel,is_consonant
+VPS2024,P324,M142,aa,aː,ஆ,aa,cow,onomatopoeia + visual,0.75,"3023,2358,2082,1045,2648,2127,1386",U-shape with serifs = cow face. Phoneme 'aa' from cow sound 'maa'. Tholkaappiyam confirms 'aa' as ancient morpheme for cow.,1,0
+VPS2024,P145,M95-104,na,n̪a,ந,na,(phonetic placeholder from numeral 4 = nanku),numeral name,0.65,"1076,2949,2950",Tally of 4 marks = nanku (Tamil for four). First syllable 'na' used as phoneme. Enables encoding of 'nay/ney' (ghee).,0,1
+VPS2024,P385,M162,ney,neɪ,நெய்,ney,ghee,phonetic,0.7,"1076,2949,2950,2127",Y-shaped sign. Appears consistently in dairy product inscriptions with unicorn motif. Seal 1076: thava thava ney = Very Good Ghee.,0,1
+VPS2024,P050,M216,sa,sa,ச,sa,(consonant base),phonetic,0.6,,"Cross/X sign. Becomes 'si' with e-vowel modifier (P060/M219), then 'Sivam/Sivan' with further modifier (M220).",0,1
+VPS2024,P060,M219,si,si,சி,si,(consonant + i-vowel),modifier-applied,0.58,,Sign 216 (sa) + e-vowel modifier = sign 219 (si). Modifier has no sound of its own.,0,1
+VPS2024,P062,M220,sivam,ʃivam,சிவம்,sivam,Shiva / sacred,compound-modifier,0.55,,Double modifier on sign 216. Terminal compound in sa→si→sivam/sivan chain.,0,1
+VPS2024,P316,M10,kaa,kaː,கா,kaa,to guard / protect,compound-base,0.65,3246,First stage of compound evolution 10→12→15. Sign 3246 documents full progression.,0,1
+VPS2024,P217,M12,kaavva,kaːvːa,காவ்வ,kaavva,guardian / keeper,compound-intermediate,0.63,3246,Intermediate compound sign. Evolved from sign 10 (kaa). Precursor to sign 15 (aakaavva).,0,1
+VPS2024,P378,M15,aakaavva,aːkaːvːa,ஆகாவ்வ,aakaavva,cow carer / cow guardian,compound-terminal,0.68,"3246,2082",Terminal integrated compound of 10+12. Seal 3246: vaya muu La aagaavva = carer of aged cows.,0,1
