@@ -1,0 +1,23 @@
+seal_id,hypothesis,phoneme_string,proposed_meaning_english,proposed_meaning_tamil,motif,semantic_domain,confidence,paper_reference,notes
+3023,VPS2024,di dii r aa,Ready / instant cow,திடீர் ஆ,unicorn,animal husbandry,0.72,"Fig 1, p.2",'di dii r' = suddenly/instantly; 'aa' = cow
+2358,VPS2024,di dii r aa,Ready / instant cow,திடீர் ஆ,unicorn,animal husbandry,0.72,"Fig 1, p.2",Identical reading to 3023; different seal
+1076,VPS2024,thava thava ney,Very Good Ghee,தவ தவ நெய்,unicorn,dairy products,0.74,"Fig 1, p.2",thava = very/excellent; ney = ghee. Seal has 4 tally marks.
+2082,VPS2024,Isa muu aagaavva,Carer of Isa's 3 cows,இசா மூ ஆகாவ்வ,unicorn,animal husbandry,0.65,"Fig 1, p.2",Isa = proper name; muu = 3 (Tamil numeral); aagaavva = cow carer
+1045,VPS2024,vayal gaavvan,Carer of cultivated field,வயல் காவ்வன்,unicorn,agriculture,0.68,"Fig 1, p.2",vayal = field/farm; gaavvan = guardian
+2648,VPS2024,mi mi na y thoLzu,Very Good Ghee Shed,மிமி நய் தொழு,elephant,dairy products,0.67,"Fig 1, p.2",Elephant Street. mi mi = very very good; thoLzu = shed
+2127,VPS2024,eN y,Sesame Oil (ENNai),எண்ணெய்,elephant,food commodities,0.7,"Fig 1, p.2",Elephant Street. eN = sesame (Tamil eNNai); y/ney = oil/ghee
+1386,VPS2024,mi mi thava aa k thoLzu,Very Good Zebu Shed,மிமி தவ ஆ க் தொழு,composite,animal husbandry,0.63,"Fig 1, p.2",Composite motif. High-value cattle shed.
+2864,VPS2024,aNNal kai aaNai,Order of the Leader (Gharial jurisdiction),அண்ணல் கை ஆணை,gharial,governance / law,0.71,"Fig 1, p.2",Gharial = riverine district. Same law as 2444 but different jurisdiction.
+2444,VPS2024,aNNal kai aaNai,Order of the Leader (Market Common jurisdiction),அண்ணல் கை ஆணை,unicorn,governance / law,0.71,"Fig 1, p.2",Same inscription as 2864 but unicorn motif = Market Common.
+4440,VPS2024,iLa iru tta aa Nai,Order effective at dusk / curfew,இள இரு ட்ட ஆணை,none,governance / law,0.64,"Fig 2, p.3",No motif = city-wide ordinance. Citywide curfew.
+4371,VPS2024,malaaLa paNNada aa Nai,Order of the Farmers Guild,மலாள பண்ணட ஆணை,none,governance / law,0.62,"Fig 2, p.3",No motif = city-wide. Farmers guild law.
+4284,VPS2024,koyl ida aagaavva,Carer of temple cows,கோயில் இட ஆகாவ்வ,none,religious / civic,0.61,"Fig 2, p.3",No motif = city-wide skill certification.
+2234,VPS2024,vay ya iir illam,The world is a Big Home,வை யா இர் இல்லம்,"bull,unicorn",governance / ethics,0.69,p.3,Banner at Market Common and Bull Street. Guiding value of Harappan governance.
+4718,VPS2024,ay ya ay o vyamun,Panic milk / emergency milk for children,அய்யா அய் ஒ வியாமுன்,none,social welfare,0.66,p.3,No motif = city-wide ordinance. Mandates fresh milk from on-demand cows for infants.
+3016,VPS2024,di diir expressed milk,Just expressed Fresh Milk,திடீர் பால்,unicorn,dairy products,0.7,p.3,Unicorn motif = Market Common. Milk cow shed availability announcement.
+1425,VPS2024,illam vaya muu thani,Homes for the aged and alone,இல்லம் வய முத்தனி,none,social welfare,0.65,p.3,"No motif = not a business, city-wide provision. Elder care facility."
+5119,VPS2024,muu da aa thoLzu,Shed for aged cattle,முத்த ஆ தொழு,unicorn,animal welfare,0.64,p.3,Unicorn = Market Common. Aged cattle sheltered for manure/sustainability.
+3246,VPS2024,vaya muu La aagaavva,Carer of aged cows,வய மூல ஆகாவ்வ,none,animal husbandry,0.67,"Fig 3, p.5",Documents compound sign evolution 10→12→15. Shows integrated writing maturity.
+1110,VPS2024,thava sa ma thaLa tha Nnal,Equanimous respected great leader,தவ சம தள்ள அண்ணல்,unicorn,governance,0.63,"Fig 3, p.4",Leader found at Market Common; adjudicating mediator in commercial disputes.
+2617,VPS2024,ivva da t l vya mu r mura,Buttermilk available HERE,இவ்வட தல் வியா மூர் முரா,unicorn,dairy products,0.6,"Fig 3, p.4","People reading a banner/signboard, not the seal itself. 'HERE' marker."
+DHOLAVIRA_SIGNBOARD,VPS2024,thava NNal arasana thava m tha r thava thava sa m,Advisors residence and grain store of the King,தவ அண்ணல் அரசன் தவ தவ சம்,none,governance,0.58,"Fig 3, p.4","Famous Dholavira 10-sign inscription. Paralleled by seals 1110, 2503, 8117."
