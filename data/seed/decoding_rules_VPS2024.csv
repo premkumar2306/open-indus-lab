@@ -1,0 +1,11 @@
+rule_type,name,priority,input_parpola_signs,input_tally_count,output_phoneme,output_morpheme,confidence,rationale,source
+sign_phoneme,Cow face (P324/M142) → aa,1,P324,,aa,cow (ஆ),0.75,U+serif = cow face. Onomatopoeia 'aa' from 'maa'. Tholkaappiyam confirms.,VPS2024 paper; Mahadevan concordance
+tally_phoneme,Tally-4 → na (from numeral nanku),2,"P122,P145",4,na,(phonetic placeholder),0.65,Tamil numeral 'nanku' (four) → phoneme 'na'. Bridges missing vowel-u sounds.,"VPS2024 paper, tally mark chapter"
+sign_phoneme,Y-sign (P385/M162) → ney,3,P385,,ney,ghee (நெய்),0.7,"Consistent dairy context with unicorn motif. Seals 1076, 2949, 2950.","VPS2024 paper, seal readings"
+modifier,E-vowel modifier: sa → si,4,P050+modifier,,si,(syllable with i-vowel),0.6,Modifier has form but no independent sound. Alters preceding consonant. Tamizi/Tamil system.,"VPS2024 paper, Technical Nuances"
+modifier,Suffix modifier: adds -am/-an/-al/-ar,5,sign+suffix-modifier,,(+suffix),"grammatical suffix: -am, -an, -al, -ar",0.62,Suffix modifier adds Tamil grammatical endings. Not shown in concordance.,"VPS2024 paper, Technical Nuances"
+compound,Signs 10+12 → sign 15 (aakaavva),6,P316+P217,,aakaavva,cow carer (ஆகாவ்வ),0.68,Seal 3246 documents full compound integration. Linear→integrated writing progression.,VPS2024 paper Fig 3
+motif_context,Unicorn → Market Common jurisdiction,10,,,,Applies to: Market Common district,0.72,60% of iconographic seals. Consistently dairy/commercial/governance content.,VPS2024 urban topology hypothesis
+motif_context,Elephant → Elephant Street,11,,,,Applies to: Elephant Street,0.65,Seals 2648 (ghee shed) and 2127 (sesame oil) both elephant motif.,VPS2024 street-level identification
+motif_context,No motif → city-wide ordinance,12,,,,Applies to: entire city domain,0.65,"Motifless seals: curfew (4440), guild laws (4371), certifications (4284), elder care (1425).",VPS2024 motifless seals section
+motif_context,Gharial → Riverine district,13,,,,Applies to: river facilities district,0.63,"Seal 2864 gharial motif = same law as 2444 unicorn, different location.",VPS2024 street-level identification
