@@ -1,0 +1,9 @@
+motif_type,common_name,corpus_frequency_approx,percent_of_inscribed_seals,iconographic_features,vps2024_interpretation,parpola_interpretation,sites,notes
+unicorn,Unicorn,1200,60.0,"Single horn, tasseled collar, ritual object (post/filter) in front. Bovine body.",Emblem of the Market Common (central commercial plaza).,"Proto-Dravidian: ekashringa (one-horned), possibly a mythical animal or clan totem.","Mohenjo-daro, Harappa, Lothal, Dholavira",Most frequent motif. ~60% of all iconographic seals.
+zebu,Zebu / Humped Bull,200,9.0,"Pronounced humped back (Bos indicus), dewlap, short curved horns.",Zebu/Bull district street identifier.,Likely represents the clan or village totem.,"Mohenjo-daro, Harappa",
+elephant,Elephant,90,4.5,"Asian elephant (Elephas maximus), trunk lowered, tusks visible.",Elephant Street: associated with sesame oil and ghee sheds.,Elephant may encode Proto-Dravidian word for elephant.,"Mohenjo-daro, Harappa, Lothal",
+bull,Short-horned Bull,110,5.5,Bull without prominent hump; shorter horns than zebu.,"Bull Street: milk, housing for oxen, market banners.",,"Mohenjo-daro, Harappa",
+tiger,Tiger,50,2.5,Feline with stripes in profile.,High-value district marker; high-value cattle sheds.,,Mohenjo-daro,
+gharial,Gharial / Gavial,40,2.0,"Long slender snout, aquatic reptile (Gavialis gangeticus).",Riverine district: laws governing river facility usage.,,"Mohenjo-daro, Harappa",
+composite,Composite / Multi-animal,30,1.5,Combines features of 2+ animals (e.g. bull+elephant+tiger).,Multi-jurisdiction seals; combination of districts.,,Mohenjo-daro,
+none,No Motif (Motifless),300,15.0,Script-only seals; no animal iconography.,City-wide / universal ordinances. Not location-restricted.,Possibly administrative or ownership marks.,All major sites,Includes tablets and script-only objects.
