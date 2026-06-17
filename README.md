@@ -2,6 +2,20 @@
 
 **An open computational framework for testing and comparing Indus-Harappan script decipherment hypotheses.**
 
+
+## Current Reading Layer Status
+
+> **Note from the author (Ponmuthu Shanmugham):** *"I haven't completed the English translations as I didn't need them for the research, but they will help non-Tamil speakers. It needs two levels — phoneme (sounds) and morphemes (meaning). It needs to be done, but I haven't."*
+
+| Layer | What | Status |
+|---|---|---|
+| **Layer 1 — Phoneme** | Tamil script + Roman transliteration (the sounds) | ✅ Complete for all 206 seals |
+| **Layer 2 — Morpheme** | English meaning (the translation) | 🔲 17 complete, 189 pending |
+
+Tamil-speaking researchers can evaluate all 206 readings now via Layer 1. Non-Tamil researchers can evaluate the 17 complete readings and the full methodology. See [`docs/READING_LAYERS.md`](./docs/READING_LAYERS.md) for full explanation.
+
+---
+
 > ⚠️ This platform does not claim to have decoded the Indus script. It provides reproducible, open tools for evaluating competing hypotheses using corpus data, rule engines, statistics, and peer review workflows.
 
 ---
