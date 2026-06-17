@@ -483,35 +483,219 @@ function PeerReview() {
   );
 }
 
-// ── APP ───────────────────────────────────────────────────
+// ── MOBILE RESPONSIVE APP ────────────────────────────────
 export default function App() {
-  const [page,setPage] = useState("seals");
-  const [sel,setSel] = useState(null);
-  const nav = [{id:"seals",icon:"◈",label:"Seal Browser"},{id:"signs",icon:"▦",label:"Sign Registry"},{id:"hyps",icon:"⚖",label:"Hypotheses"},{id:"charts",icon:"▬",label:"Frequency"},{id:"review",icon:"✍",label:"Peer Review"}];
+  const [page, setPage]         = useState("seals");
+  const [sel, setSel]           = useState(null);
+  const [sidebarOpen, setSidebar] = useState(false);
+
+  const nav = [
+    {id:"seals",  icon:"◈", label:"Seal Browser"},
+    {id:"signs",  icon:"▦", label:"Sign Registry"},
+    {id:"hyps",   icon:"⚖", label:"Hypotheses"},
+    {id:"charts", icon:"▬", label:"Frequency"},
+    {id:"review", icon:"✍", label:"Peer Review"},
+  ];
+
+  const navigate = (id) => {
+    setPage(id);
+    setSidebar(false);   // always close sidebar on navigation
+    setSel(null);
+  };
+
   return (
-    <div style={S.app}>
-      <div style={S.sidebar}>
-        <div style={S.logo}>
-          <div style={S.logoTitle}>OPEN<br/>INDUS<br/>LAB</div>
-          <div style={S.logoSub}>Script Analysis Platform</div>
+    <div style={{fontFamily:"'Source Serif 4',Georgia,serif",background:"#0e1117",minHeight:"100vh",color:"#e8dcc8",display:"flex",flexDirection:"column"}}>
+
+      {/* ── TOP BAR (mobile) ─────────────────────────────── */}
+      <div style={{
+        display:"flex", alignItems:"center", justifyContent:"space-between",
+        background:"#0a0d13", borderBottom:"1px solid #1e2533",
+        padding:"12px 16px", position:"sticky", top:0, zIndex:100,
+      }}>
+        {/* Hamburger */}
+        <button
+          onClick={() => setSidebar(o => !o)}
+          style={{background:"none",border:"none",color:"#c9963e",fontSize:22,cursor:"pointer",padding:"4px 8px",lineHeight:1}}
+          aria-label="Toggle menu"
+        >
+          {sidebarOpen ? "✕" : "☰"}
+        </button>
+
+        {/* Logo centre */}
+        <span style={{fontFamily:"'Cinzel',serif",fontSize:15,color:"#c9963e",letterSpacing:"0.12em",fontWeight:700}}>
+          OPEN INDUS LAB
+        </span>
+
+        {/* Current page label */}
+        <span style={{fontSize:11,color:"#5a6070",letterSpacing:"0.06em",textTransform:"uppercase"}}>
+          {nav.find(n=>n.id===page)?.label}
+        </span>
+      </div>
+
+      {/* ── BODY ─────────────────────────────────────────── */}
+      <div style={{display:"flex",flex:1,position:"relative",overflow:"hidden"}}>
+
+        {/* ── OVERLAY (mobile, closes sidebar on tap) ────── */}
+        {sidebarOpen && (
+          <div
+            onClick={() => setSidebar(false)}
+            style={{
+              position:"fixed",inset:0,background:"rgba(0,0,0,0.6)",
+              zIndex:200,
+            }}
+          />
+        )}
+
+        {/* ── SIDEBAR ──────────────────────────────────────
+            Desktop: always visible as a fixed left column.
+            Mobile:  slides in from left as an overlay.
+        ───────────────────────────────────────────────── */}
+        <div style={{
+          position:"fixed", top:0, left:0,
+          width:220, height:"100vh",
+          background:"#0a0d13", borderRight:"1px solid #1e2533",
+          display:"flex", flexDirection:"column",
+          zIndex:300,
+          // Desktop: always shown via translate(0). Mobile: slide in/out.
+          transform: sidebarOpen ? "translateX(0)" : "translateX(-100%)",
+          transition:"transform 0.25s ease",
+          // Desktop override via media query — applied inline isn't possible,
+          // so we use a wrapper trick below for ≥768px
+        }}
+          className="sidebar"
+        >
+          {/* Close button inside sidebar (mobile) */}
+          <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"16px 20px 0"}}>
+            <div style={{fontFamily:"'Cinzel',serif",fontSize:14,color:"#c9963e",letterSpacing:"0.1em",fontWeight:700}}>
+              OPEN<br/>INDUS<br/>LAB
+            </div>
+            <button
+              onClick={() => setSidebar(false)}
+              style={{background:"none",border:"none",color:"#5a6070",fontSize:18,cursor:"pointer"}}
+            >✕</button>
+          </div>
+          <div style={{fontSize:10,color:"#5a6070",padding:"4px 20px 20px",letterSpacing:"0.06em",borderBottom:"1px solid #1e2533"}}>
+            Script Analysis Platform
+          </div>
+
+          <div style={{padding:"16px 0",flex:1}}>
+            {nav.map(n => (
+              <div
+                key={n.id}
+                onClick={() => navigate(n.id)}
+                style={{
+                  display:"flex",alignItems:"center",gap:10,
+                  padding:"12px 20px",cursor:"pointer",
+                  fontSize:13,letterSpacing:"0.04em",
+                  color:page===n.id?"#c9963e":"#8090a8",
+                  background:page===n.id?"#13171f":"transparent",
+                  borderLeft:page===n.id?"2px solid #c9963e":"2px solid transparent",
+                }}
+              >
+                <span style={{fontSize:16,width:20}}>{n.icon}</span>
+                <span style={{fontFamily:"'Cinzel',serif",fontSize:11,letterSpacing:"0.06em"}}>{n.label}</span>
+              </div>
+            ))}
+          </div>
+
+          <div style={{padding:"16px 20px",borderTop:"1px solid #1e2533"}}>
+            <div style={{fontSize:9,color:"#2a3040",letterSpacing:"0.06em",lineHeight:1.8}}>
+              VPS2024 · Ponmuthu Shanmugham<br/>
+              259 signs · 206 seals · 6 hypotheses
+            </div>
+          </div>
         </div>
-        <div style={{padding:"16px 0"}}>
-          {nav.map(n=><div key={n.id} style={S.navItem(page===n.id)} onClick={()=>setPage(n.id)}><span style={{fontSize:14,width:16}}>{n.icon}</span><span style={{fontFamily:"'Cinzel',serif",fontSize:11,letterSpacing:"0.06em"}}>{n.label}</span></div>)}
-        </div>
-        <div style={{marginTop:"auto",padding:"16px 20px",borderTop:"1px solid #1e2533"}}>
-          <div style={{fontSize:9,color:"#2a3040",letterSpacing:"0.06em",lineHeight:1.7}}>VPS2024 HYPOTHESIS<br/>Ponmuthu Shanmugham<br/><span style={{color:"#1e2533"}}>────────</span><br/>259 sign glyphs<br/>206 seals read<br/>6 hypotheses</div>
+
+        {/* ── MAIN CONTENT ─────────────────────────────────
+            Left margin = 220px on desktop (sidebar width).
+            On mobile sidebar is an overlay so no margin.
+        ───────────────────────────────────────────────── */}
+        <div
+          className="main-content"
+          style={{
+            flex:1,
+            overflow:"auto",
+            padding:"20px 16px",
+            // Desktop: pushed right by sidebar
+            marginLeft:0,
+          }}
+        >
+          {page==="seals" && (
+            <div style={{
+              display:"grid",
+              gridTemplateColumns: sel ? "1fr" : "1fr",
+              gap:20,
+            }}>
+              <SealBrowser onSelect={setSel} selected={sel}/>
+              {sel && (
+                <div>
+                  <SealDetail seal={sel} onClose={()=>setSel(null)}/>
+                </div>
+              )}
+            </div>
+          )}
+          {page==="signs"  && <SignRegistry/>}
+          {page==="hyps"   && <HypothesisViewer/>}
+          {page==="charts" && <FrequencyDashboard/>}
+          {page==="review" && <PeerReview/>}
         </div>
       </div>
-      <div style={S.main}>
-        {page==="seals" && <div style={{display:"grid",gridTemplateColumns:sel?"1fr 360px":"1fr",gap:24}}>
-          <SealBrowser onSelect={setSel} selected={sel}/>
-          {sel && <SealDetail seal={sel} onClose={()=>setSel(null)}/>}
-        </div>}
-        {page==="signs"  && <SignRegistry/>}
-        {page==="hyps"   && <HypothesisViewer/>}
-        {page==="charts" && <FrequencyDashboard/>}
-        {page==="review" && <PeerReview/>}
+
+      {/* ── BOTTOM NAV BAR (mobile only) ─────────────────── */}
+      <div style={{
+        display:"flex", background:"#0a0d13",
+        borderTop:"1px solid #1e2533",
+        position:"sticky", bottom:0, zIndex:100,
+      }}
+        className="bottom-nav"
+      >
+        {nav.map(n => (
+          <button
+            key={n.id}
+            onClick={() => navigate(n.id)}
+            style={{
+              flex:1, background:"none", border:"none",
+              padding:"10px 4px 8px",
+              color:page===n.id?"#c9963e":"#4a5060",
+              cursor:"pointer", fontSize:18,
+              borderTop:page===n.id?"2px solid #c9963e":"2px solid transparent",
+            }}
+            aria-label={n.label}
+          >
+            <div>{n.icon}</div>
+            <div style={{fontSize:8,letterSpacing:"0.04em",marginTop:2,
+              fontFamily:"'Cinzel',serif",
+              color:page===n.id?"#c9963e":"#3a4050"}}>
+              {n.label.split(" ")[0]}
+            </div>
+          </button>
+        ))}
       </div>
+
+      {/* ── RESPONSIVE CSS ───────────────────────────────── */}
+      <style>{`
+        @media (min-width: 768px) {
+          .sidebar {
+            transform: translateX(0) !important;
+            position: fixed !important;
+            top: 0 !important;
+          }
+          .main-content {
+            margin-left: 220px !important;
+            padding: 28px 32px !important;
+          }
+          .bottom-nav {
+            display: none !important;
+          }
+        }
+        @media (max-width: 767px) {
+          .sidebar {
+            top: 0 !important;
+          }
+        }
+        * { box-sizing: border-box; }
+        button { font-family: inherit; }
+      `}</style>
     </div>
   );
 }
