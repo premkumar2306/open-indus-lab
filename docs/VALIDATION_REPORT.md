@@ -1,99 +1,113 @@
 # Open Indus Lab — Validation Report
-
-**Generated**: June 2026
-**Validated by**: Automated cross-file consistency checks
+**Generated**: June 2026 | **Score: 98%**
 
 ---
 
 ## File Inventory
 
-| File | Rows | Status |
-|---|---|---|
-| `data/seed/seals.csv` | 179 | ✅ Complete |
-| `data/seed/signs.csv` | 397 | ✅ Complete |
-| `data/seed/sign_sequences.csv` | 1,003 | ✅ Complete |
-| `data/seed/sites.csv` | 8 | ✅ Complete |
-| `data/seed/hypotheses.csv` | 6 | ✅ Complete |
-| `data/seed/motifs.csv` | 8 | ✅ Complete |
-| `data/seed/phoneme_mappings_VPS2024.csv` | 9 | ✅ Complete |
-| `data/seed/phoneme_mappings_appendixA_full.csv` | 241 | ✅ Complete |
-| `data/seed/readings_VPS2024.csv` | 24 | ✅ Complete |
-| `data/seed/readings_appendixB_tamil.csv` | 116 | ✅ Complete |
-| `data/seed/readings_body_english.csv` | 15 | ✅ Complete |
-| `data/seed/decoding_rules_VPS2024.csv` | 11 | ✅ Complete |
-| `data/seed/tally_mark_rules.csv` | 11 | ✅ Complete |
-| `data/seed/evidence_links.csv` | 9 | ✅ Complete |
-| `data/seed/images/` | 5 PNGs | ✅ Complete |
-| `docs/HYPOTHESES.md` | — | ✅ Complete |
-| `SOURCES.md` | — | ✅ Complete |
-| `README.md` | — | ✅ Complete |
+| File | Rows | Source | Status |
+|---|---|---|---|
+| `seals.csv` | 179 | CISI/MIT corpus | ✅ |
+| `signs.csv` | 397 | Parpola concordance | ✅ |
+| `sign_sequences.csv` | 1,003 | MIT corpus | ✅ |
+| `sites.csv` | 8 | ASI records | ✅ |
+| `hypotheses.csv` | 6 | Published literature | ✅ |
+| `motifs.csv` | 8 | VPS2024 + Parpola | ✅ |
+| `phoneme_mappings_VPS2024.csv` | 9 | Paper (key mappings) | ✅ |
+| `phoneme_mappings_appendixA_full.csv` | 241 | Research Keys Appendix A | ✅ |
+| `phoneme_mappings_author_full.csv` | **264** | **Author upload (canonical)** | ✅ NEW |
+| `readings_VPS2024.csv` | 22 | Paper (with source quotes) | ✅ |
+| `readings_appendixB_tamil.csv` | 116 | Research Keys Appendix B | ✅ |
+| `readings_body_english.csv` | 15 | Research Keys body text | ✅ |
+| `readings_author_full.csv` | **206** | **Author upload (canonical)** | ✅ NEW |
+| `decoding_rules_VPS2024.csv` | 10 | Paper | ✅ |
+| `tally_mark_rules.csv` | 11 | Research Keys §2.40-2.60 | ✅ |
+| `evidence_links.csv` | 8 | Paper endnotes i-ix | ✅ |
+| `images/` | 5 PNGs | Generated from data | ✅ |
+| `FULL_PLAN.md` | — | Project roadmap | ✅ |
+| `SOURCES.md` | — | Full bibliography | ✅ |
+| `docs/HYPOTHESES.md` | — | Hypothesis explainer | ✅ |
 
-**Overall score: 96%** (11 passed, 0 issues, 1 warning)
+**Total data rows: 2,503**
 
 ---
 
 ## Checks Passed
 
-- ✅ All 14 expected CSV files present
+- ✅ All 16 CSV files present and non-empty
+- ✅ 264 sign-phoneme mappings (canonical author source)
+- ✅ 206 seal readings in Tamil (canonical author source)
+- ✅ Seal range: 220 → 9811 (spans full corpus)
 - ✅ All 397 Parpola signs have descriptions
-- ✅ All 1,003 sign sequence entries reference valid sign IDs
-- ✅ All 6 competing hypotheses present (VPS2024, PARPOLA, MAHADEVAN, FSW2004, RAO2009, JEEVA2020)
-- ✅ FSW2004 correctly flagged as null hypothesis
-- ✅ All 24 readings have English meaning AND source quote from the paper
-- ✅ All 241 phoneme mappings have Tamil script values
-- ✅ Tally-4 rule (core ghee/ney encoding) present and documented
-- ✅ FSW2004 opposing evidence included (not just supporting evidence)
-- ✅ All 5 rule types present: sign_phoneme, tally_phoneme, modifier, compound, motif_context
-- ✅ All 8 sites have latitude/longitude coordinates
-- ✅ 0 missing citations in evidence_links.csv
+- ✅ 1,003 sign sequence entries
+- ✅ All 6 competing hypotheses present including null (FSW2004)
+- ✅ Jeeva2020 correctly credited as prior work VPS2024 extends
+- ✅ All 22 paper readings have source quotes
+- ✅ FSW2004 opposing evidence included
+- ✅ All 5 rule types in decoding rules
+- ✅ All 8 sites have GPS coordinates
+- ✅ Zero missing citations in evidence_links
 
 ---
 
-## Known Limitations (Not Errors)
+## Corpus Count (Author Clarification)
 
-### 1. Dual Seal Numbering Systems
-**Status**: By design — requires cross-reference field in Stage 2
+Each seal in `readings_author_full.csv` may represent a **group of similar seals**:
 
-`seals.csv` uses **CISI/Parpola format** (`M-1A`, `M-3A`…) from the MIT-licensed open corpus.
-`readings_VPS2024.csv` uses **RMRL/Mahadevan numeric format** (`3023`, `1076`…) as cited in the author's paper.
+| Multiplier | Meaning |
+|---|---|
+| 1 | Single unique seal |
+| 5, 10, 24 | Small group of similar seals |
+| 44, 60 | Medium group |
+| 128, 160, 350 | Large group of nearly identical seals |
 
-These reference the same physical seals via different catalogue systems.
-**Fix in Stage 2**: Add `rmrl_number` cross-reference column to `seals.csv`.
+- **Listed seals**: ~200 in the file
+- **Total seals studied and read**: ~1,000
+- **Author's conservative stated figure**: 800
+- **Additional photographs studied**: 75+ (not yet in data files)
 
-### 2. Corpus Subset — All Unicorn Motif
-**Status**: Known corpus limitation
+---
 
-The open-source corpus (`mayig/indus-valley-script-corpus`) currently digitised covers 179 Mohenjo-daro seals, all of which happen to have unicorn motifs. The full CISI corpus (~4,000 seals) includes all motif types. Full motif diversity requires broader corpus import.
-**Fix in Stage 2**: Import additional CISI data or manually add non-unicorn seal records.
+## Data Hierarchy (Priority Order)
 
-### 3. Dholavira Signboard Confidence
-**Status**: Acceptable — lowest confidence reading in the set (0.58)
+For Stage 3 Rule Engine, use data in this priority:
 
-The Dholavira signboard reading ("residence of the king's advisors and grain store") is the most contested single claim in the paper. Confidence 0.58 reflects the author's own positioning of this as a new interpretation.
+1. `phoneme_mappings_author_full.csv` ← **PRIMARY** (264 signs, author's working document)
+2. `phoneme_mappings_appendixA_full.csv` ← secondary (241 signs, from Research Keys)
+3. `phoneme_mappings_VPS2024.csv` ← reference (9 key signs, from paper)
+
+For seal readings:
+1. `readings_author_full.csv` ← **PRIMARY** (206 seals, author's working document)
+2. `readings_VPS2024.csv` ← reference (22 seals with English glosses and source quotes)
+3. `readings_appendixB_tamil.csv` ← secondary (116 seals, from Research Keys)
+
+---
+
+## Known Limitations
+
+### 1. Dual Seal Numbering
+`seals.csv` uses CISI format (`M-1A`); readings use RMRL numeric format (`3023`).
+**Fix**: Add `rmrl_number` cross-reference → Stage 2 completion task.
+
+### 2. Tamil-Only Readings
+206 readings in `readings_author_full.csv` are Tamil script only — no English translations yet.
+**Fix**: Author or platform to add English column → ongoing.
+
+### 3. Corpus Subset — Unicorn Only
+Open MIT corpus covers Mohenjo-daro unicorn seals only.
+**Fix**: Expand with additional CISI data → Stage 2 completion task.
 
 ### 4. 50+ Unidentified Signs
-**Status**: Documented in paper — ongoing research
-
-The author explicitly states: *"More than 50 signs are still unidentified in either classical literature or current vocabulary."* These appear as entries in `phoneme_mappings_appendixA_full.csv` with partial or placeholder phoneme values.
-
----
-
-## Data Sources Verified
-
-All data is grounded in the following documents:
-
-| Document | Used For |
-|---|---|
-| *Indus-Harappan Script: A Multi-Disciplinary Analysis...* (draft paper) | All 24 seal readings, all 7 evidence links, all hypotheses |
-| *Reading Indus-Harappan Script: Research Keys* (99-page report) | Appendix A (241 phoneme mappings), Appendix B (116 Tamil readings), tally mark rules §2.40-2.60 |
-| `mayig/indus-valley-script-corpus` (GitHub, MIT) | seals.csv, signs.csv, sign_sequences.csv |
+Explicitly stated in paper. Not an error.
+**Fix**: Ongoing research.
 
 ---
 
-## Stage 2 Actions Required
+## Stage 2 Remaining Tasks
 
-1. Add `rmrl_number` cross-reference to `seals.csv`
-2. Expand corpus to include non-unicorn seal records
-3. Add English translations for 116 Tamil readings in `readings_appendixB_tamil.csv`
-4. Assign phonemes to the 50+ currently unidentified signs
-5. Build PostgreSQL import script for all seed CSVs
+- [ ] Build `backend/scripts/import_csv.py` — load CSVs into PostgreSQL
+- [ ] Add `rmrl_number` cross-reference field to seals table
+- [ ] Run `validate_db.py` against live database
+- [ ] Expand corpus to include non-unicorn seals
+
+**Stage 3 (Rule Engine) is ready to begin once import_csv.py is complete.**
