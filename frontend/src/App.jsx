@@ -242,51 +242,352 @@ function SealBrowser({onSelect,selected}) {
   );
 }
 
-function SealDetail({seal,onClose}) {
+// ── SPEECH ────────────────────────────────────────────────
+function speak(text, lang="en-US", rate=0.85) {
+  if (!window.speechSynthesis) return;
+  window.speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = lang;
+  u.rate = rate;
+  u.pitch = 1;
+  // Try Tamil voice if available
+  if (lang === "ta-IN") {
+    const voices = window.speechSynthesis.getVoices();
+    const tamil = voices.find(v => v.lang.startsWith("ta"));
+    if (tamil) u.voice = tamil;
+  }
+  window.speechSynthesis.speak(u);
+}
+
+function SpeakBtn({ text, lang="en-US", label="", rate=0.85 }) {
+  const [speaking, setSpeaking] = useState(false);
+  const handleClick = () => {
+    if (speaking) { window.speechSynthesis.cancel(); setSpeaking(false); return; }
+    setSpeaking(true);
+    speak(text, lang, rate);
+    // Reset after ~3 seconds
+    setTimeout(() => setSpeaking(false), text.length * 80 + 800);
+  };
+  return (
+    <button onClick={handleClick} title={`Listen: ${label||text}`} style={{
+      background: speaking ? "#c9963e" : "#1a2030",
+      border: `1px solid ${speaking?"#c9963e":"#2a3040"}`,
+      color: speaking ? "#0e1117" : "#8090a8",
+      borderRadius: "50%", width:28, height:28,
+      cursor:"pointer", fontSize:13, flexShrink:0,
+      display:"inline-flex", alignItems:"center", justifyContent:"center",
+    }}>
+      {speaking ? "■" : "▶"}
+    </button>
+  );
+}
+
+// ── TALLY EXPLANATION ─────────────────────────────────────
+const TALLY_NAMES = {
+  86:"onRu (1) → o/oo", 97:"oor (1) → o",
+  87:"iru (2) → i/ii",  99:"iru (2) → i",100:"iru (2) → i",101:"iru (2) → i",
+  89:"munRu (3) → mu/muu", 102:"munRu (3) → mu/muu",103:"munRu (3) → mu/muu",
+  95:"nanku (4) → na/naa", 104:"nanku (4) → na/naa",105:"nanku (4) → na/naa",
+  96:"aintu (5) → ai/ay", 106:"aintu (5) → ai/ay",107:"aintu (5) → ai",
+  108:"aaRu (6) → a/aa — also means river",109:"aaRu (6) → a/aa",
+  110:"eLzu (7) → e/ee",112:"eLzu (7) → e/ee",
+  114:"ettu (8) → eN — also sesame",
+  115:"toNdu (9) → to",116:"toNdu (9) → to",117:"toNdu (9) → to",
+  121:"panniru (12) → panniru",122:"panniru (12) → panniru",
+};
+
+const MOTIF_DETAIL = {
+  unicorn: { icon:"◈", name:"Unicorn", jurisdiction:"Market Common", desc:"Central commercial plaza. Laws, dairy, cattle, facilities, skilled workers.", color:"#c9963e" },
+  elephant:{ icon:"◉", name:"Elephant", jurisdiction:"Elephant Street", desc:"Ghee sheds and sesame oil production. Seal 2648 (ghee shed) and 2127 (sesame oil).", color:"#4a7c59" },
+  bull:    { icon:"◆", name:"Bull", jurisdiction:"Bull Street", desc:"Fresh milk, ox pens, market banners.", color:"#a0522d" },
+  zebu:    { icon:"◇", name:"Zebu", jurisdiction:"High-value Cattle District", desc:"Premium livestock sheds.", color:"#8b6914" },
+  tiger:   { icon:"▲", name:"Tiger", jurisdiction:"Tiger District", desc:"High-value cattle, premium products.", color:"#b85450" },
+  gharial: { icon:"◗", name:"Gharial", jurisdiction:"Riverine District", desc:"Laws governing river facility usage. Seal 2864.", color:"#4a6b7c" },
+  none:    { icon:"○", name:"No motif", jurisdiction:"City-wide", desc:"Universal ordinance — not location-restricted. Curfews, guild laws, welfare mandates.", color:"#8090a8" },
+};
+
+// ── SEAL DETAIL (COMPLETE) ────────────────────────────────
+function SealDetail({seal, onClose}) {
+  const [tab, setTab] = useState("reading");
+
   if(!seal) return (
-    <div style={{...S.detail,color:"#3a4050",textAlign:"center",padding:40}}>
-      <div style={{fontFamily:"'Cinzel',serif",fontSize:14,letterSpacing:"0.1em"}}>SELECT A SEAL</div>
-      <div style={{fontSize:11,color:"#2a3040",marginTop:8}}>Click any seal card to view its full reading</div>
+    <div style={{...S.detail, color:"#3a4050", textAlign:"center", padding:40}}>
+      <div style={{fontFamily:"'Cinzel',serif", fontSize:14, letterSpacing:"0.1em"}}>SELECT A SEAL</div>
+      <div style={{fontSize:11, color:"#2a3040", marginTop:8}}>Tap any seal card to view its full reading, sign breakdown, and sounds</div>
     </div>
   );
+
+  const motifInfo = MOTIF_DETAIL[seal.motif] || MOTIF_DETAIL.none;
+  const hasTally  = seal.signs.some(m => TALLY_NAMES[m]);
+
+  // Build readable phoneme for speech
+  const phonemeForSpeech = seal.layer1.replace(/→/g," means ").replace(/[·,]/g," ");
+  const meaningForSpeech = seal.layer2 !== "[meaning pending]" ? seal.layer2 : "";
+
+  const tabs = ["reading", "signs", "evidence"];
+
   return (
     <div style={S.detail}>
-      <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:20}}>
-        <div style={{fontFamily:"'Cinzel',serif",fontSize:14,color:"#c9963e",letterSpacing:"0.08em"}}>SEAL #{seal.id}</div>
-        <button onClick={onClose} style={{background:"none",border:"none",color:"#5a6070",cursor:"pointer",fontSize:16}}>✕</button>
+
+      {/* ── HEADER ─────────────────────────────────────── */}
+      <div style={{display:"flex", justifyContent:"space-between", alignItems:"flex-start", marginBottom:16}}>
+        <div>
+          <div style={{fontFamily:"'Cinzel',serif", fontSize:20, color:"#c9963e", letterSpacing:"0.08em"}}>
+            Seal #{seal.id}
+          </div>
+          <div style={{fontSize:11, color:"#5a6070", marginTop:2}}>
+            {seal.site} · {seal.signs.length} signs · <span style={{color:motifInfo.color}}>{motifInfo.icon} {seal.motif}</span>
+          </div>
+        </div>
+        <button onClick={onClose} style={{background:"none",border:"none",color:"#5a6070",cursor:"pointer",fontSize:20,padding:"0 4px"}}>✕</button>
       </div>
-      <div style={{marginBottom:20}}>
-        <div style={{fontSize:10,color:"#5a6070",marginBottom:10,letterSpacing:"0.06em"}}>SIGN SEQUENCE — {seal.signs.length} SIGNS</div>
-        <div style={{display:"flex",gap:12,flexWrap:"wrap",alignItems:"flex-end"}}>
-          {seal.signs.map((m,i)=>(
-            <div key={i} style={{textAlign:"center"}}>
-              <SignGlyph mahadevan={m} size={56} showLabel={false}/>
-              <div style={{fontSize:9,color:"#5a6070",marginTop:4,fontFamily:"'JetBrains Mono',monospace"}}>M-{m}</div>
-              {SIGN_DATA[m] && <div style={{fontSize:9,color:"#c9963e",fontFamily:"'JetBrains Mono',monospace"}}>{SIGN_DATA[m].phoneme}</div>}
-              {SIGN_DATA[m] && <div style={{fontSize:9,color:"#8090a8"}}>{SIGN_DATA[m].tamil}</div>}
+
+      {/* ── TABS ───────────────────────────────────────── */}
+      <div style={{display:"flex", gap:0, marginBottom:20, borderBottom:"1px solid #1e2533"}}>
+        {tabs.map(t => (
+          <button key={t} onClick={()=>setTab(t)} style={{
+            background:"none", border:"none", borderBottom: tab===t?"2px solid #c9963e":"2px solid transparent",
+            color:tab===t?"#c9963e":"#5a6070", padding:"8px 16px",
+            cursor:"pointer", fontSize:11, letterSpacing:"0.06em", textTransform:"uppercase",
+            fontFamily:"'Cinzel',serif",
+          }}>
+            {t==="reading"?"Reading":t==="signs"?"Signs":"Evidence"}
+          </button>
+        ))}
+      </div>
+
+      {/* ══ TAB: READING ════════════════════════════════ */}
+      {tab==="reading" && (
+        <div>
+
+          {/* Sign strip — compact */}
+          <div style={{display:"flex", gap:6, flexWrap:"wrap", marginBottom:20}}>
+            {seal.signs.map((m,i) => (
+              <div key={i} style={{textAlign:"center"}}>
+                <SignGlyph mahadevan={m} size={44} showLabel={false}/>
+                <div style={{fontSize:8, color:"#c9963e", marginTop:2, fontFamily:"'JetBrains Mono',monospace"}}>
+                  {SIGN_DATA[m]?.phoneme || `M-${m}`}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Layer 1 — Phoneme */}
+          <div style={{background:"#0d1017", border:"1px solid #1e2533", padding:16, marginBottom:12}}>
+            <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:8}}>
+              <span style={{fontSize:10, color:"#5a6070", letterSpacing:"0.06em"}}>LAYER 1 — PHONEME (SOUND)</span>
+              <SpeakBtn text={phonemeForSpeech} lang="en-US" label="phoneme string" rate={0.75}/>
             </div>
-          ))}
+            <div style={{fontFamily:"'JetBrains Mono',monospace", fontSize:16, color:"#c9963e", marginBottom:6}}>
+              {seal.layer1}
+            </div>
+            <div style={{fontSize:10, color:"#5a6070"}}>
+              Tamil script reading — complete ✓
+            </div>
+          </div>
+
+          {/* Layer 2 — Morpheme */}
+          <div style={{background:"#0d1017", border:`1px solid ${seal.status==="complete"?"#1e2533":"#2a2010"}`, padding:16, marginBottom:12}}>
+            <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:8}}>
+              <span style={{fontSize:10, color:"#5a6070", letterSpacing:"0.06em"}}>LAYER 2 — MORPHEME (MEANING)</span>
+              {seal.status==="complete" && meaningForSpeech &&
+                <SpeakBtn text={meaningForSpeech} lang="en-US" label="English meaning"/>}
+            </div>
+            {seal.status==="complete"
+              ? <div style={{fontSize:18, color:"#e8dcc8", fontWeight:600, marginBottom:6}}>{seal.layer2}</div>
+              : <div style={{fontSize:14, color:"#4a5060", fontStyle:"italic", marginBottom:6}}>
+                  [meaning pending — Tamil phoneme reading above is complete]
+                </div>
+            }
+            {seal.domain && <div style={S.domainBadge(seal.domain)}>{seal.domain}</div>}
+          </div>
+
+          {/* Jurisdiction */}
+          <div style={{background:"#0d1017", border:"1px solid #1e2533", padding:16, marginBottom:12}}>
+            <div style={{fontSize:10, color:"#5a6070", letterSpacing:"0.06em", marginBottom:8}}>JURISDICTION</div>
+            <div style={{display:"flex", alignItems:"flex-start", gap:12}}>
+              <span style={{fontSize:28, color:motifInfo.color}}>{motifInfo.icon}</span>
+              <div>
+                <div style={{fontSize:15, color:motifInfo.color, fontWeight:600, marginBottom:4}}>
+                  {motifInfo.jurisdiction}
+                </div>
+                <div style={{fontSize:12, color:"#8090a8", lineHeight:1.5}}>
+                  {motifInfo.desc}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Tally marks */}
+          {hasTally && (
+            <div style={{background:"#0d1017", border:"1px solid #c9963e22", padding:16, marginBottom:12}}>
+              <div style={{fontSize:10, color:"#c9963e", letterSpacing:"0.06em", marginBottom:10}}>
+                TALLY MARK PHONETICS
+              </div>
+              <div style={{fontSize:11, color:"#8090a8", marginBottom:8, lineHeight:1.5}}>
+                Tally marks encode Tamil numeral names as phonemes — not just counting strokes.
+              </div>
+              {seal.signs.filter(m => TALLY_NAMES[m]).map((m,i) => (
+                <div key={i} style={{display:"flex", alignItems:"center", gap:10, padding:"6px 0", borderTop:"1px solid #1a2030"}}>
+                  <SignGlyph mahadevan={m} size={32} showLabel={false}/>
+                  <div>
+                    <span style={{fontFamily:"'JetBrains Mono',monospace", fontSize:11, color:"#c9963e"}}>M-{m}</span>
+                    <span style={{fontSize:11, color:"#8090a8", marginLeft:8}}>{TALLY_NAMES[m]}</span>
+                  </div>
+                  <SpeakBtn text={TALLY_NAMES[m].split("→")[1]?.trim()||""} lang="en-US" rate={0.8}/>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Confidence */}
+          <div style={{display:"flex", alignItems:"center", gap:12, marginTop:4}}>
+            <div style={{flex:1, height:4, background:"#1e2533", borderRadius:2}}>
+              <div style={{height:"100%", width:`${seal.confidence*100}%`,
+                background:seal.confidence>0.7?"#c9963e":seal.confidence>0.6?"#8b6914":"#a0522d",
+                borderRadius:2}}/>
+            </div>
+            <span style={{fontSize:11, fontFamily:"'JetBrains Mono',monospace", color:"#5a6070", flexShrink:0}}>
+              confidence: {seal.confidence}
+            </span>
+          </div>
+
+          {/* Full audio button */}
+          {seal.status==="complete" && (
+            <button
+              onClick={() => {
+                speak(`Seal ${seal.id}. Phoneme reading: ${phonemeForSpeech}. English meaning: ${meaningForSpeech}. Jurisdiction: ${motifInfo.jurisdiction}.`, "en-US", 0.8);
+              }}
+              style={{
+                marginTop:16, width:"100%", padding:"10px",
+                background:"#1a2030", border:"1px solid #c9963e",
+                color:"#c9963e", cursor:"pointer", fontSize:12,
+                letterSpacing:"0.06em", fontFamily:"'Cinzel',serif",
+              }}
+            >
+              ▶ PLAY FULL READING
+            </button>
+          )}
         </div>
-      </div>
-      <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:16,marginBottom:16}}>
+      )}
+
+      {/* ══ TAB: SIGNS ══════════════════════════════════ */}
+      {tab==="signs" && (
         <div>
-          <div style={{fontSize:10,color:"#5a6070",letterSpacing:"0.06em",marginBottom:6}}>LAYER 1 — PHONEME</div>
-          <div style={{fontFamily:"'JetBrains Mono',monospace",fontSize:13,color:"#c9963e"}}>{seal.layer1}</div>
+          <div style={{fontSize:11, color:"#5a6070", marginBottom:16}}>
+            Each sign below links to the author's Tamil phoneme mapping. Tap ▶ to hear the sound.
+          </div>
+          {seal.signs.map((m, i) => {
+            const info = SIGN_DATA[m];
+            const isTally = !!TALLY_NAMES[m];
+            const type = getSignType(m);
+            return (
+              <div key={i} style={{
+                display:"flex", alignItems:"center", gap:14,
+                padding:"12px 0", borderBottom:"1px solid #1a2030",
+              }}>
+                {/* Position */}
+                <span style={{fontSize:11, color:"#3a4050", fontFamily:"'JetBrains Mono',monospace", width:16, flexShrink:0}}>
+                  {i+1}
+                </span>
+
+                {/* Glyph */}
+                <SignGlyph mahadevan={m} size={52} showLabel={false}/>
+
+                {/* Info */}
+                <div style={{flex:1}}>
+                  <div style={{display:"flex", alignItems:"center", gap:8, marginBottom:4}}>
+                    <span style={{fontFamily:"'Cinzel',serif", fontSize:13, color:"#c9963e"}}>M-{m}</span>
+                    <span style={{fontSize:9, padding:"1px 6px",
+                      background:SIGN_TYPE_COLORS[type]||"#2a3040", color:"#fff",
+                      letterSpacing:"0.04em"}}>
+                      {type}
+                    </span>
+                    {isTally && <span style={{fontSize:9, color:"#c9963e"}}>tally</span>}
+                  </div>
+                  {info
+                    ? <>
+                        <div style={{fontFamily:"'JetBrains Mono',monospace", fontSize:13, color:"#e8dcc8", marginBottom:2}}>
+                          {info.phoneme}
+                        </div>
+                        <div style={{fontSize:13, color:"#8090a8"}}>{info.tamil}</div>
+                      </>
+                    : <div style={{fontSize:11, color:"#3a4050", fontStyle:"italic"}}>phoneme not yet mapped</div>
+                  }
+                  {isTally && (
+                    <div style={{fontSize:10, color:"#c9963e88", marginTop:4}}>
+                      {TALLY_NAMES[m]}
+                    </div>
+                  )}
+                </div>
+
+                {/* Speak */}
+                {info && (
+                  <SpeakBtn
+                    text={`${info.phoneme}. Tamil: ${info.tamil}`}
+                    lang="en-US"
+                    label={info.phoneme}
+                    rate={0.75}
+                  />
+                )}
+              </div>
+            );
+          })}
         </div>
+      )}
+
+      {/* ══ TAB: EVIDENCE ════════════════════════════════ */}
+      {tab==="evidence" && (
         <div>
-          <div style={{fontSize:10,color:"#5a6070",letterSpacing:"0.06em",marginBottom:6}}>LAYER 2 — MORPHEME</div>
-          <div style={{fontSize:14,color:seal.status==="complete"?"#e8dcc8":"#4a5060",fontStyle:seal.status==="pending"?"italic":"normal"}}>{seal.layer2}</div>
-          {seal.domain && <div style={S.domainBadge(seal.domain)}>{seal.domain}</div>}
+          <div style={{fontSize:11, color:"#5a6070", marginBottom:16, lineHeight:1.6}}>
+            Academic sources supporting this reading under the VPS2024 hypothesis.
+          </div>
+
+          {/* Core citation */}
+          <div style={{background:"#0d1017", border:"1px solid #1e2533", padding:16, marginBottom:12}}>
+            <div style={{fontSize:10, color:"#5a6070", letterSpacing:"0.06em", marginBottom:8}}>PRIMARY SOURCE</div>
+            <div style={{fontSize:13, color:"#e8dcc8", marginBottom:4}}>
+              Shanmugham, Ponmuthu. <em>Reading Indus-Harappan Script: Research Keys.</em>
+            </div>
+            <div style={{fontSize:11, color:"#8090a8"}}>ISBN 979-8-9940362-9-7 · 2026</div>
+          </div>
+
+          {/* Corpus source */}
+          <div style={{background:"#0d1017", border:"1px solid #1e2533", padding:16, marginBottom:12}}>
+            <div style={{fontSize:10, color:"#5a6070", letterSpacing:"0.06em", marginBottom:8}}>SEAL CORPUS</div>
+            <div style={{fontSize:13, color:"#e8dcc8", marginBottom:4}}>
+              Indus Script Web Tool, Roja Muthiah Research Library (RMRL), Chennai.
+            </div>
+            <div style={{fontSize:11, color:"#8090a8"}}>www.indusscript.in · Consultant: Iravatham Mahadevan</div>
+          </div>
+
+          {/* Grammar */}
+          <div style={{background:"#0d1017", border:"1px solid #1e2533", padding:16, marginBottom:12}}>
+            <div style={{fontSize:10, color:"#5a6070", letterSpacing:"0.06em", marginBottom:8}}>GRAMMAR REFERENCE</div>
+            <div style={{fontSize:13, color:"#e8dcc8", marginBottom:4}}>
+              <em>Tholkaappiyam</em> — ancient Tamil grammar treatise.
+            </div>
+            <div style={{fontSize:11, color:"#8090a8"}}>
+              Establishes 'aa' (ஆ) as ancient morpheme for cow, predating the written script.
+            </div>
+          </div>
+
+          {/* Statistical support */}
+          <div style={{background:"#0d1017", border:"1px solid #1e2533", padding:16, marginBottom:12}}>
+            <div style={{fontSize:10, color:"#5a6070", letterSpacing:"0.06em", marginBottom:8}}>STATISTICAL SUPPORT</div>
+            <div style={{fontSize:13, color:"#e8dcc8", marginBottom:4}}>
+              Rao, R.P.N. et al. "Entropic Evidence for Linguistic Structure in the Indus Script."
+            </div>
+            <div style={{fontSize:11, color:"#8090a8"}}>Science 324:1165 · 2009 · DOI: 10.1126/science.1170391</div>
+          </div>
+
+          {/* Confidence note */}
+          <div style={{background:"#1a1612", border:"1px solid #3a2518", padding:12, fontSize:11, color:"#8b6914", lineHeight:1.6}}>
+            Confidence {seal.confidence} is a researcher estimate, not a statistically validated probability.
+            Statistical validation (Stage 5 — Zipf test, motif co-occurrence) is planned but not yet complete.
+          </div>
         </div>
-      </div>
-      <div>
-        <div style={{fontSize:10,color:"#5a6070",letterSpacing:"0.06em",marginBottom:6}}>JURISDICTION</div>
-        <div style={{fontSize:13,color:MOTIF_COLORS[seal.motif]}}>
-          {seal.motif==="unicorn"?"◈ Market Common (commercial plaza)":seal.motif==="none"?"○ City-wide (universal ordinance)":seal.motif==="elephant"?"◉ Elephant Street":seal.motif==="gharial"?"◗ Riverine District":"◆ Bull Street"}
-        </div>
-      </div>
-      <div style={S.confBar}><div style={S.confFill(seal.confidence)}/></div>
-      <div style={{fontSize:10,color:"#3a4050",marginTop:6,fontFamily:"'JetBrains Mono',monospace"}}>confidence: {seal.confidence}</div>
+      )}
     </div>
   );
 }
