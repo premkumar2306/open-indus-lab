@@ -2,13 +2,10 @@ import { useState } from "react";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from "recharts";
 
 // ── SIGN IMAGE DATA ───────────────────────────────────────
-// Images extracted directly from author's Indus_Signs_Reading.pdf
-const SIGN_IMGS = {};
-const signModules = import.meta.glob('./signs/*.png', { eager: true, query: '?url', import: 'default' });
-Object.entries(signModules).forEach(([path, url]) => {
-  const m = path.match(/sign_(\d+)\.png/);
-  if (m) SIGN_IMGS[parseInt(m[1])] = url;
-});
+// Images from author's Indus_Signs_Reading.pdf
+// Direct URL construction — glob relative paths break at /open-indus-lab/ base
+const BASE = import.meta.env.BASE_URL || '/open-indus-lab/';
+const getSignUrl = (n) => `${BASE}signs/sign_${String(n).padStart(4,'0')}.png`;
 
 // ── REAL DATA ─────────────────────────────────────────────
 const SIGN_DATA = {
@@ -166,7 +163,7 @@ const S = {
 
 // ── SIGN GLYPH COMPONENT ─────────────────────────────────
 function SignGlyph({ mahadevan, size=40, showLabel=true }) {
-  const imgSrc = SIGN_IMGS[mahadevan];
+  const imgSrc = getSignUrl(mahadevan);
   const type = getSignType(mahadevan);
   const info = SIGN_DATA[mahadevan];
 
