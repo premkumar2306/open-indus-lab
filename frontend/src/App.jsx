@@ -166,23 +166,42 @@ function SignGlyph({ mahadevan, size=40, showLabel=true }) {
   const imgSrc = getSignUrl(mahadevan);
   const type = getSignType(mahadevan);
   const info = SIGN_DATA[mahadevan];
+  const [loaded, setLoaded] = useState(false);
+  const [errored, setErrored] = useState(false);
 
   return (
-    <div style={{display:"flex",flexDirection:"column",alignItems:"center",gap:2}} title={`M-${mahadevan}${info?` · ${info.phoneme}`:""}`}>
+    <div style={{display:"flex",flexDirection:"column",alignItems:"center",gap:2}}
+         title={`M-${mahadevan}${info ? " · " + info.phoneme : ""}`}>
       <div style={{
         width:size, height:size,
-        background:"#1a2030",
+        background: loaded && !errored ? "#f5f0e8" : "#1a2030",
         border:`1px solid ${SIGN_TYPE_COLORS[type]||"#2a3040"}`,
         display:"flex", alignItems:"center", justifyContent:"center",
-        overflow:"hidden", flexShrink:0,
+        overflow:"hidden", flexShrink:0, position:"relative",
       }}>
-        {imgSrc
-          ? <img src={imgSrc} alt={`M-${mahadevan}`} style={{width:size-4,height:size-4,objectFit:"contain",filter:"invert(1)"}} />
-          : <span style={{fontSize:8,fontFamily:"'JetBrains Mono',monospace",color:SIGN_TYPE_COLORS[type],fontWeight:700}}>{mahadevan}</span>
-        }
+        <img
+          src={imgSrc}
+          alt={"M-" + mahadevan}
+          onLoad={() => setLoaded(true)}
+          onError={() => setErrored(true)}
+          style={{
+            width:size-6, height:size-6,
+            objectFit:"contain",
+            display: loaded && !errored ? "block" : "none",
+          }}
+        />
+        {(!loaded || errored) && (
+          <span style={{fontSize:8,fontFamily:"'JetBrains Mono',monospace",
+            color:SIGN_TYPE_COLORS[type],fontWeight:700}}>
+            {mahadevan}
+          </span>
+        )}
       </div>
       {showLabel && info && (
-        <span style={{fontSize:8,fontFamily:"'JetBrains Mono',monospace",color:"#5a6070",textAlign:"center",maxWidth:size}}>{info.phoneme}</span>
+        <span style={{fontSize:8,fontFamily:"'JetBrains Mono',monospace",
+          color:"#5a6070",textAlign:"center",maxWidth:size}}>
+          {info.phoneme}
+        </span>
       )}
     </div>
   );
