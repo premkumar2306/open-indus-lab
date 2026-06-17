@@ -415,3 +415,23 @@ The platform succeeds when a peer reviewer can:
 7. Sign a reproducibility statement that goes into the peer review record
 
 That is the academic credibility target. Everything else serves that goal.
+
+---
+
+## Amendment: Two-Layer Reading Architecture (June 2026)
+
+All readings now follow a two-layer structure:
+
+**Layer 1 — Phoneme (complete for all 206 readings):**
+- `tamil_script`: original Tamil script
+- `phoneme_roman`: auto-transliterated Roman (author-reviewable)
+
+**Layer 2 — Morpheme (17 complete, 189 pending):**
+- `morpheme_english`: English meaning (human-added)
+- `semantic_domain`: semantic category
+- `translation_status`: complete | pending | partial
+
+This allows Stage 3 (Rule Engine) and Stage 5 (Statistics) to run on Layer 1
+immediately, while Layer 2 is filled in progressively.
+
+See `docs/TRANSLATION_TRACKER.md` for status.
