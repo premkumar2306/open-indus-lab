@@ -6,12 +6,28 @@
 
 ---
 
+## Project Status
+
+| Stage | Name | Status |
+|---|---|---|
+| Stage 1 | Data Model (PostgreSQL schema) | ✅ Complete |
+| Stage 2 | Corpus Loader & Seed Data | ✅ Complete |
+| Stage 3 | Rule Engine | 🔲 Next |
+| Stage 4 | Research Dashboard (React) | 🔲 Planned |
+| Stage 5 | Statistical Validation | 🔲 Planned |
+| Stage 6 | Knowledge Graph | 🔲 Planned |
+| Stage 7 | Peer Review Workflow | 🔲 Planned |
+| Stage 8 | Publication Strategy | 🔲 Planned |
+
+See [`FULL_PLAN.md`](./FULL_PLAN.md) for complete roadmap.
+
+---
+
 ## Background
 
-The Indus-Harappan script (~3300–1300 BCE) remains undeciphered after over 100 years of scholarship. More than 4,000 inscribed objects have been found across a 1.3 million sq km civilisation. Despite a century of effort, no scholarly consensus exists on the language or meaning of the signs.
+The Indus-Harappan script (~3300–1300 BCE) remains undeciphered after over 100 years of scholarship. More than 4,000 inscribed objects have been found across a 1.3 million sq km civilisation.
 
 This platform provides a neutral computational layer for researchers to:
-
 - Load and explore the open seal corpus
 - Register named, versioned decipherment hypotheses
 - Apply deterministic rule engines to produce candidate readings
@@ -22,99 +38,103 @@ This platform provides a neutral computational layer for researchers to:
 
 ## Primary Research Input
 
-This platform was developed in connection with the following scholarly work by **Ponmuthu Shanmugham** (Member of Technical Staff, Retd, Lucent Technologies – Bell Laboratories):
+**Author**: Ponmuthu Shanmugham (Member of Technical Staff, Retd., Lucent Technologies – Bell Laboratories)
+**Contact**: vpshanmugham@yahoo.com
 
-### Published Books
+### Published Works
 | Title | ISBN |
 |---|---|
-| *Ancient Harappans Speak! After 5000 years* | 979-8-9949362-3-5 (paperback); 979-8-9940362-4-2 (eBook) |
-| *Indus Script is a Language, A living language of 80 million* (Bilingual) | 979-8-9940362-6-6 (Kavin Publishers, 2026) |
-
-### Research Report
-- *Reading Indus-Harappan Script: Research Keys — A New Paradigm* (99 pages, 2026). ISBN: 979-8-9940362-9-7
+| *Ancient Harappans Speak! After 5000 years* | 979-8-9949362-3-5 (pb) / 979-8-9940362-4-2 (eBook) |
+| *Indus Script is a Language — A living language of 80 million* (Bilingual) | 979-8-9940362-6-6 (Kavin Publishers, 2026) |
+| *Reading Indus-Harappan Script: Research Keys* (99 pages) | 979-8-9940362-9-7 (2026) |
 
 ### Draft Article
-- *Indus-Harappan Script: A Multi-Disciplinary Analysis of Linguistic Continuity and Urban Topology* (2026, submitted for peer review)
+*Indus-Harappan Script: A Multi-Disciplinary Analysis of Linguistic Continuity and Urban Topology* (2026, submitted for peer review)
 
 ---
 
-## The VPS2024 Hypothesis (as modelled in this platform)
+## Data (`data/seed/`)
 
-The hypothesis proposes that the Indus-Harappan script encodes an ancient form of the Tamil language. Key claims (each falsifiable and modelled separately):
+**Total: 2,503 rows across 16 CSV files**
 
-### 1. Phonetic Mapping
-Identifies **10 vowels and 18 consonants** of the Indus script, structurally similar to the Tamizi script. The most frequent sign — a U-shape with two prominent serifs — is proposed to represent a cow's face, phoneme **'aa' (ஆ)**, from the Tamil morpheme for cow, supported by the ancient grammar treatise *Tholkaappiyam*.
+### Canonical Author Data (Primary)
+| File | Rows | Description |
+|---|---|---|
+| `phoneme_mappings_author_full.csv` | **264** | Complete sign→Tamil phoneme table (author's working document) |
+| `readings_author_full.csv` | **206** | Seal readings in Tamil, seals 220–9811 |
 
-### 2. Tally Marks as Phonetic Substitution
-Tally marks function as phonetic placeholders for Tamil vowel sounds (உ, ஊ) absent from the geometric sign corpus. Tamil number names embed these sounds:
-- Tally-3 → *mu / muu* (மு, மூ)
-- Tally-4 → *na / naa* (ந, நா) → enables encoding of *ney* (நெய் = ghee)
-- Tally-6 → *a / aa* (also means 'river' in Tamil)
-- Tally-7 → *e / ee*
+### Open Corpus Data (MIT Licensed)
+| File | Rows | Description |
+|---|---|---|
+| `seals.csv` | 179 | Seal metadata from CISI/Parpola |
+| `signs.csv` | 397 | Parpola sign concordance |
+| `sign_sequences.csv` | 1,003 | Ordered sign occurrences per seal |
 
-Demonstrated in seals 2950, 2322, 1133, 1076.
+### Research Framework Data
+| File | Rows | Description |
+|---|---|---|
+| `hypotheses.csv` | 6 | Competing hypotheses incl. null (FSW2004) |
+| `sites.csv` | 8 | Major excavation sites with GPS |
+| `motifs.csv` | 8 | Seal motif catalogue |
+| `decoding_rules_VPS2024.csv` | 10 | Deterministic rule engine rules |
+| `tally_mark_rules.csv` | 11 | Tally 1–12 Tamil phoneme rules |
+| `evidence_links.csv` | 8 | Academic citations (endnotes i–ix) |
+| `readings_VPS2024.csv` | 22 | Key readings with source quotes |
+| `phoneme_mappings_appendixA_full.csv` | 241 | Signs from Research Keys Appendix A |
+| `readings_appendixB_tamil.csv` | 116 | Readings from Research Keys Appendix B |
 
-### 3. Urban Topology of Motifs
-Seal motifs are proposed as **street and district identifiers**:
+### Corpus Scale (Author Clarification)
+Each listed seal may represent a group of similar seals (1, 5, 10, 24, 44, 60, 128, 160, or 350).
+Total seals studied and read: **~1,000** (stated conservatively as 800).
+75+ additional seal photographs studied but not yet in data files.
 
-| Motif | Proposed jurisdiction |
-|---|---|
-| Unicorn (~60% of iconographic seals) | Market Common (commercial plaza) |
-| Elephant | Elephant Street (ghee, sesame oil) |
-| Bull | Bull Street (milk, oxen, banners) |
-| Zebu / Tiger | High-value cattle district |
-| Gharial | Riverine facilities |
-| No motif | City-wide ordinance (universal) |
+---
 
-### 4. Key Seal Readings (from the paper)
+## The VPS2024 Hypothesis
 
+### Core Claims
+1. **Phonetics**: 10 vowels + 18 consonants mapped to Tamil. Most frequent sign = cow face = phoneme *aa* (ஆ)
+2. **Tally marks**: Phonetic placeholders using Tamil numeral names (tally-4 = *nanku* → *na* → enables *ney* = ghee)
+3. **Motifs as street signs**: Unicorn = Market Common; Elephant = Elephant Street; No motif = city-wide ordinance
+4. **Modifiers**: Have form but no independent sound; alter adjacent sign phoneme
+5. **Compound integration**: Signs 10+12 → sign 15 (*aakaavva* = cow carer), documented in seal 3246
+
+### Key Seal Readings
 | Seal | Motif | Reading | Meaning |
 |---|---|---|---|
 | 3023, 2358 | Unicorn | *didiir aa* | Just expressed fresh milk |
-| 1076 | Unicorn | *thava ne-y* | Very good ghee |
-| 2082 | Unicorn | *iisaa muu aagaavva* | Carer of three cows of Isaa (Shiva) |
-| 2648 | Elephant | *mi mi na y thoLzu* | Very good ghee shed |
-| 2127 | Elephant | *eNNey* | Sesame ghee (eNNey in Tamil) |
-| 1386 | Composite | — | High-value cattle shed |
-| 2444 | Unicorn | *aNNa(l) kai aaNai* | Order of the Leader (Market Common) |
-| 2864 | Gharial | *aNNa(l) kai aaNai* | Order of the Leader (Riverine) |
-| 4440 | None | — | Citywide curfew |
-| 4371 | None | — | Farmers guild law |
-| 4284 | None | — | Skill certification |
-| 2234 | Unicorn + Bull | *vayya yiir illam* | The world is a Big Home |
+| 1076 | Unicorn | *thava ney* | Very good ghee |
+| 2082 | Unicorn | *iisaa muu aagaavva* | Carer of 3 cows of Isaa (Shiva) |
+| 2127 | Elephant | *eNNey* | Sesame oil |
+| 2234 | Unicorn+Bull | *vayya yiir illam* | The world is a Big Home |
 | 4718 | None | — | Panic milk mandate for children |
 | 1425 | None | *illam vaya muu thani* | Homes for the aged and alone |
-| 5119 | Unicorn | *muu da aa thoLzu* | Shed for aged cattle |
-| 3246 | None | *vayamuula aagaavva* | Carer of aged cattle |
-| 1110 | Unicorn | — | Respected equanimous great leader |
-| 2617 | Unicorn | — | Buttermilk available HERE (banner) |
-| Dholavira signboard | None | — | Residence of king's advisors and grain store |
-
-### 5. Script Construction Mechanisms
-- **Modifiers**: Have form but no independent sound; alter the phoneme of adjacent signs (e.g. sign 216 *sa* → sign 219 *si* → sign 220 *Sivam/Sivan*)
-- **Compound integration**: Signs 10 (*kaa*) + 12 (*kaavva*) → sign 15 (*aakaavva* = cow carer), documented in seal 3246
-- **Pictogram evolution**: Pictograms simplified over time toward geometric standardisation across 1.3M sq km and ~2000 years
-
-### 6. Prior Work Extended
-This hypothesis extends and modifies the work of:
-- **Iravatham Mahadevan** — sign concordance (1977, RMRL Chennai)
-- **Asko Parpola** — Dravidian framework, *Deciphering the Indus Script* (CUP, 1994)
-- **Purnachandra Jeeva** — *sinthuveLiyil munthu thamiz* (சிந்துவெளியில் முந்து தமிழ்), Yalisaip Pathippagam, ISBN 978-81-9427-9105 (2020)
+| 2444 | Unicorn | *aNNal kai aaNai* | Order of the Leader |
+| Dholavira | None | — | Residence of king's advisors + grain store |
 
 ---
 
-## Competing Hypotheses Modelled
+## Competing Hypotheses
 
-| Code | Researcher | Claim | Status |
+| Code | Researcher | Claim | Role |
 |---|---|---|---|
-| VPS2024 | Ponmuthu Shanmugham | Old Tamil, syllabic | Active |
-| PARPOLA | Asko Parpola | Proto-Dravidian, logo-syllabic | Active |
-| MAHADEVAN | Iravatham Mahadevan | Dravidian concordance | Active |
-| FSW2004 | Farmer, Sproat, Witzel | Non-linguistic emblems | Active (null hypothesis) |
-| RAO2009 | Rajesh Rao et al. | Language-like structure (statistical) | Active |
-| RAJARAM | Rajaram, Jha | Vedic Sanskrit | Archived (discredited) |
+| VPS2024 | Ponmuthu Shanmugham | Ancient Tamil, syllabic | Primary input |
+| JEEVA2020 | Purnachandra Jeeva | Ancient Tamil (prior work) | Extended by VPS2024 |
+| PARPOLA | Asko Parpola | Proto-Dravidian, logo-syllabic | Comparison |
+| MAHADEVAN | Iravatham Mahadevan | Dravidian concordance | Comparison |
+| FSW2004 | Farmer, Sproat, Witzel | Non-linguistic emblems | **Null hypothesis** |
+| RAO2009 | Rajesh Rao et al. | Language-like entropy | Statistical baseline |
 
-> FSW2004 reference: "The Collapse of the Indus Script Thesis: The myth of a literate Harappan civilization", Electronic Journal of Vedic Studies, 02/11/2004.
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Backend | Python FastAPI + PostgreSQL 16 + pgvector |
+| Frontend | React 18 + TypeScript + Vite + Tailwind |
+| Analysis | Jupyter + pandas + scikit-learn + NetworkX |
+| Infrastructure | Docker Compose (local-first, no cloud) |
 
 ---
 
@@ -122,71 +142,17 @@ This hypothesis extends and modifies the work of:
 
 | Source | Content | License |
 |---|---|---|
-| [mayig/indus-valley-script-corpus](https://github.com/mayig/indus-valley-script-corpus) | 179 seals, 397 signs, 1003 sign sequences (Mohenjo-daro) | MIT |
-| RMRL Chennai — [www.indusscript.in](http://www.indusscript.in) | Seal images and Mahadevan concordance | Research use |
+| [mayig/indus-valley-script-corpus](https://github.com/mayig/indus-valley-script-corpus) | 179 seals, 397 signs (Mohenjo-daro) | MIT |
+| RMRL Chennai — [indusscript.in](http://www.indusscript.in) | Seal images, Mahadevan concordance | Research use |
 | CISI Vol.1 — Joshi & Parpola, Helsinki 1987 | Collections in India | Reference |
 | CISI Vol.2 — Shah & Parpola, Helsinki 1991 | Collections in Pakistan | Reference |
-| Dr. N. Yadav et al. — Harappa.com | Sign frequency distribution | Reference |
-| K. Rajan, R. Sivamantham, Dept of Archaeology, Govt of Tamil Nadu (2025) | Graffiti marks morphological study | Reference |
-
----
-
-## Data Files (`data/seed/`)
-
-| File | Description | Rows | Source |
-|---|---|---|---|
-| `seals.csv` | Seal corpus, Mohenjo-daro | 179 | CISI / MIT corpus |
-| `signs.csv` | Parpola sign concordance | 397 | MIT corpus |
-| `sign_sequences.csv` | Ordered sign occurrences per seal | 1,003 | MIT corpus |
-| `sites.csv` | 8 major excavation sites | 8 | ASI / published records |
-| `hypotheses.csv` | 6 competing hypotheses | 6 | Published literature |
-| `motifs.csv` | 8 motif types, dual interpretations | 8 | VPS2024 + Parpola |
-| `phoneme_mappings_VPS2024.csv` | Key sign→Tamil phoneme mappings | 9 | VPS2024 paper |
-| `phoneme_mappings_appendixA_full.csv` | Full 241-sign phoneme table | 241 | Research Keys Appendix A |
-| `readings_VPS2024.csv` | Named seal readings with English glosses | 22 | VPS2024 paper |
-| `readings_appendixB_tamil.csv` | 116 Tamil-script readings | 116 | Research Keys Appendix B |
-| `readings_body_english.csv` | English readings from Research Keys body | 15 | Research Keys chapters |
-| `decoding_rules_VPS2024.csv` | 10 deterministic decoding rules | 10 | VPS2024 paper |
-| `tally_mark_rules.csv` | Tally 1–12 phoneme rules | 11 | Research Keys §2.40–2.60 |
-| `evidence_links.csv` | Academic citations per claim | 8 | Paper endnotes |
-
----
-
-## Future Validation Pathways (from the paper)
-
-1. **Stratigraphic correlation** — correlate sign forms with Ravi/Kot Diji/Mature Harappan phases
-2. **Spectroscopic analysis** — GC-MS on shards near ghee/sesame/buttermilk reading seals to detect milk and sesame lipids
-3. **Comparative Tamil family study** — 50+ unidentified signs may resolve via Malayalam, Kannada, Telugu, Tulu, Brahui trade jargon
-4. **Expanded corpus** — only 10–15% of ~4000+ Harappan sites excavated; longer inscriptions may exist
-
----
-
-## Tech Stack
-
-- **Backend**: Python FastAPI + PostgreSQL + pgvector
-- **Frontend**: React + TypeScript + Vite
-- **Analysis**: Jupyter Notebooks + scikit-learn + NetworkX
-- **Infrastructure**: Docker Compose (local-first, no cloud required)
-
----
-
-## Project Stages
-
-- [x] **Stage 1** — Data model & PostgreSQL schema
-- [x] **Stage 2** — Corpus loader & CSV seed data ← *current*
-- [ ] **Stage 3** — Rule engine (sign → phoneme → reading)
-- [ ] **Stage 4** — Research dashboard (React frontend)
-- [ ] **Stage 5** — Statistical validation & null hypothesis testing
-- [ ] **Stage 6** — Knowledge graph
-- [ ] **Stage 7** — Peer review workflow
-- [ ] **Stage 8** — Publication & conference submission
+| Dr. N. Yadav et al. — Harappa.com | Sign frequency data | Reference |
+| Rajan & Sivamantham, Govt of Tamil Nadu (2025) | Graffiti mark morphology | Reference |
 
 ---
 
 ## License
 
-MIT. Corpus data credit to respective sources listed above.
+MIT. Corpus data credit to respective sources above.
 
-Research Keys content © Ponmuthu Shanmugham 2026 (ISBN 979-8-9940362-9-7). Used with permission for open research and peer review.
-
-Contact: vpshanmugham@yahoo.com | 8112 Northway Drive, Hanover Park, IL 60133
+Research content © Ponmuthu Shanmugham 2026. Used with permission for open research and peer review.
