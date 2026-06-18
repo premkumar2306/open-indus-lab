@@ -858,22 +858,26 @@ function SealDetail({seal, onClose}) {
 }
 
 function SignRegistry() {
-  const [search, setSearch] = useState("");
-  const [tf, setTf]         = useState("all");
-  const [page, setPage]     = useState(0);
-  const PAGE_SIZE = 48;
+  const [srchSign, setSrchSign] = useState("");
+  const [typeFilter, setTypeFilter] = useState("all");
+  const [signPage, setSignPage]  = useState(0);
+  const PG = 30;
 
   const filtered = ALL_SIGNS.filter(s =>
-    (tf === "all" || s.type === tf) &&
-    (search === "" ||
-      String(s.m).includes(search) ||
-      s.tamil.toLowerCase().includes(search.toLowerCase()))
+    (typeFilter === "all" || s.type === typeFilter) &&
+    (srchSign === "" ||
+      String(s.m).includes(srchSign) ||
+      s.tamil.toLowerCase().includes(srchSign.toLowerCase()))
   );
 
-  const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
-  const visible    = filtered.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
-
+  const nPages  = Math.ceil(filtered.length / PG);
+  const visible = filtered.slice(signPage * PG, (signPage + 1) * PG);
   const maxFreq = Math.max(...ALL_SIGNS.map(s => s.freq), 1);
+
+  const goPage = (n) => {
+    setSignPage(n);
+    window.scrollTo({top: 0, behavior: "smooth"});
+  };
 
   return (
     <div>
@@ -889,38 +893,46 @@ function SignRegistry() {
 
       <div style={S.filterRow}>
         <input
-          value={search}
-          onChange={e => { setSearch(e.target.value); setPage(0); }}
+          value={srchSign}
+          onChange={e => { setSrchSign(e.target.value); setSignPage(0); }}
           placeholder="Search M-number or Tamil…"
           style={{background:"#131822",border:"1px solid #1e2533",color:"#e8dcc8",
-                  padding:"6px 12px",fontSize:12,width:220,outline:"none"}}
+                  padding:"6px 12px",fontSize:12,width:200,outline:"none"}}
         />
         {["all","tally","compound","pictogram","geometric","modifier"].map(t => (
           <button key={t}
-            style={{...S.filterBtn(tf===t), borderLeft:`2px solid ${tf===t?SIGN_TYPE_COLORS[t]||"#c9963e":"transparent"}`}}
-            onClick={() => { setTf(t); setPage(0); }}>
+            style={{...S.filterBtn(typeFilter===t),
+                    borderLeft:`2px solid ${typeFilter===t ? SIGN_TYPE_COLORS[t]||"#c9963e" : "transparent"}`}}
+            onClick={() => { setTypeFilter(t); setSignPage(0); }}>
             {t}
           </button>
         ))}
       </div>
 
-      {/* Results count */}
-      <div style={{fontSize:11,color:"#5a6070",marginBottom:12}}>
-        Showing {visible.length} of {filtered.length} signs
-        {totalPages > 1 && ` · Page ${page+1}/${totalPages}`}
+      {/* Count + page indicator */}
+      <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:12}}>
+        <div style={{fontSize:11,color:"#5a6070"}}>
+          {filtered.length} signs {srchSign || typeFilter !== "all" ? "(filtered)" : ""}
+        </div>
+        {nPages > 1 && (
+          <div style={{fontSize:12,color:"#c9963e",fontFamily:"'Cinzel',serif",letterSpacing:"0.06em"}}>
+            Page {signPage + 1} / {nPages}
+          </div>
+        )}
       </div>
 
       {/* Sign grid */}
-      <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(100px,1fr))",gap:10,marginBottom:16}}>
+      <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(96px,1fr))",gap:10,marginBottom:24}}>
         {visible.map(s => (
           <div key={s.m} style={{
-            background:"#131822", border:`1px solid ${SIGN_TYPE_COLORS[s.type]||"#1e2533"}`,
+            background:"#131822",
+            border:`1px solid ${SIGN_TYPE_COLORS[s.type]||"#1e2533"}`,
             padding:"10px 8px", textAlign:"center",
           }}>
             <SignGlyph mahadevan={s.m} size={56} showLabel={false} />
             <div style={{fontFamily:"'Cinzel',serif",fontSize:11,color:"#c9963e",marginTop:6}}>M-{s.m}</div>
             <div style={{fontSize:9,color:"#5a6070",marginTop:2,letterSpacing:"0.04em"}}>{s.type}</div>
-            <div style={{fontSize:11,color:"#e8dcc8",marginTop:4,minHeight:16,lineHeight:1.3}}>{s.tamil}</div>
+            <div style={{fontSize:11,color:"#e8dcc8",marginTop:4,lineHeight:1.3}}>{s.tamil}</div>
             {s.freq > 0 && (
               <div style={{marginTop:6,height:3,background:"#1e2533"}}>
                 <div style={{height:"100%",width:`${(s.freq/maxFreq)*100}%`,background:"#c9963e"}}/>
@@ -930,24 +942,52 @@ function SignRegistry() {
         ))}
       </div>
 
-      {/* Pagination */}
-      {totalPages > 1 && (
-        <div style={{display:"flex",gap:8,justifyContent:"center",marginBottom:20}}>
-          <button onClick={() => setPage(p => Math.max(0,p-1))} disabled={page===0}
-            style={{...S.filterBtn(false), opacity:page===0?0.3:1}}>← Prev</button>
-          {Array.from({length:totalPages},(_,i) => (
-            <button key={i} onClick={() => setPage(i)}
-              style={{...S.filterBtn(page===i), minWidth:32}}>
-              {i+1}
-            </button>
-          ))}
-          <button onClick={() => setPage(p => Math.min(totalPages-1,p+1))} disabled={page===totalPages-1}
-            style={{...S.filterBtn(false), opacity:page===totalPages-1?0.3:1}}>Next →</button>
+      {/* ── PAGINATION ── big, unmissable ── */}
+      {nPages > 1 && (
+        <div style={{
+          display:"flex", alignItems:"center", justifyContent:"space-between",
+          background:"#131822", border:"1px solid #c9963e",
+          padding:"14px 20px", marginBottom:20,
+        }}>
+          <button
+            onClick={() => goPage(Math.max(0, signPage - 1))}
+            disabled={signPage === 0}
+            style={{
+              background: signPage === 0 ? "none" : "#1a1810",
+              border:`1px solid ${signPage === 0 ? "#2a3040" : "#c9963e"}`,
+              color: signPage === 0 ? "#3a4050" : "#c9963e",
+              padding:"10px 20px", cursor: signPage === 0 ? "default" : "pointer",
+              fontSize:16, fontFamily:"'Cinzel',serif", letterSpacing:"0.06em",
+            }}>
+            ← PREV
+          </button>
+
+          <div style={{textAlign:"center"}}>
+            <div style={{fontFamily:"'Cinzel',serif",fontSize:16,color:"#c9963e",letterSpacing:"0.08em"}}>
+              {signPage + 1} / {nPages}
+            </div>
+            <div style={{fontSize:10,color:"#5a6070",marginTop:2}}>
+              {signPage * PG + 1}–{Math.min((signPage+1)*PG, filtered.length)} of {filtered.length}
+            </div>
+          </div>
+
+          <button
+            onClick={() => goPage(Math.min(nPages - 1, signPage + 1))}
+            disabled={signPage === nPages - 1}
+            style={{
+              background: signPage === nPages-1 ? "none" : "#1a1810",
+              border:`1px solid ${signPage === nPages-1 ? "#2a3040" : "#c9963e"}`,
+              color: signPage === nPages-1 ? "#3a4050" : "#c9963e",
+              padding:"10px 20px", cursor: signPage === nPages-1 ? "default" : "pointer",
+              fontSize:16, fontFamily:"'Cinzel',serif", letterSpacing:"0.06em",
+            }}>
+            NEXT →
+          </button>
         </div>
       )}
 
       <div style={{fontSize:10,color:"#3a4050",padding:"8px 0",borderTop:"1px solid #1e2533"}}>
-        Note: 50+ signs remain unidentified — ongoing research. Future: comparative Tamil family study (Malayalam, Kannada, Telugu, Tulu, Brahui).
+        50+ signs unidentified — ongoing research. Future: Tamil family comparative study.
       </div>
     </div>
   );
