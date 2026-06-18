@@ -80,22 +80,271 @@ const SEALS = [
   { id:"2617", motif:"unicorn", site:"Mohenjo-daro", signs:[403,403,351,267,402], layer1:"vva vva vayya mii aar", layer2:"Buttermilk available HERE", domain:"dairy products", status:"complete", confidence:0.62 },
 ];
 
-const SIGN_FREQ_DATA = [
-  {m:95, tamil:"நான்கு,ந,நா", phoneme:"na/naa", freq:76, type:"tally"},
-  {m:162,tamil:"ய்,ய",        phoneme:"y/ya",   freq:67, type:"geometric"},
-  {m:267,tamil:"மீ",          phoneme:"mii",    freq:35, type:"geometric"},
-  {m:86, tamil:"ஓர்,ஒ",       phoneme:"oor",    freq:35, type:"tally"},
-  {m:216,tamil:"ச",           phoneme:"sa",     freq:32, type:"geometric"},
-  {m:342,tamil:"ஆ",           phoneme:"aa",     freq:31, type:"pictogram"},
-  {m:89, tamil:"மூன்று,மு",   phoneme:"muu",   freq:27, type:"tally"},
-  {m:242,tamil:"தொழு",        phoneme:"thoLzu", freq:23, type:"geometric"},
-  {m:171,tamil:"ண,ணா",        phoneme:"Na",     freq:21, type:"geometric"},
-  {m:391,tamil:"தவ",          phoneme:"thava",  freq:20, type:"pictogram"},
-  {m:10, tamil:"கா",          phoneme:"kaa",    freq:19, type:"compound"},
-  {m:12, tamil:"காவ்வ",       phoneme:"kaavva", freq:18, type:"compound"},
-  {m:15, tamil:"ஆகாவ்வ",     phoneme:"aakaavva",freq:17,type:"compound"},
-  {m:66, tamil:"இல்லம்",      phoneme:"illam",  freq:17, type:"pictogram"},
-  {m:171,tamil:"ண,ணா",        phoneme:"Na/Naa", freq:15, type:"geometric"},
+const ALL_SIGNS = [
+  {m:342,tamil:"ஆ",type:"geometric",freq:99},
+  {m:99,tamil:"கமற்படி- இரு",type:"tally",freq:76},
+  {m:161,tamil:"ன",type:"geometric",freq:35},
+  {m:267,tamil:"மீ",type:"geometric",freq:35},
+  {m:59,tamil:"ள், ள",type:"geometric",freq:32},
+  {m:87,tamil:"இரு. ஈர்",type:"tally",freq:27},
+  {m:123,tamil:"ட,த",type:"tally",freq:22},
+  {m:67,tamil:"லா",type:"geometric",freq:21},
+  {m:65,tamil:"இள, இளம்",type:"geometric",freq:20},
+  {m:211,tamil:"ன்,ன",type:"geometric",freq:18},
+  {m:387,tamil:"ெய",type:"geometric",freq:17},
+  {m:391,tamil:"ட்",type:"geometric",freq:17},
+  {m:72,tamil:"ல",type:"geometric",freq:15},
+  {m:89,tamil:"மூன்று,மு,மூ",type:"tally",freq:14},
+  {m:287,tamil:"ட",type:"geometric",freq:14},
+  {m:343,tamil:"அய்",type:"geometric",freq:14},
+  {m:102,tamil:"மூன்று,மு,மூ",type:"tally",freq:13},
+  {m:347,tamil:"ய்ய",type:"geometric",freq:11},
+  {m:402,tamil:"ஆர்",type:"geometric",freq:11},
+  {m:17,tamil:"தெ (தெம்)",type:"geometric",freq:10},
+  {m:97,tamil:"ஓர்",type:"tally",freq:10},
+  {m:403,tamil:"வ்ெ,ெவ்",type:"geometric",freq:10},
+  {m:1,tamil:"க",type:"geometric",freq:9},
+  {m:70,tamil:"ழ",type:"geometric",freq:9},
+  {m:48,tamil:"ளார்",type:"geometric",freq:8},
+  {m:51,tamil:"'கதளணஅ'",type:"geometric",freq:8},
+  {m:86,tamil:"ஒன்று,ஓர்,ஒ,ஓ,ர்",type:"tally",freq:8},
+  {m:296,tamil:"ட்ட",type:"geometric",freq:7},
+  {m:15,tamil:"ஆகாவ்ெ",type:"compound",freq:6},
+  {m:108,tamil:"ஆறு",type:"tally",freq:6},
+  {m:171,tamil:"ண,ணா",type:"geometric",freq:6},
+  {m:230,tamil:"'மலய்'",type:"pictogram",freq:6},
+  {m:249,tamil:"ப",type:"geometric",freq:6},
+  {m:254,tamil:"ண, ணி",type:"geometric",freq:6},
+  {m:293,tamil:"ட்",type:"geometric",freq:6},
+  {m:8,tamil:"கய்",type:"geometric",freq:5},
+  {m:60,tamil:"ளம்,ளன்,ளல்,ளர்",type:"modifier",freq:5},
+  {m:204,tamil:"ககாயில்",type:"pictogram",freq:5},
+  {m:233,tamil:"மு, மூ",type:"geometric",freq:5},
+  {m:244,tamil:"பண்ண",type:"geometric",freq:5},
+  {m:12,tamil:"காவ்ெ,காெல்",type:"compound",freq:4},
+  {m:28,tamil:"கம",type:"geometric",freq:4},
+  {m:53,tamil:"ம",type:"geometric",freq:4},
+  {m:103,tamil:"மூன்று,மு,மூ",type:"tally",freq:4},
+  {m:104,tamil:"நான்கு,ந,நா",type:"tally",freq:4},
+  {m:106,tamil:"அய்,அய்ந்து",type:"tally",freq:4},
+  {m:110,tamil:"ஏழு, ஏ,எ",type:"tally",freq:4},
+  {m:121,tamil:"பன்னிரு",type:"tally",freq:4},
+  {m:124,tamil:"த",type:"tally",freq:4},
+  {m:173,tamil:"ண்ண",type:"geometric",freq:4},
+  {m:176,tamil:"ண்,ண,மண",type:"geometric",freq:4},
+  {m:197,tamil:"ந",type:"geometric",freq:4},
+  {m:215,tamil:"ஈசா",type:"geometric",freq:4},
+  {m:261,tamil:"ம",type:"geometric",freq:4},
+  {m:25,tamil:"கர்",type:"geometric",freq:3},
+  {m:81,tamil:"மயிலட்ட",type:"pictogram",freq:3},
+  {m:127,tamil:"ர",type:"geometric",freq:3},
+  {m:155,tamil:"ன,ன்",type:"geometric",freq:3},
+  {m:182,tamil:"பண்ணா",type:"geometric",freq:3},
+  {m:194,tamil:"ஞான் (இளஞன்)",type:"geometric",freq:3},
+  {m:216,tamil:"ச",type:"geometric",freq:3},
+  {m:224,tamil:"சங்கரா (வெண்மம)",type:"geometric",freq:3},
+  {m:303,tamil:"ட்ட,டட்",type:"geometric",freq:3},
+  {m:327,tamil:"'அரச ண அ",type:"geometric",freq:3},
+  {m:344,tamil:"அவ்",type:"geometric",freq:3},
+  {m:348,tamil:"யண்ண,ண்மண",type:"geometric",freq:3},
+  {m:381,tamil:"ெண்,ெண",type:"geometric",freq:3},
+  {m:11,tamil:"கற்ற",type:"compound",freq:2},
+  {m:19,tamil:"கண(கண்ண)",type:"geometric",freq:2},
+  {m:32,tamil:"கவ் (வகௌ)",type:"compound",freq:2},
+  {m:57,tamil:"'எறம்ப' = எருமம",type:"pictogram",freq:2},
+  {m:96,tamil:"அய்,அய்ந்து",type:"tally",freq:2},
+  {m:114,tamil:"எட்டு, எண்",type:"tally",freq:2},
+  {m:130,tamil:"ற்,ற",type:"geometric",freq:2},
+  {m:160,tamil:"தண்ன,தன்ண",type:"geometric",freq:2},
+  {m:242,tamil:"வதாழு",type:"geometric",freq:2},
+  {m:264,tamil:"தம,தம்",type:"geometric",freq:2},
+  {m:286,tamil:"தெதம்",type:"geometric",freq:2},
+  {m:294,tamil:"ட்ட",type:"geometric",freq:2},
+  {m:307,tamil:"ம",type:"geometric",freq:2},
+  {m:325,tamil:"அரச",type:"geometric",freq:2},
+  {m:328,tamil:"அ",type:"geometric",freq:2},
+  {m:367,tamil:"ெவ்யெ",type:"geometric",freq:2},
+  {m:3,tamil:"க், கர்",type:"geometric",freq:1},
+  {m:4,tamil:"கண்",type:"geometric",freq:1},
+  {m:7,tamil:"கீ",type:"geometric",freq:1},
+  {m:9,tamil:"கய்ட்ட",type:"geometric",freq:1},
+  {m:18,tamil:"கா",type:"geometric",freq:1},
+  {m:26,tamil:"கரர், காரர்",type:"geometric",freq:1},
+  {m:30,tamil:"கம",type:"compound",freq:1},
+  {m:34,tamil:"கய்",type:"geometric",freq:1},
+  {m:36,tamil:"கச",type:"geometric",freq:1},
+  {m:38,tamil:"கண்,கண்ண",type:"geometric",freq:1},
+  {m:41,tamil:"கர், கர",type:"geometric",freq:1},
+  {m:47,tamil:"ெர, ெர்",type:"geometric",freq:1},
+  {m:50,tamil:"\"ணாய்\"",type:"geometric",freq:1},
+  {m:62,tamil:"ட்டள்",type:"geometric",freq:1},
+  {m:66,tamil:"இளம், இல்லம்",type:"geometric",freq:1},
+  {m:75,tamil:"இலி",type:"geometric",freq:1},
+  {m:76,tamil:"ககாழி (ககாழியூர்)",type:"pictogram",freq:1},
+  {m:80,tamil:"மயில்",type:"pictogram",freq:1},
+  {m:111,tamil:"எழுட்ட",type:"tally",freq:1},
+  {m:143,tamil:"இருதஅம் அம்(ன்,ல்,ர்)",type:"modifier",freq:1},
+  {m:144,tamil:"இருதட்ட",type:"geometric",freq:1},
+  {m:159,tamil:"இயன்",type:"geometric",freq:1},
+  {m:163,tamil:"இய",type:"geometric",freq:1},
+  {m:177,tamil:"ரீ",type:"geometric",freq:1},
+  {m:198,tamil:"நண்",type:"geometric",freq:1},
+  {m:206,tamil:"ககாயில்ண்[ண]",type:"pictogram",freq:1},
+  {m:209,tamil:"ககாயில்",type:"pictogram",freq:1},
+  {m:219,tamil:"சி",type:"geometric",freq:1},
+  {m:221,tamil:"சா",type:"geometric",freq:1},
+  {m:223,tamil:"சங்ங",type:"geometric",freq:1},
+  {m:228,tamil:"சச்",type:"geometric",freq:1},
+  {m:235,tamil:"மூய",type:"geometric",freq:1},
+  {m:252,tamil:"பண",type:"geometric",freq:1},
+  {m:284,tamil:"தம், தமீ",type:"geometric",freq:1},
+  {m:288,tamil:"ட்",type:"geometric",freq:1},
+  {m:298,tamil:"டட்டட்ட",type:"geometric",freq:1},
+  {m:304,tamil:"ம,ம்",type:"geometric",freq:1},
+  {m:306,tamil:"மீர்",type:"geometric",freq:1},
+  {m:311,tamil:"'யாழ்'",type:"geometric",freq:1},
+  {m:329,tamil:"அவ்",type:"geometric",freq:1},
+  {m:345,tamil:"ஆமூ",type:"geometric",freq:1},
+  {m:349,tamil:"ய்யர்",type:"geometric",freq:1},
+  {m:392,tamil:"தெஇருென்(ர்)",type:"geometric",freq:1},
+  {m:404,tamil:"வ்ென்,வ்ெர்",type:"geometric",freq:1},
+  {m:2,tamil:"ரகர், கரர், காரர்",type:"geometric",freq:0},
+  {m:5,tamil:"கண்",type:"geometric",freq:0},
+  {m:6,tamil:"கி",type:"geometric",freq:0},
+  {m:10,tamil:"கா",type:"compound",freq:0},
+  {m:13,tamil:"காவ்ெர்",type:"compound",freq:0},
+  {m:14,tamil:"காவ்ென்",type:"compound",freq:0},
+  {m:20,tamil:"கண்ணர்",type:"geometric",freq:0},
+  {m:21,tamil:"கய",type:"geometric",freq:0},
+  {m:22,tamil:"கண",type:"geometric",freq:0},
+  {m:23,tamil:"கரி",type:"geometric",freq:0},
+  {m:24,tamil:"ரிகரி",type:"geometric",freq:0},
+  {m:27,tamil:"கட",type:"geometric",freq:0},
+  {m:29,tamil:"மகம, கமகம",type:"compound",freq:0},
+  {m:31,tamil:"கவ்ெ",type:"compound",freq:0},
+  {m:33,tamil:"அகெ",type:"compound",freq:0},
+  {m:35,tamil:"கண",type:"geometric",freq:0},
+  {m:37,tamil:"கமண",type:"geometric",freq:0},
+  {m:39,tamil:"வக, கக",type:"geometric",freq:0},
+  {m:40,tamil:"கண,கண்ண",type:"geometric",freq:0},
+  {m:42,tamil:"தெகதெ",type:"geometric",freq:0},
+  {m:43,tamil:"கண",type:"geometric",freq:0},
+  {m:49,tamil:"முக'",type:"geometric",freq:0},
+  {m:52,tamil:"'கதளனர்'",type:"geometric",freq:0},
+  {m:58,tamil:"தெ (early form)",type:"geometric",freq:0},
+  {m:61,tamil:"நலம்,நலன்",type:"modifier",freq:0},
+  {m:63,tamil:"மயிலட்டள்",type:"geometric",freq:0},
+  {m:64,tamil:"மயிலட்டள்",type:"geometric",freq:0},
+  {m:68,tamil:"லாம்,லான்,லால்,லார்",type:"modifier",freq:0},
+  {m:69,tamil:"லி",type:"geometric",freq:0},
+  {m:71,tamil:"ழம்,ழன்,ழல்,ழர்",type:"modifier",freq:0},
+  {m:73,tamil:"லம்.லன்.லல்,லர்",type:"modifier",freq:0},
+  {m:74,tamil:"லி",type:"geometric",freq:0},
+  {m:78,tamil:"மயில்",type:"pictogram",freq:0},
+  {m:79,tamil:"மயில்",type:"pictogram",freq:0},
+  {m:82,tamil:"ெ அன்னம்=ெனம்",type:"pictogram",freq:0},
+  {m:84,tamil:"கால் = காற்று",type:"pictogram",freq:0},
+  {m:88,tamil:"இரும்",type:"tally",freq:0},
+  {m:90,tamil:"மூய=எருது",type:"tally",freq:0},
+  {m:91,tamil:"முரா=கமார்",type:"tally",freq:0},
+  {m:92,tamil:"இமூ",type:"tally",freq:0},
+  {m:93,tamil:"ஓரிரு",type:"tally",freq:0},
+  {m:94,tamil:"இருஓர்",type:"tally",freq:0},
+  {m:95,tamil:"நான்கு,ந,நா",type:"tally",freq:0},
+  {m:98,tamil:"கமற்ப்டி -ஒரு",type:"tally",freq:0},
+  {m:100,tamil:"இரு",type:"tally",freq:0},
+  {m:101,tamil:"இரு",type:"tally",freq:0},
+  {m:105,tamil:"நான்கு,நா,ந",type:"tally",freq:0},
+  {m:107,tamil:"அய்,அய்ந்து",type:"tally",freq:0},
+  {m:109,tamil:"ஆறு, நதி",type:"tally",freq:0},
+  {m:112,tamil:"ஏழு, ஏ,எ",type:"tally",freq:0},
+  {m:113,tamil:"எழுட்ட",type:"tally",freq:0},
+  {m:115,tamil:"வதாண்டு",type:"tally",freq:0},
+  {m:116,tamil:"வதாண்டு",type:"tally",freq:0},
+  {m:117,tamil:"வதாண்டுப",type:"tally",freq:0},
+  {m:122,tamil:"பன்னிருட்ட",type:"tally",freq:0},
+  {m:125,tamil:"த",type:"geometric",freq:0},
+  {m:126,tamil:"த",type:"geometric",freq:0},
+  {m:128,tamil:"ரி",type:"geometric",freq:0},
+  {m:129,tamil:"ர",type:"geometric",freq:0},
+  {m:137,tamil:"த",type:"geometric",freq:0},
+  {m:138,tamil:"இத",type:"geometric",freq:0},
+  {m:139,tamil:"பத",type:"geometric",freq:0},
+  {m:140,tamil:"தஅம்அம், தஅன்அன்",type:"modifier",freq:0},
+  {m:141,tamil:"இருத",type:"geometric",freq:0},
+  {m:142,tamil:"இருதப",type:"geometric",freq:0},
+  {m:145,tamil:"இருதண்",type:"geometric",freq:0},
+  {m:153,tamil:"ன,ன்",type:"geometric",freq:0},
+  {m:156,tamil:"னட்ட",type:"geometric",freq:0},
+  {m:158,tamil:"தர், இன்",type:"geometric",freq:0},
+  {m:162,tamil:"ய்,ய",type:"geometric",freq:0},
+  {m:164,tamil:"யஅம்அம்,(அன்,ல்,ர்)",type:"modifier",freq:0},
+  {m:167,tamil:"ய்ய",type:"geometric",freq:0},
+  {m:169,tamil:"னி",type:"geometric",freq:0},
+  {m:172,tamil:"ணண்",type:"geometric",freq:0},
+  {m:175,tamil:"ெய",type:"geometric",freq:0},
+  {m:190,tamil:"'கெலி'=நில அளமெ",type:"pictogram",freq:0},
+  {m:205,tamil:"ண,ணய்",type:"geometric",freq:0},
+  {m:207,tamil:"ககாயிலண்ணல்",type:"pictogram",freq:0},
+  {m:210,tamil:"ககாயில்",type:"pictogram",freq:0},
+  {m:212,tamil:"பன்,பன",type:"geometric",freq:0},
+  {m:213,tamil:"யன்",type:"geometric",freq:0},
+  {m:214,tamil:"ச்,ச",type:"geometric",freq:0},
+  {m:217,tamil:"ச்ச",type:"geometric",freq:0},
+  {m:220,tamil:"சிெம்,சிென்",type:"geometric",freq:0},
+  {m:222,tamil:"சா",type:"geometric",freq:0},
+  {m:225,tamil:"ச,ச்",type:"geometric",freq:0},
+  {m:226,tamil:"சி",type:"geometric",freq:0},
+  {m:227,tamil:"சரி",type:"geometric",freq:0},
+  {m:229,tamil:"ஈ",type:"geometric",freq:0},
+  {m:231,tamil:"'மலயமலய்'",type:"pictogram",freq:0},
+  {m:232,tamil:"\"மலய் அரச'",type:"pictogram",freq:0},
+  {m:243,tamil:"அ வதாழு",type:"geometric",freq:0},
+  {m:245,tamil:"'இட'",type:"geometric",freq:0},
+  {m:246,tamil:"'இடர்'",type:"geometric",freq:0},
+  {m:250,tamil:"பம்,பன்,பல்,பர்",type:"modifier",freq:0},
+  {m:251,tamil:"பச",type:"geometric",freq:0},
+  {m:257,tamil:"பண்ணய்",type:"geometric",freq:0},
+  {m:258,tamil:"பண்ணய்",type:"geometric",freq:0},
+  {m:259,tamil:"பண்ணய்",type:"geometric",freq:0},
+  {m:262,tamil:"மய",type:"geometric",freq:0},
+  {m:266,tamil:"மன",type:"geometric",freq:0},
+  {m:270,tamil:"மீய",type:"geometric",freq:0},
+  {m:285,tamil:"தமம்,தமன்,தமர்",type:"modifier",freq:0},
+  {m:289,tamil:"டஅம்அம்(அன்,அல்,அர்)",type:"modifier",freq:0},
+  {m:290,tamil:"டீ",type:"geometric",freq:0},
+  {m:295,tamil:"டட்",type:"geometric",freq:0},
+  {m:297,tamil:"ட்டண்",type:"geometric",freq:0},
+  {m:299,tamil:"ட",type:"geometric",freq:0},
+  {m:300,tamil:"ட்,டி",type:"geometric",freq:0},
+  {m:302,tamil:"டர்",type:"geometric",freq:0},
+  {m:305,tamil:"வம",type:"geometric",freq:0},
+  {m:308,tamil:"மஅம்அம்(அன்,அல்,அர்)",type:"modifier",freq:0},
+  {m:309,tamil:"ஈ",type:"geometric",freq:0},
+  {m:321,tamil:"ெவ்,வ்ெ",type:"geometric",freq:0},
+  {m:322,tamil:"ெென்,வ்ென்",type:"geometric",freq:0},
+  {m:323,tamil:"அரச",type:"geometric",freq:0},
+  {m:324,tamil:"அரசன",type:"geometric",freq:0},
+  {m:326,tamil:"அரச",type:"geometric",freq:0},
+  {m:330,tamil:"அமூ",type:"geometric",freq:0},
+  {m:331,tamil:"அன",type:"geometric",freq:0},
+  {m:340,tamil:"அய் (old form)",type:"geometric",freq:0},
+  {m:351,tamil:"யவ்ெ,ெவ்ய",type:"geometric",freq:0},
+  {m:352,tamil:"ஆய,யா",type:"geometric",freq:0},
+  {m:355,tamil:"தெய்ய",type:"geometric",freq:0},
+  {m:356,tamil:"இதய்ய",type:"geometric",freq:0},
+  {m:357,tamil:"தய்ய",type:"geometric",freq:0},
+  {m:358,tamil:"ண்ண",type:"geometric",freq:0},
+  {m:363,tamil:"மன்ன",type:"geometric",freq:0},
+  {m:372,tamil:"வ்ெவ்யய்",type:"geometric",freq:0},
+  {m:373,tamil:"ெ",type:"geometric",freq:0},
+  {m:382,tamil:"ெண்ண",type:"geometric",freq:0},
+  {m:385,tamil:"ென",type:"geometric",freq:0},
+  {m:388,tamil:"ெயல்",type:"geometric",freq:0},
+  {m:389,tamil:"ென",type:"geometric",freq:0},
+  {m:390,tamil:"ெனம்",type:"geometric",freq:0},
+  {m:393,tamil:"தெஅவ்",type:"geometric",freq:0},
+  {m:3411,tamil:"பண்,பண",type:"geometric",freq:0},
 ];
 
 const MOTIF_DATA = [
@@ -609,47 +858,96 @@ function SealDetail({seal, onClose}) {
 }
 
 function SignRegistry() {
-  const [search,setSearch] = useState("");
-  const [tf,setTf] = useState("all");
-  const filtered = SIGN_FREQ_DATA.filter(s=>(tf==="all"||s.type===tf)&&(search===""||String(s.m).includes(search)||s.tamil.includes(search)||s.phoneme.toLowerCase().includes(search.toLowerCase())));
+  const [search, setSearch] = useState("");
+  const [tf, setTf]         = useState("all");
+  const [page, setPage]     = useState(0);
+  const PAGE_SIZE = 48;
+
+  const filtered = ALL_SIGNS.filter(s =>
+    (tf === "all" || s.type === tf) &&
+    (search === "" ||
+      String(s.m).includes(search) ||
+      s.tamil.toLowerCase().includes(search.toLowerCase()))
+  );
+
+  const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
+  const visible    = filtered.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
+
+  const maxFreq = Math.max(...ALL_SIGNS.map(s => s.freq), 1);
+
   return (
     <div>
       <div style={S.pageTitle}>Sign Registry</div>
-      <div style={S.pageSub}>259 sign glyphs extracted from author's document · Mahadevan concordance</div>
+      <div style={S.pageSub}>264 signs mapped · Mahadevan concordance · VPS2024 phonemes</div>
+
       <div style={S.statsRow}>
-        <div style={S.statCard}><div style={S.statNum}>259</div><div style={S.statLabel}>Signs Extracted</div></div>
+        <div style={S.statCard}><div style={S.statNum}>264</div><div style={S.statLabel}>Signs Mapped</div></div>
         <div style={S.statCard}><div style={S.statNum}>404</div><div style={S.statLabel}>Total in Corpus</div></div>
         <div style={S.statCard}><div style={S.statNum}>50+</div><div style={S.statLabel}>Unidentified</div></div>
         <div style={S.statCard}><div style={S.statNum}>1003</div><div style={S.statLabel}>Occurrences</div></div>
       </div>
+
       <div style={S.filterRow}>
-        <input value={search} onChange={e=>setSearch(e.target.value)} placeholder="Search M-number or phoneme…" style={{background:"#131822",border:"1px solid #1e2533",color:"#e8dcc8",padding:"5px 12px",fontSize:12,width:220,outline:"none"}}/>
-        {["all","tally","compound","pictogram","geometric"].map(t=>(
-          <button key={t} style={{...S.filterBtn(tf===t),borderLeft:`2px solid ${tf===t?SIGN_TYPE_COLORS[t]:"transparent"}`}} onClick={()=>setTf(t)}>{t}</button>
+        <input
+          value={search}
+          onChange={e => { setSearch(e.target.value); setPage(0); }}
+          placeholder="Search M-number or Tamil…"
+          style={{background:"#131822",border:"1px solid #1e2533",color:"#e8dcc8",
+                  padding:"6px 12px",fontSize:12,width:220,outline:"none"}}
+        />
+        {["all","tally","compound","pictogram","geometric","modifier"].map(t => (
+          <button key={t}
+            style={{...S.filterBtn(tf===t), borderLeft:`2px solid ${tf===t?SIGN_TYPE_COLORS[t]||"#c9963e":"transparent"}`}}
+            onClick={() => { setTf(t); setPage(0); }}>
+            {t}
+          </button>
         ))}
       </div>
-      <div style={{background:"#131822",border:"1px solid #1e2533"}}>
-        <div style={{display:"flex",gap:12,padding:"8px 16px",borderBottom:"1px solid #1e2533",fontSize:10,color:"#3a4050",letterSpacing:"0.06em"}}>
-          <span style={{width:64}}>GLYPH</span>
-          <span style={{width:48}}>M-NO</span>
-          <span style={{width:72}}>TYPE</span>
-          <span style={{width:140}}>TAMIL PHONEME</span>
-          <span style={{width:100}}>ROMAN</span>
-          <span style={{flex:1}}>FREQUENCY</span>
-        </div>
-        {filtered.map(s=>(
-          <div key={s.m} style={{display:"flex",alignItems:"center",gap:12,padding:"10px 16px",borderBottom:"1px solid #0e1117"}}>
-            <div style={{width:64,flexShrink:0}}><SignGlyph mahadevan={s.m} size={44} showLabel={false}/></div>
-            <span style={{fontFamily:"'Cinzel',serif",fontSize:14,color:"#c9963e",width:48,flexShrink:0}}>M-{s.m}</span>
-            <span style={{width:72,fontSize:9,padding:"2px 6px",background:SIGN_TYPE_COLORS[s.type],color:"#fff",letterSpacing:"0.04em",height:"fit-content",flexShrink:0}}>{s.type}</span>
-            <span style={{width:140,fontSize:13,flexShrink:0}}>{s.tamil}</span>
-            <span style={{width:100,fontFamily:"'JetBrains Mono',monospace",fontSize:11,color:"#8090a8",flexShrink:0}}>{s.phoneme}</span>
-            <div style={{flex:1}}><div style={{height:6,width:`${(s.freq/76)*100}%`,background:"#c9963e"}}/><span style={{fontSize:9,color:"#5a6070",fontFamily:"'JetBrains Mono',monospace"}}>{s.freq}</span></div>
+
+      {/* Results count */}
+      <div style={{fontSize:11,color:"#5a6070",marginBottom:12}}>
+        Showing {visible.length} of {filtered.length} signs
+        {totalPages > 1 && ` · Page ${page+1}/${totalPages}`}
+      </div>
+
+      {/* Sign grid */}
+      <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(100px,1fr))",gap:10,marginBottom:16}}>
+        {visible.map(s => (
+          <div key={s.m} style={{
+            background:"#131822", border:`1px solid ${SIGN_TYPE_COLORS[s.type]||"#1e2533"}`,
+            padding:"10px 8px", textAlign:"center",
+          }}>
+            <SignGlyph mahadevan={s.m} size={56} showLabel={false} />
+            <div style={{fontFamily:"'Cinzel',serif",fontSize:11,color:"#c9963e",marginTop:6}}>M-{s.m}</div>
+            <div style={{fontSize:9,color:"#5a6070",marginTop:2,letterSpacing:"0.04em"}}>{s.type}</div>
+            <div style={{fontSize:11,color:"#e8dcc8",marginTop:4,minHeight:16,lineHeight:1.3}}>{s.tamil}</div>
+            {s.freq > 0 && (
+              <div style={{marginTop:6,height:3,background:"#1e2533"}}>
+                <div style={{height:"100%",width:`${(s.freq/maxFreq)*100}%`,background:"#c9963e"}}/>
+              </div>
+            )}
           </div>
         ))}
       </div>
-      <div style={{background:"#1a1612",border:"1px solid #3a2518",padding:"10px 14px",fontSize:12,color:"#8b6914",marginTop:16}}>
-        ⚠ 50+ signs remain unidentified. Engine marks these as [M-N?] in output. Future research: comparative Tamil family study (Malayalam, Kannada, Telugu, Tulu, Brahui).
+
+      {/* Pagination */}
+      {totalPages > 1 && (
+        <div style={{display:"flex",gap:8,justifyContent:"center",marginBottom:20}}>
+          <button onClick={() => setPage(p => Math.max(0,p-1))} disabled={page===0}
+            style={{...S.filterBtn(false), opacity:page===0?0.3:1}}>← Prev</button>
+          {Array.from({length:totalPages},(_,i) => (
+            <button key={i} onClick={() => setPage(i)}
+              style={{...S.filterBtn(page===i), minWidth:32}}>
+              {i+1}
+            </button>
+          ))}
+          <button onClick={() => setPage(p => Math.min(totalPages-1,p+1))} disabled={page===totalPages-1}
+            style={{...S.filterBtn(false), opacity:page===totalPages-1?0.3:1}}>Next →</button>
+        </div>
+      )}
+
+      <div style={{fontSize:10,color:"#3a4050",padding:"8px 0",borderTop:"1px solid #1e2533"}}>
+        Note: 50+ signs remain unidentified — ongoing research. Future: comparative Tamil family study (Malayalam, Kannada, Telugu, Tulu, Brahui).
       </div>
     </div>
   );
