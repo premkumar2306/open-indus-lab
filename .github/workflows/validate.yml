@@ -1,0 +1,54 @@
+name: Validate Data Every 4 Hours
+
+on:
+  schedule:
+    - cron: '0 */4 * * *'   # every 4 hours
+  push:
+    branches: [main]         # also on every push
+  workflow_dispatch:         # and manually
+
+permissions:
+  contents: write            # needed to commit updated report
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install pillow numpy
+
+      - name: Run validation
+        id: validate
+        run: |
+          python scripts/validate.py
+          echo "exit_code=$?" >> $GITHUB_OUTPUT
+        continue-on-error: true   # don't block deploy on warnings
+
+      - name: Commit updated validation report
+        run: |
+          git config user.name  "Open Indus Lab Bot"
+          git config user.email "bot@open-indus-lab"
+          git add docs/VALIDATION_REPORT.md
+          if git diff --staged --quiet; then
+            echo "No changes to report"
+          else
+            git commit -m "Auto-validate: $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
+
+      - name: Report status
+        run: |
+          if [ "${{ steps.validate.outputs.exit_code }}" != "0" ]; then
+            echo "::warning::Validation found issues — check docs/VALIDATION_REPORT.md"
+          else
+            echo "All validation checks passed"
+          fi
