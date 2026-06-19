@@ -510,18 +510,17 @@ function SealBrowser({onSelect,selected}) {
               <span style={{fontSize:10,color:MOTIF_COLORS[seal.motif],letterSpacing:"0.04em"}}>{seal.motif}</span>
             </div>
             <div style={S.sealMeta}>{seal.site} · {seal.signs.length} signs</div>
-            {/* TAMIL SCRIPT FROM PDF — sign images pending author confirmation */}
+            {/* SEAL GLYPH — cropped directly from author's PDF */}
             <div style={{
-              background:"#1a2030", border:"1px solid #2a3545",
-              padding:"10px 12px", marginBottom:10, borderRadius:2,
+              background:"#f5f0e8", border:"1px solid #c9963e",
+              marginBottom:10, overflow:"hidden", lineHeight:0,
             }}>
-              <div style={{fontSize:18, color:"#e8dcc8", letterSpacing:"0.08em",
-                           fontFamily:"'Noto Sans Tamil', sans-serif", lineHeight:1.4}}>
-                {seal.tamil}
-              </div>
-              <div style={{fontSize:9, color:"#4a5060", marginTop:4, letterSpacing:"0.06em"}}>
-                Tamil script · sign images pending author confirmation
-              </div>
+              <img
+                src={`${BASE}seal_glyphs/seal_${seal.id}.png`}
+                alt={`Seal ${seal.id} inscription`}
+                style={{width:"100%", display:"block", filter:"contrast(1.2)"}}
+                onError={e => { e.target.style.display="none"; }}
+              />
             </div>
             <div style={S.layer1}>{seal.layer1}</div>
             <div style={S.layer2(seal.status)}>{seal.layer2}</div>
