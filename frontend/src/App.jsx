@@ -60,24 +60,42 @@ const SIGN_DATA = {
 };
 
 const SEALS = [
-  { id:"1076", motif:"unicorn", site:"Mohenjo-daro", signs:[391, 391, 95, 162], layer1:"thava thava na y → ney", layer2:"Very Good Ghee", domain:"dairy products", status:"complete", confidence:0.74 },
-  { id:"2082", motif:"unicorn", site:"Mohenjo-daro", signs:[220, 89, 342, 15], layer1:"sivam muu aa aakaavva", layer2:"Carer of Isa's 3 cows", domain:"animal husbandry", status:"complete", confidence:0.68 },
-  { id:"3023", motif:"unicorn", site:"Mohenjo-daro", signs:[300,300,342], layer1:"di dii aa", layer2:"Just expressed fresh milk", domain:"dairy products", status:"complete", confidence:0.72 },
-  { id:"2127", motif:"elephant", site:"Mohenjo-daro", signs:[114, 162], layer1:"eNN y → eNNey", layer2:"Sesame oil (eNNey)", domain:"food commodities", status:"complete", confidence:0.72 },
-  { id:"2648", motif:"elephant", site:"Mohenjo-daro", signs:[267,267,95,162,242], layer1:"mii mii na y thoLzu", layer2:"Very good ghee shed", domain:"dairy products", status:"complete", confidence:0.70 },
-  { id:"2444", motif:"unicorn", site:"Mohenjo-daro", signs:[171,162,342,171], layer1:"Na y aa Na → aNNal kai aaNai", layer2:"Order of the Leader", domain:"governance / law", status:"complete", confidence:0.71 },
-  { id:"2864", motif:"gharial", site:"Mohenjo-daro", signs:[171,162,342,171], layer1:"Na y aa Na → aNNal kai aaNai", layer2:"Order of the Leader (Riverine)", domain:"governance / law", status:"complete", confidence:0.71 },
-  { id:"4440", motif:"none",    site:"Mohenjo-daro", signs:[65,87,294,342,171], layer1:"iLa iru TTa aa Na", layer2:"Citywide curfew ordinance", domain:"governance / law", status:"complete", confidence:0.65 },
-  { id:"2234", motif:"unicorn", site:"Mohenjo-daro", signs:[351, 66], layer1:"vayya illam", layer2:"The world is a Big Home", domain:"governance / ethics", status:"complete", confidence:0.70 },
-  { id:"4718", motif:"none",    site:"Mohenjo-daro", signs:[343,213,343,86,2015], layer1:"ay ya ay o vya mun → children's milk", layer2:"Panic milk mandate for children", domain:"social welfare", status:"complete", confidence:0.66 },
-  { id:"1425", motif:"none",    site:"Mohenjo-daro", signs:[66,387,102,161], layer1:"illam vaya muu na", layer2:"Homes for the aged and alone", domain:"social welfare", status:"complete", confidence:0.67 },
-  { id:"3246", motif:"none",    site:"Mohenjo-daro", signs:[387, 89, 59, 15], layer1:"vaya muu La aakaavva", layer2:"Carer of aged cattle", domain:"animal husbandry", status:"complete", confidence:0.67 },
-  { id:"1110", motif:"unicorn", site:"Mohenjo-daro", signs:[391, 216, 59, 391, 358], layer1:"thava sama La thava aNNal", layer2:"Respected equanimous great leader", domain:"governance", status:"complete", confidence:0.64 },
-  { id:"5119", motif:"unicorn", site:"Mohenjo-daro", signs:[391, 391, 89, 287, 342, 242], layer1:"thava thava muu Ta aa thoLzu", layer2:"Shed for aged cattle", domain:"animal welfare", status:"complete", confidence:0.65 },
-  { id:"2950", motif:"unicorn", site:"Mohenjo-daro", signs:[95,162], layer1:"na ney", layer2:"Ghee", domain:"dairy products", status:"complete", confidence:0.73 },
-  { id:"1133", motif:"unicorn", site:"Mohenjo-daro", signs:[162,95,162], layer1:"y na y → ney", layer2:"Ghee (evolved form)", domain:"dairy products", status:"complete", confidence:0.72 },
-  { id:"2322", motif:"unicorn", site:"Mohenjo-daro", signs:[15,95,162], layer1:"aakaavva na y → aakaavvan ney", layer2:"Cow carer's ghee", domain:"dairy products", status:"complete", confidence:0.69 },
-  { id:"2617", motif:"unicorn", site:"Mohenjo-daro", signs:[403,403,351,267,402], layer1:"vva vva vayya mii aar", layer2:"Buttermilk available HERE", domain:"dairy products", status:"complete", confidence:0.62 },
+  { id:"1076", motif:"unicorn", site:"Mohenjo-daro",
+    tamil:"வ வ நெய்",  layer1:"thava thava ney", layer2:"Very Good Ghee",       domain:"dairy products",   status:"complete", confidence:0.74 },
+  { id:"2082", motif:"unicorn", site:"Mohenjo-daro",
+    tamil:"சிவ மூ ஆகாவ்வ",    layer1:"sivam muu aakaavva",  layer2:"Carer of Siva's 3 cows",  domain:"animal husbandry", status:"complete", confidence:0.68 },
+  { id:"3023", motif:"unicorn", site:"Mohenjo-daro",
+    tamil:"டி டீ அய் லா இள வ்யமூன்", layer1:"di dii ay laa iLa vya mun", layer2:"Just expressed fresh milk", domain:"dairy products", status:"complete", confidence:0.72 },
+  { id:"2127", motif:"elephant", site:"Mohenjo-daro",
+    tamil:"எண் ய் = எண்ணய்",  layer1:"eNN y → eNNey",       layer2:"Sesame oil",              domain:"food commodities", status:"complete", confidence:0.72 },
+  { id:"2648", motif:"elephant", site:"Mohenjo-daro",
+    tamil:"மீ மீ நெய் தொழு",  layer1:"mii mii ney thoLzu",  layer2:"Very good ghee shed",     domain:"dairy products",   status:"complete", confidence:0.70 },
+  { id:"2444", motif:"unicorn", site:"Mohenjo-daro",
+    tamil:"ண ய் ஆ ண",         layer1:"Na y aa Na",           layer2:"Order of the Leader",     domain:"governance / law", status:"complete", confidence:0.71 },
+  { id:"2864", motif:"gharial", site:"Mohenjo-daro",
+    tamil:"ண ய் ஆ ண",         layer1:"Na y aa Na",           layer2:"Order of the Leader (Riverine)", domain:"governance / law", status:"complete", confidence:0.71 },
+  { id:"4440", motif:"none",    site:"Mohenjo-daro",
+    tamil:"இள இரு ட்ட ஆ ண",   layer1:"iLa iru TTa aa Na",   layer2:"Citywide curfew ordinance", domain:"governance / law", status:"complete", confidence:0.65 },
+  { id:"2234", motif:"unicorn", site:"Mohenjo-daro",
+    tamil:"வ்ய்ய இளம்",        layer1:"vayya illam",          layer2:"The world is a Big Home", domain:"governance / ethics", status:"complete", confidence:0.70 },
+  { id:"4718", motif:"none",    site:"Mohenjo-daro",
+    tamil:"அய் ய அய் ஓ வ்யமூன்", layer1:"ay ya ay o vyamun", layer2:"Panic milk for children", domain:"social welfare",   status:"complete", confidence:0.66 },
+  { id:"1425", motif:"none",    site:"Mohenjo-daro",
+    tamil:"இளம் வய மூ ன",      layer1:"illam vaya muu na",   layer2:"Homes for the aged",      domain:"social welfare",   status:"complete", confidence:0.67 },
+  { id:"3246", motif:"none",    site:"Mohenjo-daro",
+    tamil:"வய மூ ள ஆகாவ்வ",   layer1:"vaya muu La aakaavva", layer2:"Carer of aged cattle",   domain:"animal husbandry", status:"complete", confidence:0.67 },
+  { id:"1110", motif:"unicorn", site:"Mohenjo-daro",
+    tamil:"வ சம ள வ ண்ணல்",    layer1:"thava sama La thava aNNal", layer2:"Respected equanimous great leader", domain:"governance", status:"complete", confidence:0.64 },
+  { id:"5119", motif:"unicorn", site:"Mohenjo-daro",
+    tamil:"வ வ மூட ஆ தொழு",   layer1:"thava thava muu aa thoLzu", layer2:"Aged cattle shed",  domain:"animal welfare",   status:"complete", confidence:0.65 },
+  { id:"2950", motif:"unicorn", site:"Mohenjo-daro",
+    tamil:"நெய்",               layer1:"na y = ney",           layer2:"Ghee",                    domain:"dairy products",   status:"complete", confidence:0.73 },
+  { id:"1133", motif:"unicorn", site:"Mohenjo-daro",
+    tamil:"ந ய் = நெய்",        layer1:"na y = ney",           layer2:"Ghee (evolved form)",     domain:"dairy products",   status:"complete", confidence:0.72 },
+  { id:"2322", motif:"unicorn", site:"Mohenjo-daro",
+    tamil:"ஆகாவ்வ நெய்",       layer1:"aakaavva ney",          layer2:"Cow carer's ghee",        domain:"dairy products",   status:"complete", confidence:0.69 },
+  { id:"2617", motif:"unicorn", site:"Mohenjo-daro",
+    tamil:"வ்வட வ்ய மூர் மூரா", layer1:"vva vya muur muraa",   layer2:"Buttermilk available HERE", domain:"dairy products", status:"complete", confidence:0.62 },
 ];
 
 const ALL_SIGNS = [
@@ -492,9 +510,18 @@ function SealBrowser({onSelect,selected}) {
               <span style={{fontSize:10,color:MOTIF_COLORS[seal.motif],letterSpacing:"0.04em"}}>{seal.motif}</span>
             </div>
             <div style={S.sealMeta}>{seal.site} · {seal.signs.length} signs</div>
-            {/* ACTUAL SIGN GLYPHS */}
-            <div style={S.signStrip}>
-              {seal.signs.map((m,i)=><SignGlyph key={i} mahadevan={m} size={38} showLabel={true}/>)}
+            {/* TAMIL SCRIPT FROM PDF — sign images pending author confirmation */}
+            <div style={{
+              background:"#1a2030", border:"1px solid #2a3545",
+              padding:"10px 12px", marginBottom:10, borderRadius:2,
+            }}>
+              <div style={{fontSize:18, color:"#e8dcc8", letterSpacing:"0.08em",
+                           fontFamily:"'Noto Sans Tamil', sans-serif", lineHeight:1.4}}>
+                {seal.tamil}
+              </div>
+              <div style={{fontSize:9, color:"#4a5060", marginTop:4, letterSpacing:"0.06em"}}>
+                Tamil script · sign images pending author confirmation
+              </div>
             </div>
             <div style={S.layer1}>{seal.layer1}</div>
             <div style={S.layer2(seal.status)}>{seal.layer2}</div>
