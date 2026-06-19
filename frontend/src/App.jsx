@@ -509,7 +509,7 @@ function SealBrowser({onSelect,selected}) {
               <div style={S.sealId}>#{seal.id}</div>
               <span style={{fontSize:10,color:MOTIF_COLORS[seal.motif],letterSpacing:"0.04em"}}>{seal.motif}</span>
             </div>
-            <div style={S.sealMeta}>{seal.site} · {seal.signs.length} signs</div>
+            <div style={S.sealMeta}>{seal.site} · {seal.signCount||0} signs</div>
             {/* SEAL GLYPH — cropped directly from author's PDF */}
             <div style={{
               background:"#f5f0e8", border:"1px solid #c9963e",
@@ -609,7 +609,7 @@ function SealDetail({seal, onClose}) {
   );
 
   const motifInfo = MOTIF_DETAIL[seal.motif] || MOTIF_DETAIL.none;
-  const hasTally  = seal.signs.some(m => TALLY_NAMES[m]);
+  const hasTally  = false;
 
   // Build readable phoneme for speech
   const phonemeForSpeech = seal.layer1.replace(/→/g," means ").replace(/[·,]/g," ");
@@ -627,7 +627,7 @@ function SealDetail({seal, onClose}) {
             Seal #{seal.id}
           </div>
           <div style={{fontSize:11, color:"#5a6070", marginTop:2}}>
-            {seal.site} · {seal.signs.length} signs · <span style={{color:motifInfo.color}}>{motifInfo.icon} {seal.motif}</span>
+            {seal.site} · {seal.signCount||0} signs · <span style={{color:motifInfo.color}}>{motifInfo.icon} {seal.motif}</span>
           </div>
         </div>
         <button onClick={onClose} style={{background:"none",border:"none",color:"#5a6070",cursor:"pointer",fontSize:20,padding:"0 4px"}}>✕</button>
@@ -653,7 +653,7 @@ function SealDetail({seal, onClose}) {
 
           {/* Sign strip — compact */}
           <div style={{display:"flex", gap:6, flexWrap:"wrap", marginBottom:20}}>
-            {seal.signs.map((m,i) => (
+            {(seal.signs||[]).map((m,i) => (
               <div key={i} style={{textAlign:"center"}}>
                 <SignGlyph mahadevan={m} size={44} showLabel={false}/>
                 <div style={{fontSize:8, color:"#c9963e", marginTop:2, fontFamily:"'JetBrains Mono',monospace"}}>
@@ -718,7 +718,7 @@ function SealDetail({seal, onClose}) {
               <div style={{fontSize:11, color:"#8090a8", marginBottom:8, lineHeight:1.5}}>
                 Tally marks encode Tamil numeral names as phonemes — not just counting strokes.
               </div>
-              {seal.signs.filter(m => TALLY_NAMES[m]).map((m,i) => (
+              {(seal.signs||[]).filter(m => TALLY_NAMES[m]).map((m,i) => (
                 <div key={i} style={{display:"flex", alignItems:"center", gap:10, padding:"6px 0", borderTop:"1px solid #1a2030"}}>
                   <SignGlyph mahadevan={m} size={32} showLabel={false}/>
                   <div>
@@ -768,7 +768,7 @@ function SealDetail({seal, onClose}) {
           <div style={{fontSize:11, color:"#5a6070", marginBottom:16}}>
             Each sign below links to the author's Tamil phoneme mapping. Tap ▶ to hear the sound.
           </div>
-          {seal.signs.map((m, i) => {
+          {(seal.signs||[]).map((m, i) => {
             const info = SIGN_DATA[m];
             const isTally = !!TALLY_NAMES[m];
             const type = getSignType(m);
