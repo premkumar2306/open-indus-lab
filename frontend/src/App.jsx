@@ -917,20 +917,46 @@ function SignRegistry() {
         <div style={S.statCard}><div style={S.statNum}>1003</div><div style={S.statLabel}>Occurrences</div></div>
       </div>
 
-      <div style={S.filterRow}>
+      {/* Search */}
+      <div style={{marginBottom:14}}>
         <input
           value={srchSign}
           onChange={e => { setSrchSign(e.target.value); setSignPage(0); }}
-          placeholder="Search M-number or Tamil…"
+          placeholder="Search by M-number (e.g. 142) or Tamil phoneme…"
           style={{background:"#131822",border:"1px solid #1e2533",color:"#e8dcc8",
-                  padding:"6px 12px",fontSize:12,width:200,outline:"none"}}
+                  padding:"8px 14px",fontSize:13,width:"100%",outline:"none",
+                  maxWidth:420}}
         />
-        {["all","tally","compound","pictogram","geometric","modifier"].map(t => (
-          <button key={t}
-            style={{...S.filterBtn(typeFilter===t),
-                    borderLeft:`2px solid ${typeFilter===t ? SIGN_TYPE_COLORS[t]||"#c9963e" : "transparent"}`}}
-            onClick={() => { setTypeFilter(t); setSignPage(0); }}>
-            {t}
+      </div>
+
+      {/* Type filters with descriptions */}
+      <div style={{display:"flex",flexWrap:"wrap",gap:8,marginBottom:16}}>
+        {[
+          {id:"all",       label:"All Signs",   desc:"Show all 264 mapped signs",                              count: ALL_SIGNS.length},
+          {id:"tally",     label:"Tally",        desc:"Stroke marks — encode Tamil numeral names as phonemes",  count: ALL_SIGNS.filter(s=>s.type==="tally").length},
+          {id:"compound",  label:"Compound",     desc:"Two signs fused into one — e.g. M-10+M-12 = M-15",     count: ALL_SIGNS.filter(s=>s.type==="compound").length},
+          {id:"pictogram", label:"Pictogram",    desc:"Image-based signs — cow face, peacock, mountain",       count: ALL_SIGNS.filter(s=>s.type==="pictogram").length},
+          {id:"geometric", label:"Geometric",    desc:"Abstract geometric forms — most common category",       count: ALL_SIGNS.filter(s=>s.type==="geometric").length},
+          {id:"modifier",  label:"Modifier",     desc:"Has form but no sound — modifies the adjacent sign",    count: ALL_SIGNS.filter(s=>s.type==="modifier").length},
+        ].map(f => (
+          <button key={f.id}
+            onClick={() => { setTypeFilter(f.id); setSignPage(0); }}
+            title={f.desc}
+            style={{
+              background: typeFilter===f.id ? "#1a1810" : "#131822",
+              border:`1px solid ${typeFilter===f.id ? SIGN_TYPE_COLORS[f.id]||"#c9963e" : "#1e2533"}`,
+              borderLeft:`3px solid ${typeFilter===f.id ? SIGN_TYPE_COLORS[f.id]||"#c9963e" : "#1e2533"}`,
+              color: typeFilter===f.id ? SIGN_TYPE_COLORS[f.id]||"#c9963e" : "#8090a8",
+              padding:"8px 14px", cursor:"pointer",
+              textAlign:"left", minWidth:120,
+            }}>
+            <div style={{fontSize:12,fontWeight:"bold",letterSpacing:"0.04em"}}>{f.label}</div>
+            <div style={{fontSize:9,color: typeFilter===f.id ? SIGN_TYPE_COLORS[f.id]||"#c9963e" : "#4a5060",
+                         marginTop:2, opacity:0.8}}>{f.desc}</div>
+            <div style={{fontSize:10,marginTop:3,fontFamily:"'Cinzel',serif",
+                         color: typeFilter===f.id ? SIGN_TYPE_COLORS[f.id]||"#c9963e" : "#3a4050"}}>
+              {f.count} signs
+            </div>
           </button>
         ))}
       </div>
