@@ -124,8 +124,8 @@ else:               ok("Key seal meanings match expected text")
 
 # ── 4. CSV integrity ─────────────────────────────────────
 EXPECTED_CSVS = {
-    "seals.csv":                          ("corpus_id", 170),
-    "signs.csv":                          ("parpola_id", 390),
+    "seals_master.csv":                   ("seal_id", 190),
+    "signs_master.csv":                   ("mahadevan_number", 260),
     "phoneme_mappings_author_full.csv":   ("mahadevan_number", 260),
     "readings_author_full.csv":           ("seal_id", 100),
     "readings_VPS2024.csv":               ("seal_id", 18),
@@ -150,13 +150,13 @@ for fname, (key_col, min_rows) in EXPECTED_CSVS.items():
     else:
         ok(f"{fname}", f"{len(rows)} rows")
 
-# ── 5. Sign sequence spot check ───────────────────────────
-# Seal 1076 should have thava (M-391) signs, not just tally+Y
-# This is a known issue flagged for fix
-warn("Seal #1076 sign sequence",
-     "shows [95,162,162] but source PDF shows thava+thava+ney — needs author confirmation")
+# ── 5. Author-direct architecture checks ──────────────────
+# External Parpola corpus (M-xxx seals + guessed sign bridge) removed.
+# All readings now sourced directly from the author's documents.
+warn("Sign rows flagged for author confirmation",
+     "signs 39, 51, 52, 322, 391 diverge from source text (not font-corruption)")
 warn("Layer 2 translations",
-     f"{206 - 17} of 206 readings still pending English translation")
+     "Layer 1 (phonemes) complete for all readings; English meaning in progress")
 
 # ── REPORT ───────────────────────────────────────────────
 now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
@@ -186,9 +186,10 @@ report = f"""# Open Indus Lab — Validation Report
 
 ## Known Open Issues
 
-1. **Seal #1076 sign sequence** — dashboard shows `[M-95, M-162, M-162]` but PDF shows `thava thava ney` (M-391 + M-391 + M-95 + M-162). Awaiting author confirmation of correct Mahadevan numbers for all key seals.
-2. **Layer 2 translations** — 189 of 206 readings have Tamil phoneme only. English meanings being added progressively by author.
-3. **50+ unidentified signs** — explicitly noted in research. Ongoing.
+1. **External corpus removed** — the Parpola/CISI `M-xxx` seal corpus and the guessed Parpola→Mahadevan sign bridge have been removed. All seal and sign data now comes directly from the author's documents.
+2. **Five sign rows flagged** — signs 39, 51, 52, 322, 391 diverge from the source text in ways that are not font-corruption; awaiting author confirmation.
+3. **Layer 2 translations** — Layer 1 (Tamil phonemes) complete for all readings; English meanings being added progressively by the author.
+4. **Unidentified signs** — explicitly noted in the research as ongoing.
 
 ---
 

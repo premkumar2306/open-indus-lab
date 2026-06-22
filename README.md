@@ -18,6 +18,16 @@ Tamil-speaking researchers can evaluate all 206 readings now via Layer 1. Non-Ta
 
 > ⚠️ This platform does not claim to have decoded the Indus script. It provides reproducible, open tools for evaluating competing hypotheses using corpus data, rule engines, statistics, and peer review workflows.
 
+### Data provenance (single source of truth)
+
+Every seal reading and sign mapping is sourced **directly from the author's documents**
+(`INDUS_SEALS_READ_in_book_5`, `Indus_Signs_Reading`, and the draft article). The
+canonical tables are [`data/seed/seals_master.csv`](./data/seed/seals_master.csv)
+(194 seal readings) and [`data/seed/signs_master.csv`](./data/seed/signs_master.csv)
+(264 sign→phoneme mappings). The external Parpola/CISI corpus and the guessed
+Parpola→Mahadevan sign bridge have been **removed** — see
+[`docs/VALIDATION_REBUILD_REPORT.md`](./docs/VALIDATION_REBUILD_REPORT.md).
+
 ---
 
 ## Project Status
@@ -25,7 +35,7 @@ Tamil-speaking researchers can evaluate all 206 readings now via Layer 1. Non-Ta
 | Stage | Name | Status |
 |---|---|---|
 | Stage 1 | Data Model (PostgreSQL schema) | ✅ Complete |
-| Stage 2 | Corpus Loader & Seed Data | ✅ Complete |
+| Stage 2 | Author-Direct Seed Data (external corpus removed) | ✅ Complete |
 | Stage 3 | Rule Engine | 🔲 Next |
 | Stage 4 | Research Dashboard (React) | 🔲 Planned |
 | Stage 5 | Statistical Validation | 🔲 Planned |

@@ -47,8 +47,15 @@ All data in this repository is grounded in the following primary sources.
   Helsinki, 1991.
 
 - **mayig/indus-valley-script-corpus** (GitHub, MIT license).
-  Digitisation of CISI by Parpola et al. Used for open corpus data in this platform.
+  Digitisation of CISI by Parpola et al.
   https://github.com/mayig/indus-valley-script-corpus
+  > **No longer used as platform data.** This external corpus uses Parpola seal IDs
+  > (`M-xxx`) and Parpola sign IDs that have zero verified correspondence to the
+  > author's own seal and sign numbering. Composing readings across the two required a
+  > guessed Parpola→Mahadevan bridge, which produced unreliable results. As of this
+  > rebuild, all seal and sign data is sourced **directly from the author's documents**;
+  > the external corpus has been removed. It may be re-introduced only as a clearly
+  > labelled cross-reference once the author supplies a verified seal-ID concordance.
 
 ---
 
@@ -56,7 +63,9 @@ All data in this repository is grounded in the following primary sources.
 
 - Mahadevan, Iravatham. *The Indus Script: Texts, Concordance and Tables.*
   Archaeological Survey of India Memoir No.77. 1977.
-  > Foundation sign concordance. Sign numbering system used throughout this platform.
+  > Foundation sign concordance. The author's sign numbering follows this system.
+  > Sign→phoneme mappings on this platform are read **directly from the author's
+  > `Indus_Signs_Reading` document**, not re-derived from any external corpus.
 
 - Parpola, Asko. *Deciphering the Indus Script.* Cambridge University Press, 1994.
   > Most widely accepted academic Dravidian framework.

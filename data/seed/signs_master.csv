@@ -1,0 +1,265 @@
+mahadevan_number,tamil_phoneme_source,tamil_phoneme_corrected,correction_note,source_doc
+1,க,க,,Indus_Signs_Reading.pdf
+2,"ரகர், கரர், காரர்","ரகர், கரர், காரர்",,Indus_Signs_Reading.pdf
+3,"க், கர்","க், கர்",,Indus_Signs_Reading.pdf
+4,கண்,கண்,,Indus_Signs_Reading.pdf
+5,கண்,கண்,,Indus_Signs_Reading.pdf
+6,கி,கி,,Indus_Signs_Reading.pdf
+7,கீ,கீ,,Indus_Signs_Reading.pdf
+8,கய்,கய்,,Indus_Signs_Reading.pdf
+9,கய்ட்ட,கய்ட்ட,,Indus_Signs_Reading.pdf
+10,கா,கா,,Indus_Signs_Reading.pdf
+11,கற்ற,கற்ற,,Indus_Signs_Reading.pdf
+12,"காவ்ெ,காெல்","காவ்வ,காவல்",font-corruption fix (va recovered),Indus_Signs_Reading.pdf
+13,காவ்ெர்,காவ்வர்,font-corruption fix (va recovered),Indus_Signs_Reading.pdf
+14,காவ்ென்,காவ்வன்,font-corruption fix (va recovered),Indus_Signs_Reading.pdf
+15,ஆகாவ்ெ,ஆகாவ்வ,font-corruption fix (va recovered),Indus_Signs_Reading.pdf
+17,தெ (தெம்),தவ (தவம்),font-corruption fix (va recovered),Indus_Signs_Reading.pdf
+18,கா,கா,,Indus_Signs_Reading.pdf
+19,கண(கண்ண),கண(கண்ண),,Indus_Signs_Reading.pdf
+20,கண்ணர்,கண்ணர்,,Indus_Signs_Reading.pdf
+21,கய,கய,,Indus_Signs_Reading.pdf
+22,கண,கண,,Indus_Signs_Reading.pdf
+23,கரி,கரி,,Indus_Signs_Reading.pdf
+24,ரிகரி,ரிகரி,,Indus_Signs_Reading.pdf
+25,கர்,கர்,,Indus_Signs_Reading.pdf
+53,ம,ம,,Indus_Signs_Reading.pdf
+57,'எறம்ப' = எருமம,'எறம்ப' = எருமம,,Indus_Signs_Reading.pdf
+58,தெ (early form),தெ (early form),,Indus_Signs_Reading.pdf
+59,"ள், ள","ள், ள",,Indus_Signs_Reading.pdf
+60,"ளம்,ளன்,ளல்,ளர்","ளம்,ளன்,ளல்,ளர்",,Indus_Signs_Reading.pdf
+61,"நலம்,நலன்","நலம்,நலன்",,Indus_Signs_Reading.pdf
+62,ட்டள்,ட்டள்,,Indus_Signs_Reading.pdf
+63,மயிலட்டள்,மயிலட்டள்,,Indus_Signs_Reading.pdf
+64,மயிலட்டள்,மயிலட்டள்,,Indus_Signs_Reading.pdf
+65,"இள, இளம்","இள, இளம்",,Indus_Signs_Reading.pdf
+66,"இளம், இல்லம்","இளம், இல்லம்",,Indus_Signs_Reading.pdf
+67,லா,லா,,Indus_Signs_Reading.pdf
+68,"லாம்,லான்,லால்,லார்","லாம்,லான்,லால்,லார்",,Indus_Signs_Reading.pdf
+69,லி,லி,,Indus_Signs_Reading.pdf
+70,ழ,ழ,,Indus_Signs_Reading.pdf
+71,"ழம்,ழன்,ழல்,ழர்","ழம்,ழன்,ழல்,ழர்",,Indus_Signs_Reading.pdf
+72,ல,ல,,Indus_Signs_Reading.pdf
+73,"லம்.லன்.லல்,லர்","லம்.லன்.லல்,லர்",,Indus_Signs_Reading.pdf
+74,லி,லி,,Indus_Signs_Reading.pdf
+75,இலி,இலி,,Indus_Signs_Reading.pdf
+76,ககாழி (ககாழியூர்),ககாழி (ககாழியூர்),,Indus_Signs_Reading.pdf
+78,மயில்,மயில்,,Indus_Signs_Reading.pdf
+79,மயில்,மயில்,,Indus_Signs_Reading.pdf
+80,மயில்,மயில்,,Indus_Signs_Reading.pdf
+81,மயிலட்ட,மயிலட்ட,,Indus_Signs_Reading.pdf
+105,"நான்கு,நா,ந","நான்கு,நா,ந",,Indus_Signs_Reading.pdf
+106,"அய்,அய்ந்து","அய்,அய்ந்து",,Indus_Signs_Reading.pdf
+107,"அய்,அய்ந்து","அய்,அய்ந்து",,Indus_Signs_Reading.pdf
+108,ஆறு,ஆறு,,Indus_Signs_Reading.pdf
+109,"ஆறு, நதி","ஆறு, நதி",,Indus_Signs_Reading.pdf
+110,"ஏழு, ஏ,எ","ஏழு, ஏ,எ",,Indus_Signs_Reading.pdf
+111,எழுட்ட,எழுட்ட,,Indus_Signs_Reading.pdf
+112,"ஏழு, ஏ,எ","ஏழு, ஏ,எ",,Indus_Signs_Reading.pdf
+113,எழுட்ட,எழுட்ட,,Indus_Signs_Reading.pdf
+114,"எட்டு, எண்","எட்டு, எண்",,Indus_Signs_Reading.pdf
+115,வதாண்டு,வதாண்டு,,Indus_Signs_Reading.pdf
+116,வதாண்டு,வதாண்டு,,Indus_Signs_Reading.pdf
+117,வதாண்டுப,வதாண்டுப,,Indus_Signs_Reading.pdf
+121,பன்னிரு,பன்னிரு,,Indus_Signs_Reading.pdf
+122,பன்னிருட்ட,பன்னிருட்ட,,Indus_Signs_Reading.pdf
+123,"ட,த","ட,த",,Indus_Signs_Reading.pdf
+124,த,த,,Indus_Signs_Reading.pdf
+125,த,த,,Indus_Signs_Reading.pdf
+126,த,த,,Indus_Signs_Reading.pdf
+127,ர,ர,,Indus_Signs_Reading.pdf
+128,ரி,ரி,,Indus_Signs_Reading.pdf
+129,ர,ர,,Indus_Signs_Reading.pdf
+130,"ற்,ற","ற்,ற",,Indus_Signs_Reading.pdf
+137,த,த,,Indus_Signs_Reading.pdf
+177,ரீ,ரீ,,Indus_Signs_Reading.pdf
+182,பண்ணா,பண்ணா,,Indus_Signs_Reading.pdf
+190,'கெலி'=நில அளமெ,'கெலி'=நில அளமெ,,Indus_Signs_Reading.pdf
+194,ஞான் (இளஞன்),ஞான் (இளஞன்),,Indus_Signs_Reading.pdf
+197,ந,ந,,Indus_Signs_Reading.pdf
+198,நண்,நண்,,Indus_Signs_Reading.pdf
+210,ககாயில்,ககாயில்,,Indus_Signs_Reading.pdf
+209,ககாயில்,ககாயில்,,Indus_Signs_Reading.pdf
+204,ககாயில்,ககாயில்,,Indus_Signs_Reading.pdf
+206,ககாயில்ண்[ண],ககாயில்ண்[ண],,Indus_Signs_Reading.pdf
+207,ககாயிலண்ணல்,ககாயிலண்ணல்,,Indus_Signs_Reading.pdf
+211,"ன்,ன","ன்,ன",,Indus_Signs_Reading.pdf
+205,"ண,ணய்","ண,ணய்",,Indus_Signs_Reading.pdf
+212,"பன்,பன","பன்,பன",,Indus_Signs_Reading.pdf
+213,யன்,யன்,,Indus_Signs_Reading.pdf
+214,"ச்,ச","ச்,ச",,Indus_Signs_Reading.pdf
+215,ஈசா,ஈசா,,Indus_Signs_Reading.pdf
+216,ச,ச,,Indus_Signs_Reading.pdf
+217,ச்ச,ச்ச,,Indus_Signs_Reading.pdf
+219,சி,சி,,Indus_Signs_Reading.pdf
+220,"சிெம்,சிென்","சிெம்,சிென்",,Indus_Signs_Reading.pdf
+221,சா,சா,,Indus_Signs_Reading.pdf
+222,சா,சா,,Indus_Signs_Reading.pdf
+223,சங்ங,சங்ங,,Indus_Signs_Reading.pdf
+224,சங்கரா (வெண்மம),சங்கரா (வெண்மம),,Indus_Signs_Reading.pdf
+264,"தம,தம்","தம,தம்",,Indus_Signs_Reading.pdf
+266,மன,மன,,Indus_Signs_Reading.pdf
+267,மீ,மீ,,Indus_Signs_Reading.pdf
+270,மீய,மீய,,Indus_Signs_Reading.pdf
+284,"தம், தமீ","தம், தமீ",,Indus_Signs_Reading.pdf
+285,"தமம்,தமன்,தமர்","தமம்,தமன்,தமர்",,Indus_Signs_Reading.pdf
+286,தெதம்,தவதம்,font-corruption fix (va recovered),Indus_Signs_Reading.pdf
+287,ட,ட,,Indus_Signs_Reading.pdf
+288,ட்,ட்,,Indus_Signs_Reading.pdf
+289,"டஅம்அம்(அன்,அல்,அர்)","டஅம்அம்(அன்,அல்,அர்)",,Indus_Signs_Reading.pdf
+290,டீ,டீ,,Indus_Signs_Reading.pdf
+293,ட்,ட்,,Indus_Signs_Reading.pdf
+294,ட்ட,ட்ட,,Indus_Signs_Reading.pdf
+295,டட்,டட்,,Indus_Signs_Reading.pdf
+296,ட்ட,ட்ட,,Indus_Signs_Reading.pdf
+297,ட்டண்,ட்டண்,,Indus_Signs_Reading.pdf
+298,டட்டட்ட,டட்டட்ட,,Indus_Signs_Reading.pdf
+299,ட,ட,,Indus_Signs_Reading.pdf
+300,"ட்,டி","ட்,டி",,Indus_Signs_Reading.pdf
+391,ட்,தவ,FLAG: diverges from source - confirm with author,Indus_Signs_Reading.pdf
+302,டர்,டர்,,Indus_Signs_Reading.pdf
+303,"ட்ட,டட்","ட்ட,டட்",,Indus_Signs_Reading.pdf
+304,"ம,ம்","ம,ம்",,Indus_Signs_Reading.pdf
+305,வம,வம,,Indus_Signs_Reading.pdf
+306,மீர்,மீர்,,Indus_Signs_Reading.pdf
+352,"ஆய,யா","ஆய,யா",,Indus_Signs_Reading.pdf
+351,"யவ்ெ,ெவ்ய","யவ்வ,வவ்ய",font-corruption fix (va recovered),Indus_Signs_Reading.pdf
+355,தெய்ய,தவய்ய,font-corruption fix (va recovered),Indus_Signs_Reading.pdf
+356,இதய்ய,இதய்ய,,Indus_Signs_Reading.pdf
+357,தய்ய,தய்ய,,Indus_Signs_Reading.pdf
+358,ண்ண,ண்ண,,Indus_Signs_Reading.pdf
+363,மன்ன,மன்ன,,Indus_Signs_Reading.pdf
+367,ெவ்யெ,வவ்யவ,font-corruption fix (va recovered),Indus_Signs_Reading.pdf
+372,வ்ெவ்யய்,வ்வவ்யய்,font-corruption fix (va recovered),Indus_Signs_Reading.pdf
+373,ெ,ெ,,Indus_Signs_Reading.pdf
+382,ெண்ண,ெண்ண,,Indus_Signs_Reading.pdf
+381,"ெண்,ெண","ெண்,ெண",,Indus_Signs_Reading.pdf
+385,ென,ென,,Indus_Signs_Reading.pdf
+387,ெய,ெய,,Indus_Signs_Reading.pdf
+388,ெயல்,ெயல்,,Indus_Signs_Reading.pdf
+389,ென,ென,,Indus_Signs_Reading.pdf
+390,ெனம்,ெனம்,,Indus_Signs_Reading.pdf
+392,தெஇருென்(ர்),தவஇருவன்(ர்),font-corruption fix (va recovered),Indus_Signs_Reading.pdf
+393,தெஅவ்,தவஅவ்,font-corruption fix (va recovered),Indus_Signs_Reading.pdf
+402,ஆர்,ஆர்,,Indus_Signs_Reading.pdf
+403,"வ்ெ,ெவ்","வ்வ,வவ்",font-corruption fix (va recovered),Indus_Signs_Reading.pdf
+404,"வ்ென்,வ்ெர்","வ்வன்,வ்வர்",font-corruption fix (va recovered),Indus_Signs_Reading.pdf
+26,"கரர், காரர்","கரர், காரர்",,Indus_Signs_Reading.pdf
+27,கட,கட,,Indus_Signs_Reading.pdf
+28,கம,கம,,Indus_Signs_Reading.pdf
+29,"மகம, கமகம","மகம, கமகம",,Indus_Signs_Reading.pdf
+30,கம,கம,,Indus_Signs_Reading.pdf
+31,கவ்ெ,கவ்வ,font-corruption fix (va recovered),Indus_Signs_Reading.pdf
+32,கவ் (வகௌ),கவ் (வகௌ),,Indus_Signs_Reading.pdf
+33,அகெ,அகவ,font-corruption fix (va recovered),Indus_Signs_Reading.pdf
+34,கய்,கய்,,Indus_Signs_Reading.pdf
+35,கண,கண,,Indus_Signs_Reading.pdf
+36,கச,கச,,Indus_Signs_Reading.pdf
+37,கமண,கமண,,Indus_Signs_Reading.pdf
+38,"கண்,கண்ண","கண்,கண்ண",,Indus_Signs_Reading.pdf
+39,"வக, கக","கெ, கே",FLAG: diverges from source - confirm with author,Indus_Signs_Reading.pdf
+40,"கண,கண்ண","கண,கண்ண",,Indus_Signs_Reading.pdf
+41,"கர், கர","கர், கர",,Indus_Signs_Reading.pdf
+42,தெகதெ,தவகதவ,font-corruption fix (va recovered),Indus_Signs_Reading.pdf
+43,கண,கண,,Indus_Signs_Reading.pdf
+47,"ெர, ெர்","வர, வர்",font-corruption fix (va recovered),Indus_Signs_Reading.pdf
+48,ளார்,ளார்,,Indus_Signs_Reading.pdf
+49,முக',முக',,Indus_Signs_Reading.pdf
+50,"""ணாய்""","""ணாய்""",,Indus_Signs_Reading.pdf
+51,'கதளணஅ',தேளணஅ,FLAG: diverges from source - confirm with author,Indus_Signs_Reading.pdf
+52,'கதளனர்',தேளனர்,FLAG: diverges from source - confirm with author,Indus_Signs_Reading.pdf
+82,ெ அன்னம்=ெனம்,ெ அன்னம்=ெனம்,,Indus_Signs_Reading.pdf
+84,கால் = காற்று,கால் = காற்று,,Indus_Signs_Reading.pdf
+86,"ஒன்று,ஓர்,ஒ,ஓ,ர்","ஒன்று,ஓர்,ஒ,ஓ,ர்",,Indus_Signs_Reading.pdf
+87,இரு. ஈர்,இரு. ஈர்,,Indus_Signs_Reading.pdf
+88,இரும்,இரும்,,Indus_Signs_Reading.pdf
+89,"மூன்று,மு,மூ","மூன்று,மு,மூ",,Indus_Signs_Reading.pdf
+90,மூய=எருது,மூய=எருது,,Indus_Signs_Reading.pdf
+91,முரா=கமார்,முரா=கமார்,,Indus_Signs_Reading.pdf
+92,இமூ,இமூ,,Indus_Signs_Reading.pdf
+93,ஓரிரு,ஓரிரு,,Indus_Signs_Reading.pdf
+94,இருஓர்,இருஓர்,,Indus_Signs_Reading.pdf
+95,"நான்கு,ந,நா","நான்கு,ந,நா",,Indus_Signs_Reading.pdf
+96,"அய்,அய்ந்து","அய்,அய்ந்து",,Indus_Signs_Reading.pdf
+97,ஓர்,ஓர்,,Indus_Signs_Reading.pdf
+98,கமற்ப்டி -ஒரு,கமற்ப்டி -ஒரு,,Indus_Signs_Reading.pdf
+99,கமற்படி- இரு,கமற்படி- இரு,,Indus_Signs_Reading.pdf
+100,இரு,இரு,,Indus_Signs_Reading.pdf
+101,இரு,இரு,,Indus_Signs_Reading.pdf
+102,"மூன்று,மு,மூ","மூன்று,மு,மூ",,Indus_Signs_Reading.pdf
+103,"மூன்று,மு,மூ","மூன்று,மு,மூ",,Indus_Signs_Reading.pdf
+104,"நான்கு,ந,நா","நான்கு,ந,நா",,Indus_Signs_Reading.pdf
+138,இத,இத,,Indus_Signs_Reading.pdf
+139,பத,பத,,Indus_Signs_Reading.pdf
+140,"தஅம்அம், தஅன்அன்","தஅம்அம், தஅன்அன்",,Indus_Signs_Reading.pdf
+141,இருத,இருத,,Indus_Signs_Reading.pdf
+142,இருதப,இருதப,,Indus_Signs_Reading.pdf
+143,"இருதஅம் அம்(ன்,ல்,ர்)","இருதஅம் அம்(ன்,ல்,ர்)",,Indus_Signs_Reading.pdf
+144,இருதட்ட,இருதட்ட,,Indus_Signs_Reading.pdf
+145,இருதண்,இருதண்,,Indus_Signs_Reading.pdf
+153,"ன,ன்","ன,ன்",,Indus_Signs_Reading.pdf
+155,"ன,ன்","ன,ன்",,Indus_Signs_Reading.pdf
+156,னட்ட,னட்ட,,Indus_Signs_Reading.pdf
+158,"தர், இன்","தர், இன்",,Indus_Signs_Reading.pdf
+159,இயன்,இயன்,,Indus_Signs_Reading.pdf
+160,"தண்ன,தன்ண","தண்ன,தன்ண",,Indus_Signs_Reading.pdf
+161,ன,ன,,Indus_Signs_Reading.pdf
+162,"ய்,ய","ய்,ய",,Indus_Signs_Reading.pdf
+163,இய,இய,,Indus_Signs_Reading.pdf
+164,"யஅம்அம்,(அன்,ல்,ர்)","யஅம்அம்,(அன்,ல்,ர்)",,Indus_Signs_Reading.pdf
+167,ய்ய,ய்ய,,Indus_Signs_Reading.pdf
+169,னி,னி,,Indus_Signs_Reading.pdf
+171,"ண,ணா","ண,ணா",,Indus_Signs_Reading.pdf
+172,ணண்,ணண்,,Indus_Signs_Reading.pdf
+173,ண்ண,ண்ண,,Indus_Signs_Reading.pdf
+175,ெய,ெய,,Indus_Signs_Reading.pdf
+176,"ண்,ண,மண","ண்,ண,மண",,Indus_Signs_Reading.pdf
+225,"ச,ச்","ச,ச்",,Indus_Signs_Reading.pdf
+226,சி,சி,,Indus_Signs_Reading.pdf
+227,சரி,சரி,,Indus_Signs_Reading.pdf
+228,சச்,சச்,,Indus_Signs_Reading.pdf
+229,ஈ,ஈ,,Indus_Signs_Reading.pdf
+230,'மலய்','மலய்',,Indus_Signs_Reading.pdf
+231,'மலயமலய்','மலயமலய்',,Indus_Signs_Reading.pdf
+232,"""மலய் அரச'","""மலய் அரச'",,Indus_Signs_Reading.pdf
+233,"மு, மூ","மு, மூ",,Indus_Signs_Reading.pdf
+235,மூய,மூய,,Indus_Signs_Reading.pdf
+242,வதாழு,வதாழு,,Indus_Signs_Reading.pdf
+243,அ வதாழு,அ வதாழு,,Indus_Signs_Reading.pdf
+244,பண்ண,பண்ண,,Indus_Signs_Reading.pdf
+245,'இட','இட',,Indus_Signs_Reading.pdf
+246,'இடர்','இடர்',,Indus_Signs_Reading.pdf
+249,ப,ப,,Indus_Signs_Reading.pdf
+250,"பம்,பன்,பல்,பர்","பம்,பன்,பல்,பர்",,Indus_Signs_Reading.pdf
+251,பச,பச,,Indus_Signs_Reading.pdf
+252,பண,பண,,Indus_Signs_Reading.pdf
+254,"ண, ணி","ண, ணி",,Indus_Signs_Reading.pdf
+257,பண்ணய்,பண்ணய்,,Indus_Signs_Reading.pdf
+258,பண்ணய்,பண்ணய்,,Indus_Signs_Reading.pdf
+259,பண்ணய்,பண்ணய்,,Indus_Signs_Reading.pdf
+261,ம,ம,,Indus_Signs_Reading.pdf
+262,மய,மய,,Indus_Signs_Reading.pdf
+307,ம,ம,,Indus_Signs_Reading.pdf
+308,"மஅம்அம்(அன்,அல்,அர்)","மஅம்அம்(அன்,அல்,அர்)",,Indus_Signs_Reading.pdf
+309,ஈ,ஈ,,Indus_Signs_Reading.pdf
+311,'யாழ்','யாழ்',,Indus_Signs_Reading.pdf
+321,"ெவ்,வ்ெ","வவ்,வ்வ",font-corruption fix (va recovered),Indus_Signs_Reading.pdf
+322,"ெென்,வ்ென்","வன்,வ்வன்",FLAG: diverges from source - confirm with author,Indus_Signs_Reading.pdf
+323,அரச,அரச,,Indus_Signs_Reading.pdf
+326,அரச,அரச,,Indus_Signs_Reading.pdf
+327,'அரச ண அ,'அரச ண அ,,Indus_Signs_Reading.pdf
+324,அரசன,அரசன,,Indus_Signs_Reading.pdf
+325,அரச,அரச,,Indus_Signs_Reading.pdf
+328,அ,அ,,Indus_Signs_Reading.pdf
+329,அவ்,அவ்,,Indus_Signs_Reading.pdf
+330,அமூ,அமூ,,Indus_Signs_Reading.pdf
+331,அன,அன,,Indus_Signs_Reading.pdf
+340,அய் (old form),அய் (old form),,Indus_Signs_Reading.pdf
+3411,"பண்,பண","பண்,பண",,Indus_Signs_Reading.pdf
+342,ஆ,ஆ,,Indus_Signs_Reading.pdf
+343,அய்,அய்,,Indus_Signs_Reading.pdf
+344,அவ்,அவ்,,Indus_Signs_Reading.pdf
+345,ஆமூ,ஆமூ,,Indus_Signs_Reading.pdf
+347,ய்ய,ய்ய,,Indus_Signs_Reading.pdf
+348,"யண்ண,ண்மண","யண்ண,ண்மண",,Indus_Signs_Reading.pdf
+349,ய்யர்,ய்யர்,,Indus_Signs_Reading.pdf
