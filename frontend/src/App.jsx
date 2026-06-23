@@ -493,6 +493,186 @@ const SEALS = [
   { id:"8117", motif:"none", site:"author corpus", signCount:4, tamil:"கொழி (ஊர்) ஆ ண(ய்)", layer1:"koLzi (uur) aa Na(y)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
   { id:"9091", motif:"none", site:"author corpus", signCount:6, tamil:"வ ம ய \" வ ய் = சிறந் மணமுலைய தெய்", layer1:"va ma ya \" va y", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
   { id:"9811", motif:"none", site:"author corpus", signCount:5, tamil:"ம ம வயய் \" வய் = ம மவொய தெய்", layer1:"ma ma vayay \" vay", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"220", motif:"none", site:"author corpus", signCount:3, tamil:"சிவம், சிவன் (துணக்குறி = அம்,அன்,அல்,அர்)", layer1:"sivam, sivan (thuNakkuRi", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"232", motif:"none", site:"author corpus", signCount:2, tamil:"மலை அரச", layer1:"malai arasa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"327", motif:"none", site:"author corpus", signCount:2, tamil:"அரசணஅ, அரசனின்", layer1:"arasaNaa, arasanin", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"342", motif:"none", site:"author corpus", signCount:2, tamil:"தொழு, தொழுவம்", layer1:"thoLzu, thoLzuvam", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"343", motif:"none", site:"author corpus", signCount:2, tamil:"அ தொழு = மொட்டுத் தொழுவம்", layer1:"a thoLzu", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1007", motif:"none", site:"author corpus", signCount:2, tamil:"ஆறு (உலை)ய", layer1:"aaRu (ulai)ya", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1008", motif:"none", site:"author corpus", signCount:5, tamil:"கொழி ஆர் இருளைொ வயமூன் (ஆர்=ஊர்)", layer1:"koLzi aar iruLai vayamuun (aar", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1010", motif:"none", site:"author corpus", signCount:6, tamil:"வ வ ளொர் ண்ண ய் ஆ", layer1:"va va Lor NNa y aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1028", motif:"none", site:"author corpus", signCount:4, tamil:"ஓவண்ணளொர் ய் (உலைய) ஆ", layer1:"oovaNNaLor y (ulaiya) aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1030", motif:"none", site:"author corpus", signCount:3, tamil:"வயமூன் ஓர் ஆொவ்வ=பொற்பசுக்ொவைர்", layer1:"vayamuun oor aavva", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1035", motif:"none", site:"author corpus", signCount:4, tamil:"சி வண்(ணொ) ஆறு உலைய", layer1:"si vaN(No) aaRu ulaiya", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1045", motif:"none", site:"author corpus", signCount:2, tamil:"வய(ல்)ொவ்வன், வைியொவ்வன்", layer1:"vaya(l)vvan, vaiyovvan", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1046", motif:"none", site:"author corpus", signCount:3, tamil:"யொழ ன ண்ணொ", layer1:"yoLza na NNo", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1048", motif:"none", site:"author corpus", signCount:4, tamil:"ய ய இருளன் (துலணக்குறி= அன்)", layer1:"ya ya iruLan (thulaNakkuRi", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1049", motif:"none", site:"author corpus", signCount:8, tamil:"வய கொயிைண் பண \"ைொவ க ளண்ன ய்யொ ஆ", layer1:"vaya koyiN paNa \"va ka LaNna yyo aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1068", motif:"none", site:"author corpus", signCount:2, tamil:"ண்(ண)ல் வ்யமூன் = அண்ணல் பொல்", layer1:"N(Na)l vyamuun", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1070", motif:"none", site:"author corpus", signCount:3, tamil:"ஆமு ம ண்(ணொ)", layer1:"aamu ma N(No)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1078", motif:"none", site:"author corpus", signCount:3, tamil:"மீமீ ர் ஆ= கமைொளர் ஆ", layer1:"miimii r aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1088", motif:"none", site:"author corpus", signCount:4, tamil:"வ வயைொ ள ன்", layer1:"va vayai La n", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1094", motif:"none", site:"author corpus", signCount:2, tamil:"மீமீண்ணல் வ்யமூன்=கமைொன அண்ணல் பொல்", layer1:"miimiiNNal vyamuun", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1098", motif:"none", site:"author corpus", signCount:3, tamil:"மீமீஇள ய்யொ ஆ", layer1:"miimiiiLa yyo aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1102", motif:"none", site:"author corpus", signCount:3, tamil:"ண்ணி | ண்ண(ீர்)", layer1:"NNi / NNa(r)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1105", motif:"none", site:"author corpus", signCount:13, tamil:"வ \" பன்னிரு வண ள வ்யமூன் | வ வ பன்னிரு வன ண்ணல் பொல்", layer1:"va \" panniru vaNa La vyamuun / va va panniru vana NNal pol", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1109", motif:"none", site:"author corpus", signCount:4, tamil:"வ' இளைொ ஆக்( ள்)", layer1:"va' iLai aak( L)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1114", motif:"none", site:"author corpus", signCount:7, tamil:"வ வ இருளட்ை ஆ ( வொரி மொடு)", layer1:"va va iruLaT aa ( vori moTu)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1116", motif:"none", site:"author corpus", signCount:10, tamil:"மூ(த் ) வ(த் ர்) ய் (உலைய) (6-அன் உருபு) ஆ ண(ய்)", layer1:"muu(th ) va(th r) y (ulaiya) (6-an urupu) aa Na(y)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1120", motif:"none", site:"author corpus", signCount:2, tamil:"ொரி மொடு", layer1:"ri moTu", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1121", motif:"none", site:"author corpus", signCount:3, tamil:"இைம இைம வய(ல்)ொவ(ல்)", layer1:"ima ima vaya(l)va(l)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1127", motif:"none", site:"author corpus", signCount:1, tamil:"வீவித்ொவ்வ= கமைொன வித்துொவல்", layer1:"viivithvva", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1129", motif:"none", site:"author corpus", signCount:4, tamil:"சிவை மூ ஆொவ்வ;ை-6-அன் உருபு", layer1:"sivai muu aavva;-6-an urupu", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1143", motif:"none", site:"author corpus", signCount:7, tamil:"மி ச் சிறந் தெய் | வ ய் = தெய்", layer1:"mi s siRan they / va y", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1147", motif:"none", site:"author corpus", signCount:3, tamil:"வய இல்ைம் வ்யமூன்= வயல் வட்ீடுப் பொல்", layer1:"vaya ilm vyamuun", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1150", motif:"none", site:"author corpus", signCount:3, tamil:"ணொய் அரச ஆ= அரச ஆ வய்", layer1:"Noy arasa aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1156", motif:"none", site:"author corpus", signCount:4, tamil:"(இ)ை ழன் பன்னிரு ஆ", layer1:"(i) Lzan panniru aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1158", motif:"none", site:"author corpus", signCount:3, tamil:"மீமீஇள(ம்) சொ ண", layer1:"miimiiiLa(m) so Na", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1159", motif:"none", site:"author corpus", signCount:5, tamil:"இை இை அய் வ ய் =இவ்விைம் சிறந் தெய்", layer1:"i i ay va y", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1168", motif:"none", site:"author corpus", signCount:2, tamil:"ஓ வ்யமூன் = சிறந் பொல்", layer1:"oo vyamuun", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1170", motif:"none", site:"author corpus", signCount:3, tamil:"ை ழ வ்யமூன்", layer1:"Lza vyamuun", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1171", motif:"none", site:"author corpus", signCount:2, tamil:"சிறந் ஆொவ்வ(ன்)", layer1:"siRan aavva(n)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1182", motif:"none", site:"author corpus", signCount:4, tamil:"ண் அய் கொயில் எறும்ப = ண் அய்யன்", layer1:"N ay koyil eRumpa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1199", motif:"none", site:"author corpus", signCount:2, tamil:"இளம ஆ", layer1:"iLama aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1220", motif:"none", site:"author corpus", signCount:1, tamil:"எருது", layer1:"eruthu", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1228", motif:"none", site:"author corpus", signCount:3, tamil:"மீமீகொழி (ஊர்) ஆொவ்வ", layer1:"miimiikoLzi (uur) aavva", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1229", motif:"none", site:"author corpus", signCount:1, tamil:"மீமீெய்", layer1:"miimiiy", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1232", motif:"none", site:"author corpus", signCount:2, tamil:"மீமீளொர் ஆ", layer1:"miimiiLor aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1235", motif:"none", site:"author corpus", signCount:2, tamil:"ை இல்ைொைன்", layer1:"iln", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1237", motif:"none", site:"author corpus", signCount:3, tamil:"மயில் ய்யொ ஆ", layer1:"mayil yyo aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1274", motif:"none", site:"author corpus", signCount:3, tamil:"மீமீகொயில் ண் அல்", layer1:"miimiikoyil N al", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1275", motif:"none", site:"author corpus", signCount:3, tamil:"[வய(து)] மூை ஆ", layer1:"[vaya(thu)] muu aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1287", motif:"none", site:"author corpus", signCount:2, tamil:"ஓர் ஆொவ்வ", layer1:"oor aavva", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1314", motif:"none", site:"author corpus", signCount:2, tamil:"சண்ணொ ஆறுளன்", layer1:"saNNo aaRuLan", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1326", motif:"none", site:"author corpus", signCount:3, tamil:"மீமீை இள(ம்) பொல்", layer1:"miimii iLa(m) pol", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1335", motif:"none", site:"author corpus", signCount:6, tamil:"வை சங் ஆ (சிறந் தவள்லள ஆ)", layer1:"vai sang aa (siRan thavaLlaLa aa)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1339", motif:"none", site:"author corpus", signCount:4, tamil:"மூ வ ல ஆ", layer1:"muu va la aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1341", motif:"none", site:"author corpus", signCount:3, tamil:"வ ண்ணொ ஆ", layer1:"va NNo aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1344", motif:"none", site:"author corpus", signCount:5, tamil:"வ \" ஏழு (இள)ஞொன் ஆ", layer1:"va \" eeLzu (iLa)njon aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1345", motif:"none", site:"author corpus", signCount:3, tamil:"வை இளை வ்யமூன்", layer1:"vai iLai vyamuun", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1348", motif:"none", site:"author corpus", signCount:4, tamil:"வை வ ள ன்", layer1:"vai va La n", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1350", motif:"none", site:"author corpus", signCount:10, tamil:"இளை சொ ண ண் (ண ர ம ர மயக் ம்)", layer1:"iLai so Na N (Na ra ma ra mayak m)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1373", motif:"none", site:"author corpus", signCount:5, tamil:"வை வளன் இருைொ ரின் ஆ", layer1:"vai vaLan iru rin aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1374", motif:"none", site:"author corpus", signCount:3, tamil:"இள ண்ண ஆ", layer1:"iLa NNa aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1386", motif:"none", site:"author corpus", signCount:8, tamil:"மீமீ வ ஆக்( ள்) தொழு (Zebu cattle shed)", layer1:"miimii va aak( L) thoLzu (Zebu cattle shed)", layer2:"Zebu cattle shed", domain:"", status:"complete", confidence:0 },
+  { id:"1387", motif:"none", site:"author corpus", signCount:5, tamil:"மீமீ வை ள ன் தொழு", layer1:"miimii vai La n thoLzu", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1407", motif:"none", site:"author corpus", signCount:4, tamil:"வ ண்(ண) ய் ஆ", layer1:"va N(Na) y aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1414", motif:"none", site:"author corpus", signCount:5, tamil:"இள வய(து) மூ-பன்னிரு (36) ஆ", layer1:"iLa vaya(thu) muu-panniru (36) aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1427", motif:"none", site:"author corpus", signCount:3, tamil:"ய் வ ர் = வய்க் ர்= தெய்க்ொரர்", layer1:"y va r", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1447", motif:"none", site:"author corpus", signCount:3, tamil:"மைொை சொ ண =குவிக் ப்பட்ை சொணம்", layer1:"mai so Na", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1456", motif:"none", site:"author corpus", signCount:6, tamil:"மீமீை வய(து) மூ(த் ) ச ண= சிறந் மூத் சொணம்", layer1:"miimii vaya(thu) muu(th ) sa Na", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1466", motif:"none", site:"author corpus", signCount:3, tamil:"மீமீகொயில் ஏழு ஆ", layer1:"miimiikoyil eeLzu aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1533", motif:"none", site:"author corpus", signCount:2, tamil:"சொ ண(ம்)", layer1:"so Na(m)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1534", motif:"none", site:"author corpus", signCount:5, tamil:"மூப மூப்பைொ ள ன் தொழுவம்", layer1:"muupa muuppai La n thoLzuvam", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1551", motif:"none", site:"author corpus", signCount:3, tamil:"மீமீஇரு ள ன்", layer1:"miimiiiru La n", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1561", motif:"none", site:"author corpus", signCount:3, tamil:"கொயில் மலை ஆ", layer1:"koyil malai aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1628", motif:"none", site:"author corpus", signCount:15, tamil:"பக் ம் 1- ள வ்வ இரு ஆ | பக் ம் 2- ள ம ச ண", layer1:"pak m 1- La vva iru aa / pak m 2- La ma sa Na", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1707", motif:"none", site:"author corpus", signCount:3, tamil:"கொயில் இை ஆ", layer1:"koyil i aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1708", motif:"none", site:"author corpus", signCount:4, tamil:"கொயில் இை ண்ண ஆ", layer1:"koyil i NNa aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1771", motif:"none", site:"author corpus", signCount:3, tamil:"வனை ளொர் ஆ", layer1:"vanai Lor aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"1801", motif:"none", site:"author corpus", signCount:3, tamil:"வண்ணை ளொர் ஆ", layer1:"vaNNai Lor aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2014", motif:"none", site:"author corpus", signCount:2, tamil:"ஆ தொழு", layer1:"aa thoLzu", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2015", motif:"none", site:"author corpus", signCount:1, tamil:"வ்யமூன் = பொல்", layer1:"vyamuun", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2056", motif:"none", site:"author corpus", signCount:5, tamil:"வ வ ணை ன ய்யொ", layer1:"va va Nai na yyo", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2057", motif:"none", site:"author corpus", signCount:6, tamil:"மீமீஓர் ண் ஆ (ஆ தெடில் குறி)", layer1:"miimiioor N aa (aa theTil kuRi)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2059", motif:"none", site:"author corpus", signCount:2, tamil:"மீமீசொ ண", layer1:"miimiiso Na", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2060", motif:"none", site:"author corpus", signCount:2, tamil:"மீமீசொ ண", layer1:"miimiiso Na", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2061", motif:"none", site:"author corpus", signCount:3, tamil:"ஆமு ண் ண(ல்)", layer1:"aamu N Na(l)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2068", motif:"none", site:"author corpus", signCount:6, tamil:"மீ மி ழ ட்ைள் ஆ க்=", layer1:"mii mi Lza TL aa k", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2069", motif:"none", site:"author corpus", signCount:7, tamil:"வ வ வவண் வ ஓணொள் ஆ ப", layer1:"va va vavaN va ooNoL aa pa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2081", motif:"none", site:"author corpus", signCount:3, tamil:"மீமீவயைொ ள ன்", layer1:"miimiivayai La n", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2086", motif:"none", site:"author corpus", signCount:7, tamil:"ம யன் அய் வன ம ஆ தொழு", layer1:"ma yan ay vana ma aa thoLzu", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2096", motif:"none", site:"author corpus", signCount:7, tamil:"ண்ன அவ் வர ண்ண வ்வ ய்யொ ஆ", layer1:"Nna av vara NNa vva yyo aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2097", motif:"none", site:"author corpus", signCount:4, tamil:"கொயில் இை மூை ஆ", layer1:"koyil i muu aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2104", motif:"none", site:"author corpus", signCount:3, tamil:"வயைொ ளர் ஆ", layer1:"vayai Lar aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2113", motif:"none", site:"author corpus", signCount:2, tamil:"அய் ஆொவ்வ", layer1:"ay aavva", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2123", motif:"none", site:"author corpus", signCount:2, tamil:"வ்யைைொ வ்யமுன்", layer1:"vyai vyamun", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2142", motif:"none", site:"author corpus", signCount:7, tamil:"இள(ம்) சொ ண(ம்) | இள சொ ண(ம்)", layer1:"iLa(m) so Na(m) / iLa so Na(m)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2163", motif:"none", site:"author corpus", signCount:6, tamil:"(மீ) (இள) சொ ண பன்னிரு ஆ", layer1:"(mii) (iLa) so Na panniru aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2167", motif:"none", site:"author corpus", signCount:2, tamil:"மூய தொழு", layer1:"muuya thoLzu", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2169", motif:"none", site:"author corpus", signCount:6, tamil:"அ ம ஆர்ை ன ன் தொழு", layer1:"a ma aar na n thoLzu", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2183", motif:"none", site:"author corpus", signCount:4, tamil:"ம ணொ ள ன்", layer1:"ma No La n", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2186", motif:"none", site:"author corpus", signCount:2, tamil:"இளைொ பன்னிருொவ்வ", layer1:"iLai panniruvva", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2200", motif:"none", site:"author corpus", signCount:6, tamil:"(இ)ன் ன் ஆ (சுகமரியர் த ய்வம்)", layer1:"(i)n n aa (sukamariyar tha yvam)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2201", motif:"none", site:"author corpus", signCount:3, tamil:"ண ய்ய ஆ", layer1:"Na yya aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2251", motif:"none", site:"author corpus", signCount:1, tamil:"மீமீவ்யமூன்", layer1:"miimiivyamuun", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2290", motif:"none", site:"author corpus", signCount:5, tamil:"மீமீகொயில் மைய்ை ன ய்யொ ஆ", layer1:"miimiikoyil maiy na yyo aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2315", motif:"none", site:"author corpus", signCount:3, tamil:"ை னி ஆ", layer1:"ni aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2343", motif:"none", site:"author corpus", signCount:2, tamil:"ஆொவ்வ மூ", layer1:"aavva muu", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2368", motif:"none", site:"author corpus", signCount:2, tamil:"ஆொவ்வ மூ", layer1:"aavva muu", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2375", motif:"none", site:"author corpus", signCount:2, tamil:"(இ)ள ஆொவ்வ", layer1:"(i)La aavva", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2380", motif:"none", site:"author corpus", signCount:3, tamil:"ணொ ய் ஆ = வொல ஆ,அண்ணல் ல ஆ", layer1:"No y aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2382", motif:"none", site:"author corpus", signCount:2, tamil:"ஆொவ்வ அய்", layer1:"aavva ay", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2394", motif:"none", site:"author corpus", signCount:2, tamil:"ஆொவ்வ ஓர்", layer1:"aavva oor", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2420", motif:"none", site:"author corpus", signCount:4, tamil:"ஆள் அவ் ஈச ர் = சிவொ", layer1:"aaL av iisa r", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2442", motif:"none", site:"author corpus", signCount:4, tamil:"ை அய்யி மு ர்", layer1:"ayyi mu r", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2459", motif:"none", site:"author corpus", signCount:3, tamil:"வய(ளொர்) ய்யொ ஆ", layer1:"vaya(Lor) yyo aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2472", motif:"none", site:"author corpus", signCount:2, tamil:"அரச ஆொவ்வன்", layer1:"arasa aavvan", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2478", motif:"none", site:"author corpus", signCount:3, tamil:"மீமீஏழு ஞொன் ஆ", layer1:"miimiieeLzu njon aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2482", motif:"none", site:"author corpus", signCount:4, tamil:"வ ளொர் ஆ ண(ய்)", layer1:"va Lor aa Na(y)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2497", motif:"none", site:"author corpus", signCount:2, tamil:"ஆொவ்வ மூ", layer1:"aavva muu", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2503", motif:"none", site:"author corpus", signCount:2, tamil:"மீமீகொழி (ஊர்)ொவ்வ", layer1:"miimiikoLzi (uur)vva", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2507", motif:"none", site:"author corpus", signCount:3, tamil:"வ இளை வ்யமூன்", layer1:"va iLai vyamuun", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2514", motif:"none", site:"author corpus", signCount:2, tamil:"ஆொவ்வ மூ", layer1:"aavva muu", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2520", motif:"none", site:"author corpus", signCount:3, tamil:"இள எழுட்ை ஆ", layer1:"iLa eLzuT aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2534", motif:"none", site:"author corpus", signCount:3, tamil:"ை வய ஆ", layer1:"vaya aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2545", motif:"none", site:"author corpus", signCount:3, tamil:"மீமீஇள ச ண", layer1:"miimiiiLa sa Na", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2596", motif:"none", site:"author corpus", signCount:7, tamil:"ண்ன அவ் வர ண்ண வ்வ ய்யொ ஆ", layer1:"Nna av vara NNa vva yyo aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2608", motif:"none", site:"author corpus", signCount:3, tamil:"இள அரசன ஆ", layer1:"iLa arasana aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2614", motif:"none", site:"author corpus", signCount:6, tamil:"ொல் ள ண்ன அய்வனைொ இருளன ன்", layer1:"l La Nna ayvanai iruLana n", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2630", motif:"none", site:"author corpus", signCount:3, tamil:"மீமீ வ ண்(ண)", layer1:"miimii va N(Na)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2636", motif:"none", site:"author corpus", signCount:2, tamil:"மீமீெ ய்", layer1:"miimii y", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2639", motif:"none", site:"author corpus", signCount:2, tamil:"ஓர் ஆொவ்வ", layer1:"oor aavva", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2651", motif:"none", site:"author corpus", signCount:4, tamil:"சிவன் (பண்பட்ை வத் ன்)", layer1:"sivan (paNpaT vath n)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2653", motif:"none", site:"author corpus", signCount:4, tamil:"மீமீளொர் ர ய்ய ஆ", layer1:"miimiiLor ra yya aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2663", motif:"none", site:"author corpus", signCount:4, tamil:"மீமீளொர் ர ய்ய ஆ", layer1:"miimiiLor ra yya aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2689", motif:"none", site:"author corpus", signCount:12, tamil:"வரி 1- வ வ வயச ஆ | வரி 2- ச ச ஆர் = ச சயொர்= யொர்", layer1:"vari 1- va va vayasa aa / vari 2- sa sa aar", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2698", motif:"none", site:"author corpus", signCount:2, tamil:"ஆொவ்வ வொன்கு", layer1:"aavva vonku", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2699", motif:"none", site:"author corpus", signCount:3, tamil:"வனி ஆ மூரொ", layer1:"vani aa muuro", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2700", motif:"none", site:"author corpus", signCount:3, tamil:"இருை இனொ ஆ", layer1:"iru ino aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2847", motif:"none", site:"author corpus", signCount:4, tamil:"வயமளொர் ஆொவ்வ மூ அய", layer1:"vayamaLor aavva muu aya", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2848", motif:"none", site:"author corpus", signCount:3, tamil:"ைொ ய் ஆண(ய்)", layer1:"y aaNa(y)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2856", motif:"none", site:"author corpus", signCount:2, tamil:"ஆொவ்வ மூ", layer1:"aavva muu", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2862", motif:"none", site:"author corpus", signCount:2, tamil:"ஆொவ்வ மூ", layer1:"aavva muu", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2908", motif:"none", site:"author corpus", signCount:9, tamil:"ஏழு (இள)ஞொன் அரசன ஆ | ஏழு ஞொன் அரசன ஆ", layer1:"eeLzu (iLa)njon arasana aa / eeLzu njon arasana aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"2913", motif:"none", site:"author corpus", signCount:4, tamil:"இரு ள யண்ண ஆ", layer1:"iru La yaNNa aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"3016", motif:"none", site:"author corpus", signCount:5, tamil:"டி டீ (ிடீர்)அய்ைொ இள வ்யமூன்", layer1:"Ti Tii (Tiir)ay iLa vyamuun", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"3075", motif:"none", site:"author corpus", signCount:2, tamil:"ஓர் ஆொவ்வ", layer1:"oor aavva", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"3095", motif:"none", site:"author corpus", signCount:2, tamil:"அரச ஆொவ்வ", layer1:"arasa aavva", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"3118", motif:"none", site:"author corpus", signCount:4, tamil:"ஈசொ இரு ணொ ஆ", layer1:"iiso iru No aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"3159", motif:"none", site:"author corpus", signCount:3, tamil:"வொ ய் ண் = ண்ணெய் = தவண்ணய்", layer1:"vo y N", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"3249", motif:"none", site:"author corpus", signCount:5, tamil:"ம ணொ ள ஆ ணய்", layer1:"ma No La aa Nay", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"3328", motif:"none", site:"author corpus", signCount:8, tamil:"வய மூ ட்ை ஆ ஓர் (பசு - ஒருலம)", layer1:"vaya muu T aa oor (pasu - orulama)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"3351", motif:"none", site:"author corpus", signCount:8, tamil:"மூ ள ய் ஆ (மூ இள ய்மொடு ள்)", layer1:"muu La y aa (muu iLa ymoTu L)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"4022", motif:"none", site:"author corpus", signCount:4, tamil:"மீமீவன இளை சொண னி", layer1:"miimiivana iLai soNa ni", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"4029", motif:"none", site:"author corpus", signCount:2, tamil:"வய ஆொவ்வ", layer1:"vaya aavva", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"4033", motif:"none", site:"author corpus", signCount:4, tamil:"மூ வ ல ஆ", layer1:"muu va la aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"4055", motif:"none", site:"author corpus", signCount:4, tamil:"இரு வ்வன் \" வ்யமூன்", layer1:"iru vvan \" vyamuun", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"4056", motif:"none", site:"author corpus", signCount:3, tamil:"ை மைொை ன் = வைிய அலமப்பொளன்", layer1:"mai n", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"4084", motif:"none", site:"author corpus", signCount:5, tamil:"மூை ஆவ் ஆய்ைொ ய் பசு", layer1:"muu aav aay y pasu", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"4166", motif:"none", site:"author corpus", signCount:2, tamil:"ஒர் ஆொவ்வ", layer1:"or aavva", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"4262", motif:"none", site:"author corpus", signCount:4, tamil:"ை ணை ன ய்யொ", layer1:"Nai na yyo", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"4320", motif:"none", site:"author corpus", signCount:5, tamil:"வர ளொர் ய் ஆ ண(ய்)", layer1:"vara Lor y aa Na(y)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"4347", motif:"none", site:"author corpus", signCount:11, tamil:"வரி 1- அரச ஆ ண(ய்) | வரி 2- இரு அ ?", layer1:"vari 1- arasa aa Na(y) / vari 2- iru a ?", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"4354", motif:"none", site:"author corpus", signCount:2, tamil:"மைொை பண்ணொை = பண்ணயர் குழுமம்", layer1:"mai paNNo", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"4371", motif:"none", site:"author corpus", signCount:4, tamil:"மைொை பண்ணொை ஆ ண(ய்)", layer1:"mai paNNo aa Na(y)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"4430", motif:"none", site:"author corpus", signCount:4, tamil:"பண்ணய் ய்யொ ஆ ண(ய்)", layer1:"paNNay yyo aa Na(y)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"4582", motif:"none", site:"author corpus", signCount:13, tamil:"வரி 1 -ைொ பண்ணொ ஆ ண (ய்) | அ வொ (மூ?) [scribe error?]", layer1:"vari 1 - paNNo aa Na (y) / a vo (muu?) [scribe error?]", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"4590", motif:"none", site:"author corpus", signCount:2, tamil:"ஆொவ்வ மூ", layer1:"aavva muu", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"4626", motif:"none", site:"author corpus", signCount:3, tamil:"(இ)ள ஞொன் ஆ", layer1:"(i)La njon aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"5274", motif:"none", site:"author corpus", signCount:12, tamil:"வரி 1 - இை இைம ஆண(ய்) | வரி 2 - அ ம்மூ", layer1:"vari 1 - i ima aaNa(y) / vari 2 - a mmuu", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"5305", motif:"none", site:"author corpus", signCount:5, tamil:"ர ஆ ண வ்வ அய்", layer1:"ra aa Na vva ay", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"5443", motif:"none", site:"author corpus", signCount:3, tamil:"ளொர் ஆ ண(ய்)", layer1:"Lor aa Na(y)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"5461", motif:"none", site:"author corpus", signCount:8, tamil:"வரி 1 - ண்ண ள ய்யொ ஆ ண(ய்)", layer1:"vari 1 - NNa La yyo aa Na(y)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"6213", motif:"none", site:"author corpus", signCount:3, tamil:"ஓை ண்ணொ ஆ", layer1:"oo NNo aa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"7002", motif:"none", site:"author corpus", signCount:2, tamil:"ஆொவ்வ மூ", layer1:"aavva muu", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"7040", motif:"none", site:"author corpus", signCount:2, tamil:"ஆொவ்வ அய்", layer1:"aavva ay", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"7078", motif:"none", site:"author corpus", signCount:3, tamil:"ண வ ய் = ணண்வய்= தவண்ணய்", layer1:"Na va y", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"8031", motif:"none", site:"author corpus", signCount:2, tamil:"ய் வ = தெய்", layer1:"y va", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"8041", motif:"none", site:"author corpus", signCount:8, tamil:"மூ ள ஆொவ்வ (ள ர- ர மயக் ம்)", layer1:"muu La aavva (La ra- ra mayak m)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"8117", motif:"none", site:"author corpus", signCount:4, tamil:"கொழி (ஊர்) ஆ ண(ய்)", layer1:"koLzi (uur) aa Na(y)", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"9091", motif:"none", site:"author corpus", signCount:6, tamil:"வ ம ய \" வ ய் = சிறந் மணமுலைய தெய்", layer1:"va ma ya \" va y", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
+  { id:"9811", motif:"none", site:"author corpus", signCount:5, tamil:"ம ம வயய் \" வய் = ம மவொய தெய்", layer1:"ma ma vayay \" vay", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
 ];
 
 const ALL_SIGNS = [
@@ -871,11 +1051,23 @@ function SignGlyph({ mahadevan, size=40, showLabel=true }) {
   );
 }
 
+// ── IMAGE INVENTORY ───────────────────────────────────────
+// Only these seals have actual glyph images in /public/seal_glyphs/
+const SEAL_HAS_IMAGE = new Set([1076,1110,1133,2082,2127,2234,2322,2444,2617,2648,2950,3246,4718,5119]);
+
 // ── PAGES ─────────────────────────────────────────────────
 function SealBrowser({onSelect,selected}) {
-  const [mf,setMf] = useState("all");
-  const [sf,setSf] = useState("all");
-  const filtered = SEALS.filter(s=>(mf==="all"||s.motif===mf)&&(sf==="all"||s.status===sf));
+  const [view,setView]     = useState("gallery");
+  const [search,setSearch] = useState("");
+  const [motif,setMotif]   = useState("all");
+  const gallery = SEALS.filter(s => SEAL_HAS_IMAGE.has(Number(s.id)));
+  const q = search.trim().toLowerCase();
+  const tableRows = SEALS.filter(s => {
+    if (motif !== "all" && s.motif !== motif) return false;
+    if (!q) return true;
+    return s.id.includes(q)||s.tamil.includes(q)||s.layer1.toLowerCase().includes(q)||(s.layer2&&s.layer2.toLowerCase().includes(q));
+  });
+  const dummy = null; // remove unused
   return (
     <div>
       <div style={S.pageTitle}>Seal Browser</div>
@@ -886,46 +1078,97 @@ function SealBrowser({onSelect,selected}) {
         <div style={S.statCard}><div style={S.statNum}>~1000</div><div style={S.statLabel}>Total Studied</div></div>
         <div style={S.statCard}><div style={S.statNum}>400+</div><div style={S.statLabel}>Seals Documented</div></div>
       </div>
-      <div style={S.filterRow}>
-        {["all","unicorn","elephant","gharial","none"].map(m=>(
-          <button key={m} style={S.filterBtn(mf===m)} onClick={()=>setMf(m)}>
-            <span style={{color:MOTIF_COLORS[m]||"#5a6070",marginRight:4}}>◈</span>{m==="all"?"All Motifs":m}
-          </button>
-        ))}
-        <div style={{width:1,background:"#1e2533"}}/>
-        {["all","complete","pending"].map(s=>(
-          <button key={s} style={S.filterBtn(sf===s)} onClick={()=>setSf(s)}>
-            {s==="all"?"All":s==="complete"?"2-Layer Complete":"Layer 1 Only"}
-          </button>
+      {/* Stats */}
+      <div style={S.statsRow}>
+        <div style={S.statCard}><div style={S.statNum}>199</div><div style={S.statLabel}>Readings</div></div>
+        <div style={S.statCard}><div style={S.statNum}>14</div><div style={S.statLabel}>With Images</div></div>
+        <div style={S.statCard}><div style={S.statNum}>264</div><div style={S.statLabel}>Signs Mapped</div></div>
+        <div style={S.statCard}><div style={S.statNum}>400+</div><div style={S.statLabel}>Total Studied</div></div>
+      </div>
+      {/* View tabs */}
+      <div style={{display:"flex",borderBottom:"1px solid #1e2533",marginBottom:20}}>
+        {[["gallery",`Featured Gallery (${gallery.length})`],["table",`All Readings (${SEALS.length})`]].map(([id,lbl])=>(
+          <button key={id} onClick={()=>setView(id)} style={{
+            background:"none", border:"none",
+            borderBottom: view===id?"2px solid #c9963e":"2px solid transparent",
+            color: view===id?"#c9963e":"#5a6070",
+            padding:"8px 18px", cursor:"pointer",
+            fontSize:11, fontFamily:"'Cinzel',serif", letterSpacing:"0.07em",
+          }}>{lbl}</button>
         ))}
       </div>
-      <div style={S.grid}>
-        {filtered.map(seal=>(
-          <div key={seal.id} style={S.sealCard(selected?.id===seal.id)} onClick={()=>onSelect(seal)}>
-            <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start"}}>
-              <div style={S.sealId}>#{seal.id}</div>
-              <span style={{fontSize:10,color:MOTIF_COLORS[seal.motif],letterSpacing:"0.04em"}}>{seal.motif}</span>
+      {/* GALLERY */}
+      {view==="gallery" && (
+        <div style={S.grid}>
+          {gallery.map(seal=>(
+            <div key={seal.id} style={S.sealCard(selected?.id===seal.id)} onClick={()=>onSelect(seal)}>
+              <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",marginBottom:6}}>
+                <div style={S.sealId}>#{seal.id}</div>
+                {seal.motif!=="none"&&<span style={{fontSize:11,color:MOTIF_META[seal.motif]?.color||"#c9963e"}}>{MOTIF_META[seal.motif]?.icon} {MOTIF_META[seal.motif]?.name}</span>}
+              </div>
+              <div style={{background:"#f5f0e8",marginBottom:8,overflow:"hidden",lineHeight:0}}>
+                <img src={`${BASE}seal_glyphs/seal_${seal.id}.png`} alt={`Seal ${seal.id}`}
+                  style={{width:"100%",display:"block",filter:"contrast(1.2)"}}/>
+              </div>
+              <div style={S.layer1}>{seal.layer1}</div>
+              <div style={S.layer2(seal.status)}>{seal.layer2}</div>
+              {seal.domain&&<div style={S.domainBadge(seal.domain)}>{seal.domain}</div>}
             </div>
-            <div style={S.sealMeta}>{seal.site} · {seal.signCount||0} signs</div>
-            {/* SEAL GLYPH — cropped directly from author's PDF */}
-            <div style={{
-              background:"#f5f0e8", border:"1px solid #c9963e",
-              marginBottom:10, overflow:"hidden", lineHeight:0,
-            }}>
-              <img
-                src={`${BASE}seal_glyphs/seal_${seal.id}.png`}
-                alt={`Seal ${seal.id} inscription`}
-                style={{width:"100%", display:"block", filter:"contrast(1.2)"}}
-                onError={e => { e.target.style.display="none"; }}
-              />
-            </div>
-            <div style={S.layer1}>{seal.layer1}</div>
-            <div style={S.layer2(seal.status)}>{seal.layer2}</div>
-            {seal.domain && <div style={S.domainBadge(seal.domain)}>{seal.domain}</div>}
-            <div style={S.confBar}><div style={S.confFill(seal.confidence)}/></div>
+          ))}
+        </div>
+      )}
+      {/* TABLE */}
+      {view==="table" && (
+        <div>
+          <div style={{display:"flex",gap:8,marginBottom:16,flexWrap:"wrap"}}>
+            <input value={search} onChange={e=>setSearch(e.target.value)}
+              placeholder="Search by seal ID, Tamil text, or meaning…"
+              style={{flex:1,minWidth:180,background:"#0d1017",border:"1px solid #1e2533",
+                color:"#e8dcc8",padding:"8px 12px",fontSize:12,outline:"none"}}/>
+            <select value={motif} onChange={e=>setMotif(e.target.value)} style={{...S.sel,minWidth:130}}>
+              <option value="all">All Motifs</option>
+              {["unicorn","elephant","bull","zebu","tiger","gharial","none"].map(m=>(
+                <option key={m} value={m}>{MOTIF_META[m]?.name||m}</option>
+              ))}
+            </select>
           </div>
-        ))}
-      </div>
+          <div style={{fontSize:11,color:"#5a6070",marginBottom:10}}>Showing {tableRows.length} of {SEALS.length}</div>
+          <div style={{overflowX:"auto"}}>
+            <table style={{width:"100%",borderCollapse:"collapse",fontSize:12}}>
+              <thead>
+                <tr style={{borderBottom:"1px solid #1e2533"}}>
+                  {["Seal","Motif","Tamil Reading","Romanization","English Meaning"].map(h=>(
+                    <th key={h} style={{textAlign:"left",padding:"6px 10px",color:"#5a6070",
+                      fontFamily:"'Cinzel',serif",fontSize:9,letterSpacing:"0.08em",whiteSpace:"nowrap"}}>{h}</th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {tableRows.map((seal,i)=>(
+                  <tr key={seal.id} onClick={()=>onSelect(seal)}
+                    style={{borderBottom:"1px solid #13171f",cursor:"pointer",
+                      background:selected?.id===seal.id?"#13171f":i%2===0?"transparent":"#0c1016"}}
+                    onMouseEnter={e=>e.currentTarget.style.background="#161c26"}
+                    onMouseLeave={e=>e.currentTarget.style.background=selected?.id===seal.id?"#13171f":i%2===0?"transparent":"#0c1016"}
+                  >
+                    <td style={{padding:"7px 10px",color:"#c9963e",fontFamily:"'JetBrains Mono',monospace",whiteSpace:"nowrap"}}>
+                      #{seal.id}{SEAL_HAS_IMAGE.has(Number(seal.id))&&<span title="Has image" style={{marginLeft:4,color:"#4a7c59",fontSize:9}}>▪</span>}
+                    </td>
+                    <td style={{padding:"7px 10px",color:"#8090a8",fontSize:11}}>
+                      {seal.motif!=="none"?(MOTIF_META[seal.motif]?.icon+" "+MOTIF_META[seal.motif]?.name):"—"}
+                    </td>
+                    <td style={{padding:"7px 10px",fontFamily:"'Source Serif 4',serif",fontSize:13,color:"#e8dcc8"}}>{seal.tamil}</td>
+                    <td style={{padding:"7px 10px",fontFamily:"'JetBrains Mono',monospace",color:"#c9963e",fontSize:11}}>{seal.layer1}</td>
+                    <td style={{padding:"7px 10px",color:seal.status==="complete"?"#e8dcc8":"#3a4050",fontStyle:seal.status==="complete"?"normal":"italic"}}>
+                      {seal.status==="complete"?seal.layer2:"—"}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -1587,219 +1830,98 @@ function PeerReview() {
   );
 }
 
-// ── MOBILE RESPONSIVE APP ────────────────────────────────
+// ── APP ───────────────────────────────────────────────────
 export default function App() {
-  const [page, setPage]         = useState("seals");
-  const [sel, setSel]           = useState(null);
-  const [sidebarOpen, setSidebar] = useState(false);
+  const [page, setPage] = useState("seals");
+  const [sel, setSel]   = useState(null);
 
   const nav = [
-    {id:"seals",  icon:"◈", label:"Seal Browser"},
-    {id:"signs",  icon:"▦", label:"Sign Registry"},
-    {id:"hyps",   icon:"⚖", label:"Hypotheses"},
-    {id:"charts", icon:"▬", label:"Frequency"},
-    {id:"review", icon:"✍", label:"Peer Review"},
+    {id:"seals",   icon:"◈", label:"Readings"},
+    {id:"signs",   icon:"▦", label:"Signs"},
+    {id:"research",icon:"⚖", label:"Research"},
   ];
 
-  const navigate = (id) => {
-    setPage(id);
-    setSidebar(false);   // always close sidebar on navigation
-    setSel(null);
-  };
+  const navigate = (id) => { setPage(id); setSel(null); };
 
   return (
     <div style={{fontFamily:"'Source Serif 4',Georgia,serif",background:"#0e1117",minHeight:"100vh",color:"#e8dcc8",display:"flex",flexDirection:"column"}}>
 
-      {/* ── TOP BAR (mobile) ─────────────────────────────── */}
+      {/* ── HEADER ─────────────────────────────────────── */}
       <div style={{
-        display:"flex", alignItems:"center", justifyContent:"space-between",
         background:"#0a0d13", borderBottom:"1px solid #1e2533",
-        padding:"12px 16px", position:"sticky", top:0, zIndex:100,
+        padding:"0 16px", position:"sticky", top:0, zIndex:100,
+        display:"flex", alignItems:"center", justifyContent:"space-between",
       }}>
-        {/* Hamburger */}
-        <button
-          onClick={() => setSidebar(o => !o)}
-          style={{background:"none",border:"none",color:"#c9963e",fontSize:22,cursor:"pointer",padding:"4px 8px",lineHeight:1}}
-          aria-label="Toggle menu"
-        >
-          {sidebarOpen ? "✕" : "☰"}
-        </button>
-
-        {/* Logo centre */}
-        <span style={{fontFamily:"'Cinzel',serif",fontSize:15,color:"#c9963e",letterSpacing:"0.12em",fontWeight:700}}>
+        <span style={{fontFamily:"'Cinzel',serif",fontSize:14,color:"#c9963e",
+          letterSpacing:"0.12em",fontWeight:700,padding:"12px 0",whiteSpace:"nowrap"}}>
           OPEN INDUS LAB
         </span>
 
-        {/* Current page label */}
-        <span style={{fontSize:11,color:"#5a6070",letterSpacing:"0.06em",textTransform:"uppercase"}}>
-          {nav.find(n=>n.id===page)?.label}
+        <div style={{display:"flex",gap:0}}>
+          {nav.map(n=>(
+            <button key={n.id} onClick={()=>navigate(n.id)} style={{
+              background:"none", border:"none",
+              borderBottom: page===n.id?"2px solid #c9963e":"2px solid transparent",
+              color: page===n.id?"#c9963e":"#5a6070",
+              padding:"14px 14px", cursor:"pointer",
+              fontSize:11, fontFamily:"'Cinzel',serif", letterSpacing:"0.07em",
+            }}>
+              <span style={{marginRight:4}}>{n.icon}</span>{n.label}
+            </button>
+          ))}
+        </div>
+
+        <span style={{fontSize:10,color:"#2a3040",letterSpacing:"0.05em",whiteSpace:"nowrap"}}>
+          VPS · 2024
         </span>
       </div>
 
-      {/* ── BODY ─────────────────────────────────────────── */}
-      <div style={{display:"flex",flex:1,position:"relative",overflow:"hidden"}}>
-
-        {/* ── OVERLAY (mobile, closes sidebar on tap) ────── */}
-        {sidebarOpen && (
-          <div
-            onClick={() => setSidebar(false)}
-            style={{
-              position:"fixed",inset:0,background:"rgba(0,0,0,0.6)",
-              zIndex:200,
-            }}
-          />
+      {/* ── CONTENT ────────────────────────────────────── */}
+      <div style={{flex:1,overflow:"auto",padding:"24px 20px",maxWidth:1100,margin:"0 auto",width:"100%"}}>
+        {page==="seals" && (
+          <>
+            <SealBrowser onSelect={setSel} selected={sel}/>
+            {sel && <SealDetail seal={sel} onClose={()=>setSel(null)}/>}
+          </>
         )}
-
-        {/* ── SIDEBAR ──────────────────────────────────────
-            Desktop: always visible as a fixed left column.
-            Mobile:  slides in from left as an overlay.
-        ───────────────────────────────────────────────── */}
-        <div style={{
-          position:"fixed", top:0, left:0,
-          width:220, height:"100vh",
-          background:"#0a0d13", borderRight:"1px solid #1e2533",
-          display:"flex", flexDirection:"column",
-          zIndex:300,
-          // Desktop: always shown via translate(0). Mobile: slide in/out.
-          transform: sidebarOpen ? "translateX(0)" : "translateX(-100%)",
-          transition:"transform 0.25s ease",
-          // Desktop override via media query — applied inline isn't possible,
-          // so we use a wrapper trick below for ≥768px
-        }}
-          className="sidebar"
-        >
-          {/* Close button inside sidebar (mobile) */}
-          <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"16px 20px 0"}}>
-            <div style={{fontFamily:"'Cinzel',serif",fontSize:14,color:"#c9963e",letterSpacing:"0.1em",fontWeight:700}}>
-              OPEN<br/>INDUS<br/>LAB
-            </div>
-            <button
-              onClick={() => setSidebar(false)}
-              style={{background:"none",border:"none",color:"#5a6070",fontSize:18,cursor:"pointer"}}
-            >✕</button>
-          </div>
-          <div style={{fontSize:10,color:"#5a6070",padding:"4px 20px 20px",letterSpacing:"0.06em",borderBottom:"1px solid #1e2533"}}>
-            Script Analysis Platform
-          </div>
-
-          <div style={{padding:"16px 0",flex:1}}>
-            {nav.map(n => (
-              <div
-                key={n.id}
-                onClick={() => navigate(n.id)}
-                style={{
-                  display:"flex",alignItems:"center",gap:10,
-                  padding:"12px 20px",cursor:"pointer",
-                  fontSize:13,letterSpacing:"0.04em",
-                  color:page===n.id?"#c9963e":"#8090a8",
-                  background:page===n.id?"#13171f":"transparent",
-                  borderLeft:page===n.id?"2px solid #c9963e":"2px solid transparent",
-                }}
-              >
-                <span style={{fontSize:16,width:20}}>{n.icon}</span>
-                <span style={{fontFamily:"'Cinzel',serif",fontSize:11,letterSpacing:"0.06em"}}>{n.label}</span>
-              </div>
-            ))}
-          </div>
-
-          <div style={{padding:"16px 20px",borderTop:"1px solid #1e2533"}}>
-            <div style={{fontSize:9,color:"#2a3040",letterSpacing:"0.06em",lineHeight:1.8}}>
-              VPS2024 · Ponmuthu Shanmugham<br/>
-              259 signs · 206 seals · 6 hypotheses
-            </div>
-          </div>
-        </div>
-
-        {/* ── MAIN CONTENT ─────────────────────────────────
-            Left margin = 220px on desktop (sidebar width).
-            On mobile sidebar is an overlay so no margin.
-        ───────────────────────────────────────────────── */}
-        <div
-          className="main-content"
-          style={{
-            flex:1,
-            overflow:"auto",
-            padding:"20px 16px",
-            // Desktop: pushed right by sidebar
-            marginLeft:0,
-          }}
-        >
-          {page==="seals" && (
-            <div style={{
-              display:"grid",
-              gridTemplateColumns: sel ? "1fr" : "1fr",
-              gap:20,
-            }}>
-              <SealBrowser onSelect={setSel} selected={sel}/>
-              {sel && (
-                <div>
-                  <SealDetail seal={sel} onClose={()=>setSel(null)}/>
-                </div>
-              )}
-            </div>
-          )}
-          {page==="signs"  && <SignRegistry/>}
-          {page==="hyps"   && <HypothesisViewer/>}
-          {page==="charts" && <FrequencyDashboard/>}
-          {page==="review" && <PeerReview/>}
-        </div>
+        {page==="signs" && <SignRegistry/>}
+        {page==="research" && <ResearchHub/>}
       </div>
 
-      {/* ── BOTTOM NAV BAR (mobile only) ─────────────────── */}
-      <div style={{
-        display:"flex", background:"#0a0d13",
-        borderTop:"1px solid #1e2533",
-        position:"sticky", bottom:0, zIndex:100,
-      }}
-        className="bottom-nav"
-      >
-        {nav.map(n => (
-          <button
-            key={n.id}
-            onClick={() => navigate(n.id)}
-            style={{
-              flex:1, background:"none", border:"none",
-              padding:"10px 4px 8px",
-              color:page===n.id?"#c9963e":"#4a5060",
-              cursor:"pointer", fontSize:18,
-              borderTop:page===n.id?"2px solid #c9963e":"2px solid transparent",
-            }}
-            aria-label={n.label}
-          >
-            <div>{n.icon}</div>
-            <div style={{fontSize:8,letterSpacing:"0.04em",marginTop:2,
-              fontFamily:"'Cinzel',serif",
-              color:page===n.id?"#c9963e":"#3a4050"}}>
-              {n.label.split(" ")[0]}
-            </div>
-          </button>
-        ))}
-      </div>
-
-      {/* ── RESPONSIVE CSS ───────────────────────────────── */}
       <style>{`
-        @media (min-width: 768px) {
-          .sidebar {
-            transform: translateX(0) !important;
-            position: fixed !important;
-            top: 0 !important;
-          }
-          .main-content {
-            margin-left: 220px !important;
-            padding: 28px 32px !important;
-          }
-          .bottom-nav {
-            display: none !important;
-          }
-        }
-        @media (max-width: 767px) {
-          .sidebar {
-            top: 0 !important;
-          }
-        }
         * { box-sizing: border-box; }
         button { font-family: inherit; }
+        @media (max-width: 480px) {
+          .oi-wordmark { display:none; }
+        }
       `}</style>
+    </div>
+  );
+}
+
+function ResearchHub() {
+  const [rtab, setRtab] = useState("hyps");
+  return (
+    <div>
+      <div style={{fontFamily:"'Cinzel',serif",fontSize:20,color:"#e8dcc8",fontWeight:600,
+        letterSpacing:"0.06em",marginBottom:4}}>Research</div>
+      <div style={{fontSize:11,color:"#5a6070",letterSpacing:"0.05em",textTransform:"uppercase",marginBottom:20}}>
+        Hypotheses · Frequency analysis · Peer review
+      </div>
+      <div style={{display:"flex",borderBottom:"1px solid #1e2533",marginBottom:24}}>
+        {[["hyps","Hypotheses"],["charts","Frequency"],["review","Peer Review"]].map(([id,lbl])=>(
+          <button key={id} onClick={()=>setRtab(id)} style={{
+            background:"none", border:"none",
+            borderBottom: rtab===id?"2px solid #c9963e":"2px solid transparent",
+            color: rtab===id?"#c9963e":"#5a6070",
+            padding:"8px 16px", cursor:"pointer",
+            fontSize:11, fontFamily:"'Cinzel',serif", letterSpacing:"0.07em",
+          }}>{lbl}</button>
+        ))}
+      </div>
+      {rtab==="hyps"   && <HypothesisViewer/>}
+      {rtab==="charts" && <FrequencyDashboard/>}
+      {rtab==="review" && <PeerReview/>}
     </div>
   );
 }
