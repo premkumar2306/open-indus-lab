@@ -312,6 +312,7 @@ const SEALS = [
     tamil:"ஆகாவ்வ நெய்",       layer1:"aakaavva ney",          layer2:"Cow carer's ghee",        domain:"dairy products",   status:"complete", confidence:0.69 },
   { id:"2617", motif:"unicorn", site:"Mohenjo-daro",
     tamil:"வ்வட வ்ய மூர் மூரா", layer1:"vva vya muur muraa",   layer2:"Buttermilk available HERE", domain:"dairy products", status:"complete", confidence:0.62 },
+  { id:"2358", motif:"unicorn", site:"Mohenjo-daro", tamil:"டி டீ ஆ", layer1:"didiir aa", layer2:"Just expressed fresh milk", domain:"dairy products", status:"complete", confidence:0.72 },
   { id:"220", motif:"none", site:"author corpus", signCount:3, tamil:"சிவம், சிவன் (துணக்குறி = அம்,அன்,அல்,அர்)", layer1:"sivam, sivan (thuNakkuRi", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
   { id:"232", motif:"none", site:"author corpus", signCount:2, tamil:"மலை அரச", layer1:"malai arasa", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
   { id:"327", motif:"none", site:"author corpus", signCount:2, tamil:"அரசணஅ, அரசனின்", layer1:"arasaNaa, arasanin", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
