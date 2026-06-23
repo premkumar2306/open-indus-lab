@@ -1,5 +1,5 @@
 # Open Indus Lab — Validation Report
-**Last run**: 2026-06-23 17:47 UTC
+**Last run**: 2026-06-23 19:59 UTC
 **Score**: 100% (15 passed / 3 warnings / 0 failed)
 
 ---
@@ -12,8 +12,8 @@
 ✅ Tamil phoneme text clean — no known corruption patterns
 ✅ All key seals have readings
 ⚠️  Seal meanings may have changed — #2082: expected 'Carer of Isa', got 'Carer of three cows of Isaa (Shiva)'
-✅ seals.csv — 179 rows
-✅ signs.csv — 397 rows
+✅ seals_master.csv — 194 rows
+✅ signs_master.csv — 264 rows
 ✅ phoneme_mappings_author_full.csv — 264 rows
 ✅ readings_author_full.csv — 206 rows
 ✅ readings_VPS2024.csv — 24 rows
@@ -22,8 +22,8 @@
 ✅ tally_mark_rules.csv — 11 rows
 ✅ evidence_links.csv — 9 rows
 ✅ motifs.csv — 8 rows
-⚠️  Seal #1076 sign sequence — shows [95,162,162] but source PDF shows thava+thava+ney — needs author confirmation
-⚠️  Layer 2 translations — 189 of 206 readings still pending English translation
+⚠️  Sign rows flagged for author confirmation — signs 39, 51, 52, 322, 391 diverge from source text (not font-corruption)
+⚠️  Layer 2 translations — Layer 1 (phonemes) complete for all readings; English meaning in progress
 
 ---
 
@@ -39,9 +39,10 @@
 
 ## Known Open Issues
 
-1. **Seal #1076 sign sequence** — dashboard shows `[M-95, M-162, M-162]` but PDF shows `thava thava ney` (M-391 + M-391 + M-95 + M-162). Awaiting author confirmation of correct Mahadevan numbers for all key seals.
-2. **Layer 2 translations** — 189 of 206 readings have Tamil phoneme only. English meanings being added progressively by author.
-3. **50+ unidentified signs** — explicitly noted in research. Ongoing.
+1. **External corpus removed** — the Parpola/CISI `M-xxx` seal corpus and the guessed Parpola→Mahadevan sign bridge have been removed. All seal and sign data now comes directly from the author's documents.
+2. **Five sign rows flagged** — signs 39, 51, 52, 322, 391 diverge from the source text in ways that are not font-corruption; awaiting author confirmation.
+3. **Layer 2 translations** — Layer 1 (Tamil phonemes) complete for all readings; English meanings being added progressively by the author.
+4. **Unidentified signs** — explicitly noted in the research as ongoing.
 
 ---
 
