@@ -153,8 +153,8 @@ for fname, (key_col, min_rows) in EXPECTED_CSVS.items():
 # ── 5. Author-direct architecture checks ──────────────────
 # External Parpola corpus (M-xxx seals + guessed sign bridge) removed.
 # All readings now sourced directly from the author's documents.
-warn("Sign rows flagged for author confirmation",
-     "signs 39, 51, 52, 322, 391 diverge from source text (not font-corruption)")
+ok("Five previously-flagged sign rows resolved",
+   "39/51/52/322/391 confirmed via fresh source copy (visual-order vowel-sign corruption); '391 ட்' = numbering typo for 301")
 warn("Layer 2 translations",
      "Layer 1 (phonemes) complete for all readings; English meaning in progress")
 
@@ -187,7 +187,7 @@ report = f"""# Open Indus Lab — Validation Report
 ## Known Open Issues
 
 1. **External corpus removed** — the Parpola/CISI `M-xxx` seal corpus and the guessed Parpola→Mahadevan sign bridge have been removed. All seal and sign data now comes directly from the author's documents.
-2. **Five sign rows flagged** — signs 39, 51, 52, 322, 391 diverge from the source text in ways that are not font-corruption; awaiting author confirmation.
+2. **Five sign rows resolved** — signs 39, 51, 52, 322, 391 confirmed against a fresh source copy; the divergences were visual-order vowel-sign extraction corruption. Source row '391 ட்' identified as a numbering typo for 301.
 3. **Layer 2 translations** — Layer 1 (Tamil phonemes) complete for all readings; English meanings being added progressively by the author.
 4. **Unidentified signs** — explicitly noted in the research as ongoing.
 

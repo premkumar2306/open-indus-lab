@@ -1811,8 +1811,9 @@ function AboutPage({go}) {
         Canonical datasets (CSV, directly traceable to the source documents):{" "}
         <a href={raw+"seals_master.csv"} target="_blank" rel="noreferrer" style={{color:"#c9963e"}}>seals_master.csv</a> (194 readings) ·{" "}
         <a href={raw+"signs_master.csv"} target="_blank" rel="noreferrer" style={{color:"#c9963e"}}>signs_master.csv</a> (264 signs).
-        Five sign rows (39, 51, 52, 322, 391) are explicitly flagged pending the author's
-        confirmation rather than silently corrected. A validation suite runs every 4 hours;
+        Five sign rows (39, 51, 52, 322, 391) that initially diverged between extractions
+        were resolved by cross-checking two independent renditions of the source document;
+        the resolution trail is recorded in the dataset. A validation suite runs every 4 hours;
         results are committed to the repository.
       </P>
 

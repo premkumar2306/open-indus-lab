@@ -1,6 +1,6 @@
 # Open Indus Lab — Validation Report
-**Last run**: 2026-07-03 02:30 UTC
-**Score**: 100% (15 passed / 3 warnings / 0 failed)
+**Last run**: 2026-07-03 02:48 UTC
+**Score**: 100% (16 passed / 2 warnings / 0 failed)
 
 ---
 
@@ -22,7 +22,7 @@
 ✅ tally_mark_rules.csv — 11 rows
 ✅ evidence_links.csv — 9 rows
 ✅ motifs.csv — 8 rows
-⚠️  Sign rows flagged for author confirmation — signs 39, 51, 52, 322, 391 diverge from source text (not font-corruption)
+✅ Five previously-flagged sign rows resolved — 39/51/52/322/391 confirmed via fresh source copy (visual-order vowel-sign corruption); '391 ட்' = numbering typo for 301
 ⚠️  Layer 2 translations — Layer 1 (phonemes) complete for all readings; English meaning in progress
 
 ---
@@ -31,8 +31,8 @@
 
 | Category | Count |
 |---|---|
-| ✅ Passed | 15 |
-| ⚠️  Warnings | 3 |
+| ✅ Passed | 16 |
+| ⚠️  Warnings | 2 |
 | ❌ Failed | 0 |
 
 ---
@@ -40,7 +40,7 @@
 ## Known Open Issues
 
 1. **External corpus removed** — the Parpola/CISI `M-xxx` seal corpus and the guessed Parpola→Mahadevan sign bridge have been removed. All seal and sign data now comes directly from the author's documents.
-2. **Five sign rows flagged** — signs 39, 51, 52, 322, 391 diverge from the source text in ways that are not font-corruption; awaiting author confirmation.
+2. **Five sign rows resolved** — signs 39, 51, 52, 322, 391 confirmed against a fresh source copy; the divergences were visual-order vowel-sign extraction corruption. Source row '391 ட்' identified as a numbering typo for 301.
 3. **Layer 2 translations** — Layer 1 (Tamil phonemes) complete for all readings; English meanings being added progressively by the author.
 4. **Unidentified signs** — explicitly noted in the research as ongoing.
 

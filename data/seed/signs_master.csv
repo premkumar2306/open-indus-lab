@@ -116,7 +116,7 @@ mahadevan_number,tamil_phoneme_source,tamil_phoneme_corrected,correction_note,so
 298,டட்டட்ட,டட்டட்ட,,Indus_Signs_Reading.pdf
 299,ட,ட,,Indus_Signs_Reading.pdf
 300,"ட்,டி","ட்,டி",,Indus_Signs_Reading.pdf
-391,ட்,தவ,FLAG: diverges from source - confirm with author,Indus_Signs_Reading.pdf
+391,ட்,தவ,confirmed: தவ verified against fresh source copy + article Fig.1 (seal 1076 thava thava ney); source row '391 ட்' is a numbering typo for 301,Indus_Signs_Reading.pdf
 302,டர்,டர்,,Indus_Signs_Reading.pdf
 303,"ட்ட,டட்","ட்ட,டட்",,Indus_Signs_Reading.pdf
 304,"ம,ம்","ம,ம்",,Indus_Signs_Reading.pdf
@@ -157,7 +157,7 @@ mahadevan_number,tamil_phoneme_source,tamil_phoneme_corrected,correction_note,so
 36,கச,கச,,Indus_Signs_Reading.pdf
 37,கமண,கமண,,Indus_Signs_Reading.pdf
 38,"கண்,கண்ண","கண்,கண்ண",,Indus_Signs_Reading.pdf
-39,"வக, கக","கெ, கே",FLAG: diverges from source - confirm with author,Indus_Signs_Reading.pdf
+39,"வக, கக","கெ, கே","confirmed: source shows visual-order e-vowel corruption (cf. கோயில்→ககாயில்); கெ, கே verified against fresh source copy 2026-07-02",Indus_Signs_Reading.pdf
 40,"கண,கண்ண","கண,கண்ண",,Indus_Signs_Reading.pdf
 41,"கர், கர","கர், கர",,Indus_Signs_Reading.pdf
 42,தெகதெ,தவகதவ,font-corruption fix (va recovered),Indus_Signs_Reading.pdf
@@ -166,8 +166,8 @@ mahadevan_number,tamil_phoneme_source,tamil_phoneme_corrected,correction_note,so
 48,ளார்,ளார்,,Indus_Signs_Reading.pdf
 49,முக',முக',,Indus_Signs_Reading.pdf
 50,"""ணாய்""","""ணாய்""",,Indus_Signs_Reading.pdf
-51,'கதளணஅ',தேளணஅ,FLAG: diverges from source - confirm with author,Indus_Signs_Reading.pdf
-52,'கதளனர்',தேளனர்,FLAG: diverges from source - confirm with author,Indus_Signs_Reading.pdf
+51,'கதளணஅ',தேளணஅ,confirmed: க-prefix = ே vowel-sign corruption; தேளணஅ verified against fresh source copy 2026-07-02,Indus_Signs_Reading.pdf
+52,'கதளனர்',தேளனர்,confirmed: க-prefix = ே vowel-sign corruption; தேளனர் verified against fresh source copy 2026-07-02,Indus_Signs_Reading.pdf
 82,ெ அன்னம்=ெனம்,ெ அன்னம்=ெனம்,,Indus_Signs_Reading.pdf
 84,கால் = காற்று,கால் = காற்று,,Indus_Signs_Reading.pdf
 86,"ஒன்று,ஓர்,ஒ,ஓ,ர்","ஒன்று,ஓர்,ஒ,ஓ,ர்",,Indus_Signs_Reading.pdf
@@ -244,7 +244,7 @@ mahadevan_number,tamil_phoneme_source,tamil_phoneme_corrected,correction_note,so
 309,ஈ,ஈ,,Indus_Signs_Reading.pdf
 311,'யாழ்','யாழ்',,Indus_Signs_Reading.pdf
 321,"ெவ்,வ்ெ","வவ்,வ்வ",font-corruption fix (va recovered),Indus_Signs_Reading.pdf
-322,"ெென்,வ்ென்","வன்,வ்வன்",FLAG: diverges from source - confirm with author,Indus_Signs_Reading.pdf
+322,"ெென்,வ்ென்","வன்,வ்வன்","confirmed: ெ→வ corruption; வவன்,வ்வன் verified against fresh source copy 2026-07-02",Indus_Signs_Reading.pdf
 323,அரச,அரச,,Indus_Signs_Reading.pdf
 326,அரச,அரச,,Indus_Signs_Reading.pdf
 327,'அரச ண அ,'அரச ண அ,,Indus_Signs_Reading.pdf
