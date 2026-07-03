@@ -63,7 +63,7 @@ This platform provides a neutral computational layer for researchers to:
 ## Primary Research Input
 
 **Author**: Ponmuthu Shanmugham (Member of Technical Staff, Retd., Lucent Technologies – Bell Laboratories)
-**Contact**: vpshanmugham@yahoo.com
+**Contact**: ponmuthushanmugham@gmail.com
 
 ### Published Works
 | Title | ISBN |

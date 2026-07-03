@@ -10,7 +10,7 @@ Status as of June 2026.
 | **Total** | **206** |
 
 ## What needs to be done
-For each of the 189 pending seals in `readings_enriched_VPS2024.csv`:
+For each of the 179 pending seals in `readings_enriched_VPS2024.csv`:
 - Confirm or correct the auto-generated `phoneme_roman` field
 - Add `morpheme_english` — English meaning of the reading
 - Add `semantic_domain` — category (dairy products, governance, animal husbandry, etc.)
@@ -20,7 +20,7 @@ For each of the 189 pending seals in `readings_enriched_VPS2024.csv`:
 2. Find rows where `translation_status = pending`
 3. Fill in `morpheme_english` and `semantic_domain`
 4. Set `translation_status = complete`
-5. Submit as pull request or email to vpshanmugham@yahoo.com
+5. Submit as pull request or email to ponmuthushanmugham@gmail.com
 
 ## Semantic Domains (use these consistently)
 - `dairy products` — ghee, milk, buttermilk, sesame oil

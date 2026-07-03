@@ -7,7 +7,7 @@ Every seal reading in this platform has **two distinct layers**:
 ---
 
 ### Layer 1 — Phoneme (Sound)
-**Status: Complete for all 206 seals**
+**Status: Complete for all 199 readings shown**
 
 The Tamil script reading and its Roman transliteration.
 
@@ -22,7 +22,7 @@ Tamil-speaking researchers can read, verify, and critique all 206 readings **rig
 ---
 
 ### Layer 2 — Morpheme (Meaning)
-**Status: 17 complete, 189 pending**
+**Status: 20 complete, 179 pending**
 
 The English translation and semantic domain.
 
@@ -51,7 +51,7 @@ The research was conducted in Tamil. The phoneme readings (Layer 1) are the prim
 | Reviewer type | Can evaluate | Using |
 |---|---|---|
 | Tamil-speaking researcher | All 206 readings | Layer 1 (Tamil script + phoneme) |
-| Non-Tamil researcher | 17 complete readings | Layer 2 (English meaning) |
+| Non-Tamil researcher | 20 complete readings | Layer 2 (English meaning) |
 | Any researcher | Methodology, rules, motif hypothesis | Research Keys + decoding_rules_VPS2024.csv |
 | Any researcher | Statistical patterns | Frequency dashboard charts |
 | Any researcher | Competing hypotheses | Hypothesis Viewer (6 frameworks) |
@@ -65,7 +65,7 @@ If you are a Tamil speaker and wish to contribute English translations:
 1. Download `data/seed/readings_enriched_VPS2024.csv` from this repo
 2. Find rows where `translation_status = pending`
 3. Fill in `morpheme_english` and `semantic_domain`
-4. Submit as a pull request or email: **vpshanmugham@yahoo.com**
+4. Submit as a pull request or email: **ponmuthushanmugham@gmail.com**
 
 Semantic domains in use: `dairy products`, `animal husbandry`, `animal welfare`, `governance / law`, `social welfare`, `agriculture`, `religious / civic`, `labour / certification`, `food commodities`, `governance`
 
