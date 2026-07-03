@@ -1642,7 +1642,7 @@ function PeerReview() {
         <div style={S.statCard}><div style={S.statNum}>8</div><div style={S.statLabel}>Evidence Links</div></div>
       </div>
       <div style={{background:"#1a1612",border:"1px solid #3a2518",padding:"10px 14px",fontSize:12,color:"#8b6914",marginBottom:20}}>
-        📬 Platform is accepting peer reviewers. Contact: vpshanmugham@yahoo.com · All reviews logged publicly.
+        📬 Platform is accepting peer reviewers. Contact: ponmuthushanmugham@gmail.com · All reviews logged publicly.
       </div>
       {[{id:1,claim:"Tally-4 = phoneme 'na' via numeral name",obj:"Onomatopoeic derivation from numeral names is speculative.",rev:"Reviewer A",status:"addressed",resp:"Derivation is systematic: all 12 Tamil numeral names embed first syllable as phoneme. Documented in Research Keys §2.40–2.60 with 20+ seal examples."},{id:2,claim:"Unicorn motif = Market Common jurisdiction",obj:"Urban topology interpretation lacks archaeological corroboration.",rev:"Reviewer B",status:"open",resp:""},{id:3,claim:"Brevity = purpose (rebuttal of FSW2004)",obj:"Average of 5 signs per seal is consistent with non-linguistic emblems.",rev:"Reviewer C",status:"open",resp:""}].map(obj=>(
         <div key={obj.id} style={{...S.hypCard,marginBottom:12}}>
@@ -1662,10 +1662,11 @@ function PeerReview() {
 
 // ── APP ───────────────────────────────────────────────────
 export default function App() {
-  const [page, setPage] = useState("seals");
+  const [page, setPage] = useState("about");
   const [sel, setSel]   = useState(null);
 
   const nav = [
+    {id:"about",   icon:"◎", label:"Overview"},
     {id:"seals",   icon:"◈", label:"Readings"},
     {id:"signs",   icon:"▦", label:"Signs"},
     {id:"research",icon:"⚖", label:"Research"},
@@ -1708,6 +1709,7 @@ export default function App() {
 
       {/* ── CONTENT ────────────────────────────────────── */}
       <div style={{flex:1,overflow:"auto",padding:"24px 20px",maxWidth:1100,margin:"0 auto",width:"100%"}}>
+        {page==="about" && <AboutPage go={navigate}/>}
         {page==="seals" && (
           <>
             <SealBrowser onSelect={setSel} selected={sel}/>
@@ -1725,6 +1727,94 @@ export default function App() {
           .oi-wordmark { display:none; }
         }
       `}</style>
+    </div>
+  );
+}
+
+
+function AboutPage({go}) {
+  const H = ({children}) => (
+    <div style={{fontFamily:"'Cinzel',serif",fontSize:13,color:"#c9963e",letterSpacing:"0.1em",
+      textTransform:"uppercase",borderBottom:"1px solid #1e2533",paddingBottom:8,margin:"28px 0 12px"}}>{children}</div>
+  );
+  const P = ({children}) => (
+    <p style={{fontSize:14,lineHeight:1.75,color:"#c8bfa8",margin:"0 0 12px"}}>{children}</p>
+  );
+  const raw = "https://github.com/premkumar2306/open-indus-lab/blob/main/data/seed/";
+  return (
+    <div style={{maxWidth:760}}>
+      <div style={{fontFamily:"'Cinzel',serif",fontSize:24,color:"#e8dcc8",fontWeight:600,letterSpacing:"0.05em",marginBottom:6}}>
+        Reading the Indus-Harappan Script as Ancient Tamil
+      </div>
+      <div style={{fontSize:12,color:"#5a6070",letterSpacing:"0.04em",marginBottom:22}}>
+        Research by Ponmuthu Shanmugham · Open platform for verification and peer review
+      </div>
+
+      <P>
+        This platform presents, in verifiable form, a body of research arguing that the
+        Indus-Harappan script records an ancient form of spoken Tamil. The approach
+        prioritizes reconstructing the <em>spoken language</em> over visually decoding signs
+        in isolation: signs are mapped to Tamil phonemes, seals are read aloud as sound
+        sequences, and meanings emerge from words still recognizable in classical and
+        modern Tamil. The full methodology is documented in the author's 99-page
+        "Indus Scripts Research Keys" and four published books.
+      </P>
+      <P>
+        The platform itself makes no claim that the script "has been decoded." It exists so
+        that other researchers can inspect every reading, trace it to the author's source
+        documents, reproduce the analysis, and disagree in public.
+      </P>
+
+      <H>Method in brief</H>
+      <P>
+        The reconstruction identifies 10 vowels and 18 consonants aligned with the later
+        Tamizi script. Three mechanisms carry most of the analytical weight:
+        the <b>"cow face" pictogram</b> (sign for the phoneme <i>aa</i>, an onomatopoeia
+        meaning cow, anchoring hundreds of animal-husbandry seals); <b>tally marks as
+        phonetic placeholders</b> (Tamil numeral names supply sounds the sign inventory
+        lacked — e.g. tally-4, <i>naa</i>, before sign 162 <i>y</i> spells <i>nay/ney</i>,
+        ghee); and <b>modifiers</b> — signs with form but no sound that alter adjacent
+        syllables, explaining many "singleton" signs. Seal motifs are read as urban
+        topology: the unicorn marks the Market Common, animal motifs name streets, and
+        motif-less seals carry city-wide ordinances.
+      </P>
+
+      <H>What you can verify here</H>
+      <P>
+        <b>194 seal readings</b> transcribed directly from the author's reading book, in
+        original Tamil with romanization — browse them under <a onClick={()=>go("seals")}
+        style={{color:"#c9963e",cursor:"pointer",textDecoration:"underline"}}>Readings</a>.
+        <b> 264 sign-to-phoneme mappings</b> with the author's glyph images under{" "}
+        <a onClick={()=>go("signs")} style={{color:"#c9963e",cursor:"pointer",textDecoration:"underline"}}>Signs</a>.
+        Competing hypotheses, frequency analysis and the open review log are under{" "}
+        <a onClick={()=>go("research")} style={{color:"#c9963e",cursor:"pointer",textDecoration:"underline"}}>Research</a>.
+      </P>
+      <P style={{fontSize:13}}>
+        Reading layers: Layer 1 (Tamil phonemes) is complete for all 199 readings shown;
+        Layer 2 (English meaning) is complete for 20 and in progress for the rest — the
+        author notes English glosses were not required for the research itself but are
+        being added for non-Tamil readers.
+      </P>
+
+      <H>Data &amp; reproducibility</H>
+      <P>
+        Canonical datasets (CSV, directly traceable to the source documents):{" "}
+        <a href={raw+"seals_master.csv"} target="_blank" rel="noreferrer" style={{color:"#c9963e"}}>seals_master.csv</a> (194 readings) ·{" "}
+        <a href={raw+"signs_master.csv"} target="_blank" rel="noreferrer" style={{color:"#c9963e"}}>signs_master.csv</a> (264 signs).
+        Five sign rows (39, 51, 52, 322, 391) are explicitly flagged pending the author's
+        confirmation rather than silently corrected. A validation suite runs every 4 hours;
+        results are committed to the repository.
+      </P>
+
+      <H>For reviewers</H>
+      <P>
+        The author welcomes critical review from researchers in archaeology, linguistics,
+        epigraphy and related fields. Contact:{" "}
+        <a href="mailto:ponmuthushanmugham@gmail.com" style={{color:"#c9963e"}}>ponmuthushanmugham@gmail.com</a>.
+        Objections and author responses are logged publicly in the Peer Review section.
+        Source code and data:{" "}
+        <a href="https://github.com/premkumar2306/open-indus-lab" target="_blank" rel="noreferrer" style={{color:"#c9963e"}}>github.com/premkumar2306/open-indus-lab</a>.
+      </P>
     </div>
   );
 }

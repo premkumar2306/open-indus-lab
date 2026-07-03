@@ -9,10 +9,10 @@
 
 | Layer | What | Status |
 |---|---|---|
-| **Layer 1 — Phoneme** | Tamil script + Roman transliteration (the sounds) | ✅ Complete for all 206 seals |
-| **Layer 2 — Morpheme** | English meaning (the translation) | 🔲 17 complete, 189 pending |
+| **Layer 1 — Phoneme** | Tamil script + Roman transliteration (the sounds) | ✅ Complete for all 199 readings shown |
+| **Layer 2 — Morpheme** | English meaning (the translation) | 🔲 20 complete, 179 pending |
 
-Tamil-speaking researchers can evaluate all 206 readings now via Layer 1. Non-Tamil researchers can evaluate the 17 complete readings and the full methodology. See [`docs/READING_LAYERS.md`](./docs/READING_LAYERS.md) for full explanation.
+Tamil-speaking researchers can evaluate all 199 readings now via Layer 1. Non-Tamil researchers can evaluate the 20 complete readings and the full methodology. See [`docs/READING_LAYERS.md`](./docs/READING_LAYERS.md) for full explanation.
 
 ---
 
