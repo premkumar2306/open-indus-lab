@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this dataset or platform, please cite it as below."
+title: "Open Indus Lab: Indus-Harappan Seal Readings and Sign-Phoneme Mappings (Ancient Tamil Hypothesis)"
+authors:
+  - family-names: "Shanmugham"
+    given-names: "Ponmuthu"
+    affiliation: "Independent researcher"
+  - family-names: "Kumar"
+    given-names: "Prem"
+    affiliation: "Open Indus Lab (platform)"
+version: "1.0.0"
+date-released: "2026-07-02"
+url: "https://premkumar2306.github.io/open-indus-lab/"
+repository-code: "https://github.com/premkumar2306/open-indus-lab"
+abstract: >-
+  194 Indus-Harappan seal readings and 264 sign-to-Tamil-phoneme mappings
+  transcribed directly from the source documents of Ponmuthu Shanmugham's
+  research reading the Indus script as ancient Tamil. Layer 1 (phonemes)
+  complete; Layer 2 (English meanings) in progress. The platform presents
+  the data for verification and peer review and does not claim the script
+  has been decoded.
+keywords:
+  - Indus script
+  - Harappan
+  - Tamil
+  - decipherment
+  - epigraphy
+license: MIT

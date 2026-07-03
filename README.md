@@ -28,6 +28,15 @@ canonical tables are [`data/seed/seals_master.csv`](./data/seed/seals_master.csv
 Parpola→Mahadevan sign bridge have been **removed** — see
 [`docs/VALIDATION_REBUILD_REPORT.md`](./docs/VALIDATION_REBUILD_REPORT.md).
 
+### How to cite
+
+> Shanmugham, P. (2026). *Open Indus Lab: Indus-Harappan Seal Readings and
+> Sign-Phoneme Mappings (Ancient Tamil Hypothesis)*, v1.0.0.
+> https://github.com/premkumar2306/open-indus-lab
+
+Stable dataset snapshots are published as [GitHub Releases](https://github.com/premkumar2306/open-indus-lab/releases); cite the release version you used. Machine-readable metadata: [`CITATION.cff`](./CITATION.cff).
+
+
 ---
 
 ## Project Status
