@@ -811,7 +811,7 @@ const S = {
   main: {flex:1,overflow:"auto",padding:"28px 32px"},
   pageTitle: {fontFamily:"'Cinzel',serif",fontSize:22,color:"#e8dcc8",fontWeight:600,letterSpacing:"0.06em",marginBottom:4},
   pageSub: {fontSize:12,color:"#5a6070",letterSpacing:"0.05em",textTransform:"uppercase",marginBottom:24},
-  statsRow: {display:"flex",gap:16,marginBottom:28},
+  statsRow: {display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:12,marginBottom:24},
   statCard: {background:"#131822",border:"1px solid #1e2533",padding:"14px 20px",flex:1},
   statNum: {fontFamily:"'Cinzel',serif",fontSize:28,color:"#c9963e",lineHeight:1},
   statLabel: {fontSize:11,color:"#5a6070",letterSpacing:"0.06em",textTransform:"uppercase",marginTop:4},
@@ -827,7 +827,7 @@ const S = {
   confFill: (c) => ({height:"100%",width:`${c*100}%`,background:c>0.7?"#c9963e":c>0.6?"#8b6914":"#a0522d"}),
   detail: {background:"#0d1017",border:"1px solid #1e2533",padding:24,marginBottom:16},
   sectionHdr: {fontFamily:"'Cinzel',serif",fontSize:13,color:"#8090a8",letterSpacing:"0.1em",textTransform:"uppercase",borderBottom:"1px solid #1e2533",paddingBottom:10,marginBottom:16,marginTop:28},
-  twoCol: {display:"grid",gridTemplateColumns:"1fr 1fr",gap:20},
+  twoCol: {display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(280px,1fr))",gap:20},
   chartBox: {background:"#131822",border:"1px solid #1e2533",padding:20},
   chartTitle: {fontFamily:"'Cinzel',serif",fontSize:12,color:"#8090a8",letterSpacing:"0.08em",marginBottom:16,textTransform:"uppercase"},
   filterRow: {display:"flex",gap:10,marginBottom:20,flexWrap:"wrap"},
@@ -902,14 +902,14 @@ function SealBrowser({onSelect,selected}) {
     <div>
       <div style={S.pageTitle}>Seal Browser</div>
       <div style={S.pageSub}>Readings sourced directly from the author's documents · Layer 1 (phonemes) complete · Layer 2 (English meaning) in progress</div>
-      <div style={S.statsRow}>
+      <div className="oi-stats" style={S.statsRow}>
         <div style={S.statCard}><div style={S.statNum}>264</div><div style={S.statLabel}>Signs (author)</div></div>
         <div style={S.statCard}><div style={S.statNum}>198</div><div style={S.statLabel}>Readings shown</div></div>
         <div style={S.statCard}><div style={S.statNum}>~1000</div><div style={S.statLabel}>Total Studied</div></div>
         <div style={S.statCard}><div style={S.statNum}>400+</div><div style={S.statLabel}>Seals Documented</div></div>
       </div>
       {/* Stats */}
-      <div style={S.statsRow}>
+      <div className="oi-stats" style={S.statsRow}>
         <div style={S.statCard}><div style={S.statNum}>199</div><div style={S.statLabel}>Readings</div></div>
         <div style={S.statCard}><div style={S.statNum}>14</div><div style={S.statLabel}>With Images</div></div>
         <div style={S.statCard}><div style={S.statNum}>264</div><div style={S.statLabel}>Signs Mapped</div></div>
@@ -1380,7 +1380,7 @@ function SignRegistry() {
       <div style={S.pageTitle}>Sign Registry</div>
       <div style={S.pageSub}>264 signs mapped · Mahadevan concordance · VPS2024 phonemes</div>
 
-      <div style={S.statsRow}>
+      <div className="oi-stats" style={S.statsRow}>
         <div style={S.statCard}><div style={S.statNum}>264</div><div style={S.statLabel}>Signs Mapped</div></div>
         <div style={S.statCard}><div style={S.statNum}>404</div><div style={S.statLabel}>Total in Corpus</div></div>
         <div style={S.statCard}><div style={S.statNum}>50+</div><div style={S.statLabel}>Unidentified</div></div>
@@ -1635,7 +1635,7 @@ function PeerReview() {
     <div>
       <div style={S.pageTitle}>Peer Review</div>
       <div style={S.pageSub}>Open platform · all objections logged · all responses public</div>
-      <div style={S.statsRow}>
+      <div className="oi-stats" style={S.statsRow}>
         <div style={S.statCard}><div style={S.statNum}>3</div><div style={S.statLabel}>Open Objections</div></div>
         <div style={S.statCard}><div style={S.statNum}>1</div><div style={S.statLabel}>Addressed</div></div>
         <div style={S.statCard}><div style={S.statNum}>0</div><div style={S.statLabel}>Reviews In</div></div>
@@ -1678,17 +1678,17 @@ export default function App() {
     <div style={{fontFamily:"'Source Serif 4',Georgia,serif",background:"#0e1117",minHeight:"100vh",color:"#e8dcc8",display:"flex",flexDirection:"column"}}>
 
       {/* ── HEADER ─────────────────────────────────────── */}
-      <div style={{
+      <div className="oi-header" style={{
         background:"#0a0d13", borderBottom:"1px solid #1e2533",
-        padding:"0 16px", position:"sticky", top:0, zIndex:100,
-        display:"flex", alignItems:"center", justifyContent:"space-between",
+        padding:"0 12px", position:"sticky", top:0, zIndex:100,
+        display:"flex", alignItems:"center", justifyContent:"space-between", flexWrap:"wrap",
       }}>
         <span style={{fontFamily:"'Cinzel',serif",fontSize:14,color:"#c9963e",
           letterSpacing:"0.12em",fontWeight:700,padding:"12px 0",whiteSpace:"nowrap"}}>
           OPEN INDUS LAB
         </span>
 
-        <div style={{display:"flex",gap:0}}>
+        <div className="oi-tabs" style={{display:"flex",gap:0,overflowX:"auto"}}>
           {nav.map(n=>(
             <button key={n.id} onClick={()=>navigate(n.id)} style={{
               background:"none", border:"none",
@@ -1702,13 +1702,13 @@ export default function App() {
           ))}
         </div>
 
-        <span style={{fontSize:10,color:"#2a3040",letterSpacing:"0.05em",whiteSpace:"nowrap"}}>
+        <span className="oi-badge" style={{fontSize:10,color:"#2a3040",letterSpacing:"0.05em",whiteSpace:"nowrap"}}>
           VPS · 2024
         </span>
       </div>
 
       {/* ── CONTENT ────────────────────────────────────── */}
-      <div style={{flex:1,overflow:"auto",padding:"24px 20px",maxWidth:1100,margin:"0 auto",width:"100%"}}>
+      <div className="oi-main" style={{flex:1,overflow:"auto",padding:"24px 20px",maxWidth:1100,margin:"0 auto",width:"100%"}}>
         {page==="about" && <AboutPage go={navigate}/>}
         {page==="seals" && (
           <>
@@ -1723,8 +1723,18 @@ export default function App() {
       <style>{`
         * { box-sizing: border-box; }
         button { font-family: inherit; }
-        @media (max-width: 480px) {
-          .oi-wordmark { display:none; }
+        html { -webkit-text-size-adjust: 100%; }
+        img { max-width: 100%; }
+        a { word-break: break-word; }
+        @media (max-width: 700px) {
+          .oi-badge { display: none; }
+          .oi-header { padding: 0 8px !important; }
+          .oi-tabs { width: 100%; order: 3; justify-content: space-around;
+                     border-top: 1px solid #1e2533; }
+          .oi-tabs button { padding: 10px 6px !important; flex: 1; white-space: nowrap; }
+          .oi-main { padding: 16px 10px !important; }
+          .oi-stats { grid-template-columns: repeat(2,1fr) !important; gap: 8px !important; }
+          .oi-stats > div { padding: 10px 12px !important; }
         }
       `}</style>
     </div>
