@@ -1679,7 +1679,7 @@ export default function App() {
     {id:"about",   icon:"◎", label:"Overview"},
     {id:"seals",   icon:"◈", label:"Readings"},
     {id:"signs",   icon:"▦", label:"Signs"},
-    {id:"research",icon:"⚖", label:"Research"},
+    {id:"pubs",   icon:"▤", label:"Publications"},
   ];
 
   const navigate = (id) => { setPage(id); setSel(null); };
@@ -1727,7 +1727,7 @@ export default function App() {
           </>
         )}
         {page==="signs" && <SignRegistry/>}
-        {page==="research" && <ResearchHub/>}
+        {page==="pubs" && <PublicationsPage/>}
       </div>
 
       <style>{`
@@ -1799,6 +1799,19 @@ function AboutPage({go}) {
         motif-less seals carry city-wide ordinances.
       </P>
 
+      <H>Falsification tests — the author's challenge</H>
+      <P>
+        The research stakes out testable ground rather than asking for belief. Three
+        falsification routes are named in the paper: <b>script evolution</b> — the claim that
+        sign sequences compress over generations (four signs becoming two, becoming one, as
+        in seals 2949, 2950 → signs 1220, 1133) is checkable against stratigraphy, seriation
+        and relative dating: run the test and disprove it. <b>Chemistry</b> — the pottery
+        shard bearing the ghee reading (seal 2929) is a named GC-MS test piece: milk lipids
+        present or absent is an independent, binary verdict. <b>A blind read</b> — a held-out
+        page of Mahadevan's concordance (Fig. 7 of the paper) read cold with the published
+        phoneme table, reproducible by anyone.
+      </P>
+
       <H>What you can verify here</H>
       <P>
         <b>194 seal readings</b> transcribed directly from the author's reading book, in
@@ -1841,29 +1854,62 @@ function AboutPage({go}) {
   );
 }
 
-function ResearchHub() {
-  const [rtab, setRtab] = useState("hyps");
+function PublicationsPage() {
+  const H = ({children}) => (
+    <div style={{fontFamily:"'Cinzel',serif",fontSize:13,color:"#c9963e",letterSpacing:"0.1em",
+      textTransform:"uppercase",borderBottom:"1px solid #1e2533",paddingBottom:8,margin:"26px 0 14px"}}>{children}</div>
+  );
+  const Item = ({title, meta, children}) => (
+    <div style={{marginBottom:18}}>
+      <div style={{fontSize:15,color:"#e8dcc8",fontFamily:"'Source Serif 4',serif",marginBottom:3}}>{title}</div>
+      {meta && <div style={{fontSize:11,color:"#5a6070",marginBottom:4}}>{meta}</div>}
+      <div style={{fontSize:13,color:"#c8bfa8",lineHeight:1.65}}>{children}</div>
+    </div>
+  );
   return (
-    <div>
-      <div style={{fontFamily:"'Cinzel',serif",fontSize:20,color:"#e8dcc8",fontWeight:600,
-        letterSpacing:"0.06em",marginBottom:4}}>Research</div>
-      <div style={{fontSize:11,color:"#5a6070",letterSpacing:"0.05em",textTransform:"uppercase",marginBottom:20}}>
-        Hypotheses · Frequency analysis · Peer review
+    <div style={{maxWidth:760}}>
+      <div style={{fontFamily:"'Cinzel',serif",fontSize:22,color:"#e8dcc8",fontWeight:600,letterSpacing:"0.05em",marginBottom:4}}>
+        Publications
       </div>
-      <div style={{display:"flex",borderBottom:"1px solid #1e2533",marginBottom:24}}>
-        {[["hyps","Hypotheses"],["charts","Frequency"],["review","Peer Review"]].map(([id,lbl])=>(
-          <button key={id} onClick={()=>setRtab(id)} style={{
-            background:"none", border:"none",
-            borderBottom: rtab===id?"2px solid #c9963e":"2px solid transparent",
-            color: rtab===id?"#c9963e":"#5a6070",
-            padding:"8px 16px", cursor:"pointer",
-            fontSize:11, fontFamily:"'Cinzel',serif", letterSpacing:"0.07em",
-          }}>{lbl}</button>
-        ))}
+      <div style={{fontSize:11,color:"#5a6070",letterSpacing:"0.05em",textTransform:"uppercase",marginBottom:8}}>
+        The paper and books behind this platform
       </div>
-      {rtab==="hyps"   && <HypothesisViewer/>}
-      {rtab==="charts" && <FrequencyDashboard/>}
-      {rtab==="review" && <PeerReview/>}
+
+      <H>Research paper</H>
+      <Item title="Indus-Harappan Script: A Multi-Disciplinary Analysis of Linguistic Continuity and Urban Topology"
+        meta="V.P. (Ponmuthu) Shanmugham · Final draft, 2026">
+        Reading the Indus-Harappan script with tools of a new paradigm — sound-first
+        reconstruction, tally-mark acrophony, modifiers, and the urban-topology reading of
+        seal motifs, with falsification tests.{" "}
+        <a href={`${BASE}paper/Indus-Harappan-Script_Shanmugham_2026.pdf`} target="_blank" rel="noreferrer"
+          style={{color:"#c9963e"}}>Download the paper (PDF)</a>
+      </Item>
+
+      <H>Books by the author</H>
+      <Item title="Ancient Harappans Speak! After 5000 Years"
+        meta="Paperback ISBN 979-8-9949362-3-5 (IngramSpark — Barnes & Noble and library distribution) · eBook ISBN 979-8-9940362-4-2 (Amazon)">
+        The full research narrative for general and scholarly readers.
+      </Item>
+      <Item title="Indus Script is a Language — A Living Language of 80 Million (Bilingual)"
+        meta="ISBN 979-8-9940362-6-6 · Self-published 2026 · Available in India via Kavin Publishers (kavinpublishing.in)">
+        Bilingual (Tamil/English) presentation of the readings and method.
+      </Item>
+
+      <H>Foundational references</H>
+      <Item title="சிந்துவெளியில் முந்து தமிழ் (sinthuveLiyil munthu thamiz)"
+        meta="Purnachandra Jeeva · Yalisaip Pathippagam, 2020 · ISBN 978-81-9427-9105 (Tamil)">
+        Thirty years of independent research identifying the Tamil syllabic structure of the
+        script — the work that drew the author into this study. Some results are used here,
+        with substantial deviations and extensions.
+      </Item>
+      <Item title="Indus Script Web Tool — Roja Muthiah Research Library (RMRL), Chennai"
+        meta="www.indusscript.in">
+        Source of most seal images referenced in the research.
+      </Item>
+      <Item title="Mahadevan, I. — The Indus Script: Texts, Concordance and Tables"
+        meta="Archaeological Survey of India, Memoir 77, 1977">
+        The foundational concordance this research builds upon.
+      </Item>
     </div>
   );
 }
