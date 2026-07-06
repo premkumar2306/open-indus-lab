@@ -2,6 +2,8 @@
 
 **An open computational framework for testing and comparing Indus-Harappan script decipherment hypotheses.**
 
+**Live platform:** https://premkumar2306.github.io/open-indus-lab/ · **Paper (final draft, PDF):** [download](./docs/paper/Indus-Harappan-Script_Shanmugham_2026.pdf) · **Citable dataset:** [v1.0.0 release](https://github.com/premkumar2306/open-indus-lab/releases/tag/v1.0.0)
+
 
 ## Current Reading Layer Status
 
@@ -9,10 +11,10 @@
 
 | Layer | What | Status |
 |---|---|---|
-| **Layer 1 — Phoneme** | Tamil script + Roman transliteration (the sounds) | ✅ Complete for all 199 readings shown |
-| **Layer 2 — Morpheme** | English meaning (the translation) | 🔲 20 complete, 179 pending |
+| **Layer 1 — Phoneme** | Tamil script + Roman transliteration (the sounds) | ✅ Complete for all 204 readings shown |
+| **Layer 2 — Morpheme** | English meaning (the translation) | 🔲 40 complete (sourced from the final paper, Table 2), 164 pending |
 
-Tamil-speaking researchers can evaluate all 199 readings now via Layer 1. Non-Tamil researchers can evaluate the 20 complete readings and the full methodology. See [`docs/READING_LAYERS.md`](./docs/READING_LAYERS.md) for full explanation.
+Tamil-speaking researchers can evaluate all 204 readings now via Layer 1. Non-Tamil researchers can evaluate the 40 complete readings and the full methodology. See [`docs/READING_LAYERS.md`](./docs/READING_LAYERS.md) for full explanation.
 
 ---
 
@@ -43,14 +45,14 @@ Stable dataset snapshots are published as [GitHub Releases](https://github.com/p
 
 | Stage | Name | Status |
 |---|---|---|
-| Stage 1 | Data Model (PostgreSQL schema) | ✅ Complete |
-| Stage 2 | Author-Direct Seed Data (external corpus removed) | ✅ Complete |
-| Stage 3 | Rule Engine | 🔲 Next |
-| Stage 4 | Research Dashboard (React) | 🔲 Planned |
-| Stage 5 | Statistical Validation | 🔲 Planned |
-| Stage 6 | Knowledge Graph | 🔲 Planned |
-| Stage 7 | Peer Review Workflow | 🔲 Planned |
-| Stage 8 | Publication Strategy | 🔲 Planned |
+| Stage 1 | Data model & seed schema | ✅ Complete |
+| Stage 2 | Author-direct seed data (external corpus removed) | ✅ Complete |
+| Stage 3 | Research dashboard (React, live on GitHub Pages) | ✅ Complete |
+| Stage 4 | Citable dataset release (v1.0.0, CITATION.cff) | ✅ Complete |
+| Stage 5 | Final paper ingestion (VER_4 Table 2 → Layer 2) | ✅ Complete |
+| Stage 6 | Preprint + journal submission (OSF / HSSC / harappa.com) | 🔶 In progress |
+| Stage 7 | Sign registry re-key to paper Table 1 numbering | ⏸ Awaiting author confirmation |
+| Stage 8 | Statistical validation & rule engine | 🔲 Planned |
 
 See [`FULL_PLAN.md`](./FULL_PLAN.md) for complete roadmap.
 
@@ -82,44 +84,39 @@ This platform provides a neutral computational layer for researchers to:
 | *Reading Indus-Harappan Script: Research Keys* (99 pages) | 979-8-9940362-9-7 (2026) |
 
 ### Draft Article
-*Indus-Harappan Script: A Multi-Disciplinary Analysis of Linguistic Continuity and Urban Topology* (2026, submitted for peer review)
+*Indus-Harappan Script: A Multi-Disciplinary Analysis of Linguistic Continuity and Urban Topology* (final draft, 2026) — [PDF on the platform](https://premkumar2306.github.io/open-indus-lab/paper/Indus-Harappan-Script_Shanmugham_2026.pdf). Submission targets: Humanities and Social Sciences Communications; harappa.com; Academia.edu.
 
 ---
 
 ## Data (`data/seed/`)
 
-**Total: 2,503 rows across 16 CSV files**
-
-### Canonical Author Data (Primary)
+### Canonical author data (single source of truth)
 | File | Rows | Description |
 |---|---|---|
-| `phoneme_mappings_author_full.csv` | **264** | Complete sign→Tamil phoneme table (author's working document) |
-| `readings_author_full.csv` | **206** | Seal readings in Tamil, seals 220–9811 |
+| `seals_master.csv` | **194** | Seal readings transcribed verbatim from `INDUS_SEALS_READ_in_book_5` |
+| `signs_master.csv` | **264** | Sign→Tamil phoneme mappings from `Indus_Signs_Reading` (all corruption fixes documented in-row) |
+| `readings_paper_VER4.csv` | **40** | Romanized readings + English meanings from the final paper (Table 2 & figures) |
+| `phoneme_mappings_author_full.csv` | 264 | Working phoneme table (superseded by `signs_master.csv`) |
+| `readings_author_full.csv` | 206 | Working readings table (superseded by `seals_master.csv`) |
 
-### Open Corpus Data (MIT Licensed)
-| File | Rows | Description |
-|---|---|---|
-| `seals.csv` | 179 | Seal metadata from CISI/Parpola |
-| `signs.csv` | 397 | Parpola sign concordance |
-| `sign_sequences.csv` | 1,003 | Ordered sign occurrences per seal |
-
-### Research Framework Data
+### Research framework data
 | File | Rows | Description |
 |---|---|---|
 | `hypotheses.csv` | 6 | Competing hypotheses incl. null (FSW2004) |
 | `sites.csv` | 8 | Major excavation sites with GPS |
 | `motifs.csv` | 8 | Seal motif catalogue |
-| `decoding_rules_VPS2024.csv` | 10 | Deterministic rule engine rules |
+| `decoding_rules_VPS2024.csv` | 11 | Deterministic rule engine rules |
 | `tally_mark_rules.csv` | 11 | Tally 1–12 Tamil phoneme rules |
-| `evidence_links.csv` | 8 | Academic citations (endnotes i–ix) |
-| `readings_VPS2024.csv` | 22 | Key readings with source quotes |
-| `phoneme_mappings_appendixA_full.csv` | 241 | Signs from Research Keys Appendix A |
-| `readings_appendixB_tamil.csv` | 116 | Readings from Research Keys Appendix B |
+| `evidence_links.csv` | 9 | Academic citations (paper endnotes) |
+| `readings_VPS2024.csv` / `readings_enriched_VPS2024.csv` / `readings_body_english.csv` | 24 / 206 / 15 | Article-derived reading detail |
+| `phoneme_mappings_appendixA_full.csv` / `readings_appendixB_tamil.csv` | 241 / 116 | Research Keys appendices |
 
-### Corpus Scale (Author Clarification)
-Each listed seal may represent a group of similar seals (1, 5, 10, 24, 44, 60, 128, 160, or 350).
-Total seals studied and read: **~1,000** (stated conservatively as 800).
-75+ additional seal photographs studied but not yet in data files.
+> **Removed (2026-07):** the external Parpola/CISI corpus (`seals.csv`, `signs.csv`, `sign_sequences.csv`) and the guessed Parpola→Mahadevan bridge. Its numbering had zero verified correspondence to the author's data. See [`docs/VALIDATION_REBUILD_REPORT.md`](./docs/VALIDATION_REBUILD_REPORT.md).
+
+### Corpus scale (author clarification)
+Each listed seal may represent a group of similar seals (1, 5, 20, 40, 60, 130, up to 400).
+Seals shown read in the paper: **200+**, extrapolating to **700+** including represented groups.
+Sample counts from the paper: cow 300, milk 44, ghee 24, ordinances 128, children's food 160, manure 60.
 
 ---
 
@@ -136,11 +133,11 @@ Total seals studied and read: **~1,000** (stated conservatively as 800).
 | Seal | Motif | Reading | Meaning |
 |---|---|---|---|
 | 3023, 2358 | Unicorn | *didiir aa* | Just expressed fresh milk |
-| 1076 | Unicorn | *thava ney* | Very good ghee |
-| 2082 | Unicorn | *iisaa muu aagaavva* | Carer of 3 cows of Isaa (Shiva) |
+| 1076 | Unicorn | *thava thava ney* | Very good ghee |
+| 2082 | Unicorn | *Isa muu aagaavva* | Cow carer of 3 cows of Isa |
 | 2127 | Elephant | *eNNey* | Sesame oil |
 | 2234 | Unicorn+Bull | *vayya yiir illam* | The world is a Big Home |
-| 4718 | None | — | Panic milk mandate for children |
+| 4718 | None | *ay ya ay o vyamun; ammu* | Panic milk for children (ordinance) |
 | 1425 | None | *illam vaya muu thani* | Homes for the aged and alone |
 | 2444 | Unicorn | *aNNal kai aaNai* | Order of the Leader |
 | Dholavira | None | — | Residence of king's advisors + grain store |
@@ -164,10 +161,10 @@ Total seals studied and read: **~1,000** (stated conservatively as 800).
 
 | Layer | Technology |
 |---|---|
-| Backend | Python FastAPI + PostgreSQL 16 + pgvector |
-| Frontend | React 18 + TypeScript + Vite + Tailwind |
-| Analysis | Jupyter + pandas + scikit-learn + NetworkX |
-| Infrastructure | Docker Compose (local-first, no cloud) |
+| Frontend | React 18 + Vite, deployed to GitHub Pages (legacy mode, served from `main:/docs`) |
+| Data | Versioned CSVs in `data/seed/` (canonical), validated every 4 hours by GitHub Actions |
+| Backend (scaffold) | Python rule engine + PostgreSQL schema for the planned statistical stage |
+| Validation | `scripts/validate.py` → `docs/VALIDATION_REPORT.md` (currently 16 pass / 0 fail) |
 
 ---
 
@@ -175,7 +172,7 @@ Total seals studied and read: **~1,000** (stated conservatively as 800).
 
 | Source | Content | License |
 |---|---|---|
-| [mayig/indus-valley-script-corpus](https://github.com/mayig/indus-valley-script-corpus) | 179 seals, 397 signs (Mohenjo-daro) | MIT |
+| [mayig/indus-valley-script-corpus](https://github.com/mayig/indus-valley-script-corpus) | *Removed 2026-07 — incompatible numbering; see SOURCES.md* | MIT |
 | RMRL Chennai — [indusscript.in](http://www.indusscript.in) | Seal images, Mahadevan concordance | Research use |
 | CISI Vol.1 — Joshi & Parpola, Helsinki 1987 | Collections in India | Reference |
 | CISI Vol.2 — Shah & Parpola, Helsinki 1991 | Collections in Pakistan | Reference |
