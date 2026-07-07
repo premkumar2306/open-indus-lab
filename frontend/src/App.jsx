@@ -283,7 +283,7 @@ const SEALS = [
   { id:"3023", motif:"unicorn", site:"Mohenjo-daro",
     tamil:"டி டீ அய் லா இள வ்யமூன்", layer1:"di diir (da daal) aa", layer2:"Instant cow (on demand)", domain:"dairy products", status:"complete", confidence:0.72 },
   { id:"2127", motif:"elephant", site:"Mohenjo-daro",
-    tamil:"எண் ய் = எண்ணய்",  layer1:"eN y",       layer2:"Oil (sesamum ghee)",              domain:"dairy products", status:"complete", confidence:0.72 },
+    tamil:"எண் ய் = எண்ணய்",  layer1:"eN y",       layer2:"Oil (sesamum ghee)",              domain:"oils", status:"complete", confidence:0.72 },
   { id:"2648", motif:"elephant", site:"Mohenjo-daro",
     tamil:"மீ மீ நெய் தொழு",  layer1:"mi mi na y thoLzu",  layer2:"Very good ghee shed",     domain:"dairy products",   status:"complete", confidence:0.70 },
   { id:"2444", motif:"unicorn", site:"Mohenjo-daro",
@@ -493,11 +493,11 @@ const SEALS = [
   { id:"8117", motif:"none", site:"author corpus", signCount:4, tamil:"கொழி (ஊர்) ஆ ண(ய்)", layer1:"KoLzi aa Nai", layer2:"KoLzi village ordinance", domain:"governance", status:"complete", confidence:0 },
   { id:"9091", motif:"none", site:"author corpus", signCount:6, tamil:"வ ம ய \" வ ய் = சிறந் மணமுலைய தெய்", layer1:"va ma ya \" va y", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
   { id:"9811", motif:"none", site:"author corpus", signCount:5, tamil:"ம ம வயய் \" வய் = ம மவொய தெய்", layer1:"ma ma vayay \" vay", layer2:"[meaning pending]", domain:"", status:"pending", confidence:0 },
-  { id:"2929", motif:"pottery", site:"paper VER_4", signCount:0, tamil:"nay", layer1:"nay", layer2:"Ghee (pottery graffiti - GC-MS test piece)", domain:"dairy products", status:"complete", confidence:0 },
-  { id:"2949", motif:"circle", site:"paper VER_4", signCount:0, tamil:"muuya", layer1:"muuya", layer2:"Oxen", domain:"livestock", status:"complete", confidence:0 },
-  { id:"4284", motif:"none", site:"paper VER_4", signCount:0, tamil:"koyil ida aagaavva", layer1:"koyil ida aagaavva", layer2:"Carer of temple cow", domain:"livestock", status:"complete", confidence:0 },
-  { id:"2110", motif:"elephant", site:"paper VER_4", signCount:0, tamil:"La vya mun", layer1:"La vya mun", layer2:"Fresh milk at Elephant St.", domain:"dairy products", status:"complete", confidence:0 },
-  { id:"2411", motif:"fabulous", site:"paper VER_4", signCount:0, tamil:"thava da vya mun", layer1:"thava da vya mun", layer2:"Good milk at many streets", domain:"dairy products", status:"complete", confidence:0 },
+  { id:"2929", motif:"pottery", site:"paper VER_4", signCount:0, tamil:"—", layer1:"nay", layer2:"Ghee (pottery graffiti - GC-MS test piece)", domain:"dairy products", status:"complete", confidence:0 },
+  { id:"2949", motif:"circle", site:"paper VER_4", signCount:0, tamil:"—", layer1:"muuya", layer2:"Oxen", domain:"livestock", status:"complete", confidence:0 },
+  { id:"4284", motif:"none", site:"paper VER_4", signCount:0, tamil:"—", layer1:"koyil ida aagaavva", layer2:"Carer of temple cow", domain:"livestock", status:"complete", confidence:0 },
+  { id:"2110", motif:"elephant", site:"paper VER_4", signCount:0, tamil:"—", layer1:"La vya mun", layer2:"Fresh milk at Elephant St.", domain:"dairy products", status:"complete", confidence:0 },
+  { id:"2411", motif:"fabulous", site:"paper VER_4", signCount:0, tamil:"—", layer1:"thava da vya mun", layer2:"Good milk at many streets", domain:"dairy products", status:"complete", confidence:0 },
 ];
 
 const ALL_SIGNS = [
