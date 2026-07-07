@@ -893,7 +893,7 @@ function SignGlyph({ mahadevan, size=40, showLabel=true }) {
 
 // ── IMAGE INVENTORY ───────────────────────────────────────
 // Only these seals have actual glyph images in /public/seal_glyphs/
-const SEAL_HAS_IMAGE = new Set([1076,1110,1133,2082,2127,2234,2322,2444,2617,2648,2950,3246,4718,5119]);
+const SEAL_HAS_IMAGE = new Set([1045,1076,1110,1133,1220,1228,1386,1425,2082,2127,2167,2234,2322,2358,2442,2444,2503,2617,2648,2864,2929,2949,2950,3016,3023,3246,4284,4371,4440,4718,5119,8117]);
 
 // ── PAGES ─────────────────────────────────────────────────
 function SealBrowser({onSelect,selected}) {
