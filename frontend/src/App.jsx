@@ -5,7 +5,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pi
 // Images from author's Indus_Signs_Reading.pdf
 // Direct URL construction — glob relative paths break at /open-indus-lab/ base
 const BASE = import.meta.env.BASE_URL || '/open-indus-lab/';
-const getSignUrl = (n) => `${BASE}signs/sign_${String(n).padStart(4,'0')}.png`;
+const getSignUrl = (n) => `${BASE}signs/sign_${String(n).padStart(4,'0')}.png?v=3`;
 
 // ── REAL DATA ─────────────────────────────────────────────
 const SIGN_DATA = {
@@ -947,7 +947,7 @@ function SealBrowser({onSelect,selected}) {
                 {seal.motif!=="none"&&<span style={{fontSize:11,color:MOTIF_META[seal.motif]?.color||"#c9963e"}}>{MOTIF_META[seal.motif]?.icon} {MOTIF_META[seal.motif]?.name}</span>}
               </div>
               <div style={{background:"#f5f0e8",marginBottom:8,overflow:"hidden",lineHeight:0}}>
-                <img src={`${BASE}seal_glyphs/seal_${seal.id}.png`} alt={`Seal ${seal.id}`}
+                <img src={`${BASE}seal_glyphs/seal_${seal.id}.png?v=3`} alt={`Seal ${seal.id}`}
                   style={{width:"100%",display:"block",filter:"contrast(1.2)"}}/>
               </div>
               <div style={S.layer1}>{seal.layer1}</div>
