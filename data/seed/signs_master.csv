@@ -25,7 +25,7 @@ mahadevan_number,tamil_phoneme_source,tamil_phoneme_corrected,correction_note,so
 25,கர்,கர்,,Indus_Signs_Reading.pdf
 53,ம,ம,,Indus_Signs_Reading.pdf
 57,'எறம்ப' = எருமம,'எறம்ப' = எருமம,,Indus_Signs_Reading.pdf
-58,தெ (early form),தெ (early form),,Indus_Signs_Reading.pdf
+58,தெ (early form),தவ (early form),author correction 2026-07-10 (kombu vowel-sign font corruption),Indus_Signs_Reading.pdf
 59,"ள், ள","ள், ள",,Indus_Signs_Reading.pdf
 60,"ளம்,ளன்,ளல்,ளர்","ளம்,ளன்,ளல்,ளர்",,Indus_Signs_Reading.pdf
 61,"நலம்,நலன்","நலம்,நலன்",,Indus_Signs_Reading.pdf
@@ -43,7 +43,7 @@ mahadevan_number,tamil_phoneme_source,tamil_phoneme_corrected,correction_note,so
 73,"லம்.லன்.லல்,லர்","லம்.லன்.லல்,லர்",,Indus_Signs_Reading.pdf
 74,லி,லி,,Indus_Signs_Reading.pdf
 75,இலி,இலி,,Indus_Signs_Reading.pdf
-76,ககாழி (ககாழியூர்),ககாழி (ககாழியூர்),,Indus_Signs_Reading.pdf
+76,ககாழி (ககாழியூர்),கோழி (கோழியூர்),author correction 2026-07-10 (kombu vowel-sign font corruption),Indus_Signs_Reading.pdf
 78,மயில்,மயில்,,Indus_Signs_Reading.pdf
 79,மயில்,மயில்,,Indus_Signs_Reading.pdf
 80,மயில்,மயில்,,Indus_Signs_Reading.pdf
@@ -58,9 +58,9 @@ mahadevan_number,tamil_phoneme_source,tamil_phoneme_corrected,correction_note,so
 112,"ஏழு, ஏ,எ","ஏழு, ஏ,எ",,Indus_Signs_Reading.pdf
 113,எழுட்ட,எழுட்ட,,Indus_Signs_Reading.pdf
 114,"எட்டு, எண்","எட்டு, எண்",,Indus_Signs_Reading.pdf
-115,வதாண்டு,வதாண்டு,,Indus_Signs_Reading.pdf
-116,வதாண்டு,வதாண்டு,,Indus_Signs_Reading.pdf
-117,வதாண்டுப,வதாண்டுப,,Indus_Signs_Reading.pdf
+115,வதாண்டு,தொண்டு,author correction 2026-07-10 (kombu vowel-sign font corruption),Indus_Signs_Reading.pdf
+116,வதாண்டு,தொண்டு,author correction 2026-07-10 (kombu vowel-sign font corruption),Indus_Signs_Reading.pdf
+117,வதாண்டுப,தொண்டுப,author correction 2026-07-10 (kombu vowel-sign font corruption),Indus_Signs_Reading.pdf
 121,பன்னிரு,பன்னிரு,,Indus_Signs_Reading.pdf
 122,பன்னிருட்ட,பன்னிருட்ட,,Indus_Signs_Reading.pdf
 123,"ட,த","ட,த",,Indus_Signs_Reading.pdf
@@ -74,15 +74,15 @@ mahadevan_number,tamil_phoneme_source,tamil_phoneme_corrected,correction_note,so
 137,த,த,,Indus_Signs_Reading.pdf
 177,ரீ,ரீ,,Indus_Signs_Reading.pdf
 182,பண்ணா,பண்ணா,,Indus_Signs_Reading.pdf
-190,'கெலி'=நில அளமெ,'கெலி'=நில அளமெ,,Indus_Signs_Reading.pdf
+190,'கெலி'=நில அளமெ,'வேலி'=நில அளவை,author correction 2026-07-10 (kombu vowel-sign font corruption),Indus_Signs_Reading.pdf
 194,ஞான் (இளஞன்),ஞான் (இளஞன்),,Indus_Signs_Reading.pdf
 197,ந,ந,,Indus_Signs_Reading.pdf
 198,நண்,நண்,,Indus_Signs_Reading.pdf
-210,ககாயில்,ககாயில்,,Indus_Signs_Reading.pdf
-209,ககாயில்,ககாயில்,,Indus_Signs_Reading.pdf
-204,ககாயில்,ககாயில்,,Indus_Signs_Reading.pdf
-206,ககாயில்ண்[ண],ககாயில்ண்[ண],,Indus_Signs_Reading.pdf
-207,ககாயிலண்ணல்,ககாயிலண்ணல்,,Indus_Signs_Reading.pdf
+210,ககாயில்,கோயில்,author correction 2026-07-10 (kombu vowel-sign font corruption),Indus_Signs_Reading.pdf
+209,ககாயில்,கோயில்,author correction 2026-07-10 (kombu vowel-sign font corruption),Indus_Signs_Reading.pdf
+204,ககாயில்,கோயில்,author correction 2026-07-10 (kombu vowel-sign font corruption),Indus_Signs_Reading.pdf
+206,ககாயில்ண்[ண],கோயிலண்ண,author correction 2026-07-10 (kombu vowel-sign font corruption),Indus_Signs_Reading.pdf
+207,ககாயிலண்ணல்,கோயிலண்ணல்,author correction 2026-07-10 (kombu vowel-sign font corruption),Indus_Signs_Reading.pdf
 211,"ன்,ன","ன்,ன",,Indus_Signs_Reading.pdf
 205,"ண,ணய்","ண,ணய்",,Indus_Signs_Reading.pdf
 212,"பன்,பன","பன்,பன",,Indus_Signs_Reading.pdf
@@ -92,11 +92,11 @@ mahadevan_number,tamil_phoneme_source,tamil_phoneme_corrected,correction_note,so
 216,ச,ச,,Indus_Signs_Reading.pdf
 217,ச்ச,ச்ச,,Indus_Signs_Reading.pdf
 219,சி,சி,,Indus_Signs_Reading.pdf
-220,"சிெம்,சிென்","சிெம்,சிென்",,Indus_Signs_Reading.pdf
+220,"சிெம்,சிென்","சிவம்,சிவன்",author correction 2026-07-10 (kombu vowel-sign font corruption),Indus_Signs_Reading.pdf
 221,சா,சா,,Indus_Signs_Reading.pdf
 222,சா,சா,,Indus_Signs_Reading.pdf
 223,சங்ங,சங்ங,,Indus_Signs_Reading.pdf
-224,சங்கரா (வெண்மம),சங்கரா (வெண்மம),,Indus_Signs_Reading.pdf
+224,சங்கரா (வெண்மம),சங்கரா (வெண்மை),author correction 2026-07-10 (kombu vowel-sign font corruption),Indus_Signs_Reading.pdf
 264,"தம,தம்","தம,தம்",,Indus_Signs_Reading.pdf
 266,மன,மன,,Indus_Signs_Reading.pdf
 267,மீ,மீ,,Indus_Signs_Reading.pdf
@@ -168,22 +168,22 @@ mahadevan_number,tamil_phoneme_source,tamil_phoneme_corrected,correction_note,so
 50,"""ணாய்""","""ணாய்""",,Indus_Signs_Reading.pdf
 51,'கதளணஅ',தேளணஅ,confirmed: க-prefix = ே vowel-sign corruption; தேளணஅ verified against fresh source copy 2026-07-02,Indus_Signs_Reading.pdf
 52,'கதளனர்',தேளனர்,confirmed: க-prefix = ே vowel-sign corruption; தேளனர் verified against fresh source copy 2026-07-02,Indus_Signs_Reading.pdf
-82,ெ அன்னம்=ெனம்,ெ அன்னம்=ெனம்,,Indus_Signs_Reading.pdf
+82,ெ அன்னம்=ெனம்,வ அன்னம்=வனம்,author correction 2026-07-10 (kombu vowel-sign font corruption),Indus_Signs_Reading.pdf
 84,கால் = காற்று,கால் = காற்று,,Indus_Signs_Reading.pdf
 86,"ஒன்று,ஓர்,ஒ,ஓ,ர்","ஒன்று,ஓர்,ஒ,ஓ,ர்",,Indus_Signs_Reading.pdf
 87,இரு. ஈர்,இரு. ஈர்,,Indus_Signs_Reading.pdf
 88,இரும்,இரும்,,Indus_Signs_Reading.pdf
 89,"மூன்று,மு,மூ","மூன்று,மு,மூ",,Indus_Signs_Reading.pdf
 90,மூய=எருது,மூய=எருது,,Indus_Signs_Reading.pdf
-91,முரா=கமார்,முரா=கமார்,,Indus_Signs_Reading.pdf
+91,முரா=கமார்,முரா=மோர்,author correction 2026-07-10 (kombu vowel-sign font corruption),Indus_Signs_Reading.pdf
 92,இமூ,இமூ,,Indus_Signs_Reading.pdf
 93,ஓரிரு,ஓரிரு,,Indus_Signs_Reading.pdf
 94,இருஓர்,இருஓர்,,Indus_Signs_Reading.pdf
 95,"நான்கு,ந,நா","நான்கு,ந,நா",,Indus_Signs_Reading.pdf
 96,"அய்,அய்ந்து","அய்,அய்ந்து",,Indus_Signs_Reading.pdf
 97,ஓர்,ஓர்,,Indus_Signs_Reading.pdf
-98,கமற்ப்டி -ஒரு,கமற்ப்டி -ஒரு,,Indus_Signs_Reading.pdf
-99,கமற்படி- இரு,கமற்படி- இரு,,Indus_Signs_Reading.pdf
+98,கமற்ப்டி -ஒரு,மேற்படி -ஒரு,author correction 2026-07-10 (kombu vowel-sign font corruption),Indus_Signs_Reading.pdf
+99,கமற்படி- இரு,மேற்படி- இரு,author correction 2026-07-10 (kombu vowel-sign font corruption),Indus_Signs_Reading.pdf
 100,இரு,இரு,,Indus_Signs_Reading.pdf
 101,இரு,இரு,,Indus_Signs_Reading.pdf
 102,"மூன்று,மு,மூ","மூன்று,மு,மூ",,Indus_Signs_Reading.pdf
@@ -224,8 +224,8 @@ mahadevan_number,tamil_phoneme_source,tamil_phoneme_corrected,correction_note,so
 232,"""மலய் அரச'","""மலய் அரச'",,Indus_Signs_Reading.pdf
 233,"மு, மூ","மு, மூ",,Indus_Signs_Reading.pdf
 235,மூய,மூய,,Indus_Signs_Reading.pdf
-242,வதாழு,வதாழு,,Indus_Signs_Reading.pdf
-243,அ வதாழு,அ வதாழு,,Indus_Signs_Reading.pdf
+242,வதாழு,தொழு,author correction 2026-07-10 (kombu vowel-sign font corruption),Indus_Signs_Reading.pdf
+243,அ வதாழு,அ தொழு,author correction 2026-07-10 (kombu vowel-sign font corruption),Indus_Signs_Reading.pdf
 244,பண்ண,பண்ண,,Indus_Signs_Reading.pdf
 245,'இட','இட',,Indus_Signs_Reading.pdf
 246,'இடர்','இடர்',,Indus_Signs_Reading.pdf
@@ -255,7 +255,7 @@ mahadevan_number,tamil_phoneme_source,tamil_phoneme_corrected,correction_note,so
 330,அமூ,அமூ,,Indus_Signs_Reading.pdf
 331,அன,அன,,Indus_Signs_Reading.pdf
 340,அய் (old form),அய் (old form),,Indus_Signs_Reading.pdf
-3411,"பண்,பண","பண்,பண",,Indus_Signs_Reading.pdf
+341,"பண்,பண","பண், பண","author 2026-07-10: source '3411' is numbering typo for 341; reads paN, paNa",Indus_Signs_Reading.pdf
 342,ஆ,ஆ,,Indus_Signs_Reading.pdf
 343,அய்,அய்,,Indus_Signs_Reading.pdf
 344,அவ்,அவ்,,Indus_Signs_Reading.pdf

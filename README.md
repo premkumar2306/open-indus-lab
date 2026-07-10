@@ -51,7 +51,7 @@ Stable dataset snapshots are published as [GitHub Releases](https://github.com/p
 | Stage 4 | Citable dataset release (v1.0.0, CITATION.cff) | ✅ Complete |
 | Stage 5 | Final paper ingestion (VER_4 Table 2 → Layer 2) | ✅ Complete |
 | Stage 6 | Preprint + journal submission (OSF / HSSC / harappa.com) | 🔶 In progress |
-| Stage 7 | Sign registry re-key to paper Table 1 numbering | ⏸ Awaiting author confirmation |
+| Stage 7 | Sign numbering resolved: book numbering (342=aa) is canonical; paper Table 1 to be corrected by author | ✅ Complete |
 | Stage 8 | Statistical validation & rule engine | 🔲 Planned |
 
 See [`FULL_PLAN.md`](./FULL_PLAN.md) for complete roadmap.

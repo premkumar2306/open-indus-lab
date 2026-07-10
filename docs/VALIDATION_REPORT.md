@@ -1,12 +1,12 @@
 # Open Indus Lab — Validation Report
-**Last run**: 2026-07-10 00:40 UTC
+**Last run**: 2026-07-10 19:53 UTC
 **Score**: 100% (16 passed / 2 warnings / 0 failed)
 
 ---
 
 ## Results
 
-✅ Sign images count — 263/264
+✅ Sign images count — 264/264
 ✅ All key sign images present
 ✅ Sign image sizes OK
 ✅ Tamil phoneme text clean — no known corruption patterns
