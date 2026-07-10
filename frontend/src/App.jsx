@@ -1761,93 +1761,102 @@ function AboutPage({go}) {
     <p style={{fontSize:14,lineHeight:1.75,color:"#c8bfa8",margin:"0 0 12px"}}>{children}</p>
   );
   const raw = "https://github.com/premkumar2306/open-indus-lab/blob/main/data/seed/";
+  const L = ({id,children}) => (<a onClick={()=>go(id)} style={{color:"#c9963e",cursor:"pointer",textDecoration:"underline"}}>{children}</a>);
   return (
     <div style={{maxWidth:760}}>
       <div style={{fontFamily:"'Cinzel',serif",fontSize:24,color:"#e8dcc8",fontWeight:600,letterSpacing:"0.05em",marginBottom:6}}>
-        Reading the Indus-Harappan Script as Ancient Tamil
+        Reading the Indus-Harappan Script as an Ancient Classical Language
       </div>
       <div style={{fontSize:12,color:"#5a6070",letterSpacing:"0.04em",marginBottom:22}}>
-        Research by Ponmuthu Shanmugham · Open platform for verification and peer review
+        Research by V.P. (Ponmuthu) Shanmugham · Open platform for verification and peer review
       </div>
 
       <P>
-        This platform presents, in verifiable form, a body of research arguing that the
-        Indus-Harappan script records an ancient form of spoken Tamil. The approach
-        prioritizes reconstructing the <em>spoken language</em> over visually decoding signs
-        in isolation: signs are mapped to Tamil phonemes, seals are read aloud as sound
-        sequences, and meanings emerge from words still recognizable in classical and
-        modern Tamil. The full methodology is documented in the author's 99-page
-        "Indus Scripts Research Keys" and four published books.
+        This platform presents a body of research that hypothesizes and develops verifiable
+        arguments that the Indus-Harappan script is an ancient form of a classical spoken
+        language. The approach prioritizes reconstructing the <em>spoken language</em>, which is
+        a priori to writing — the Rosetta Stone suggests the need for a bounded research
+        space, over decoding signs in isolation. The research reconstructs the signs and seals
+        and maps them to ancient Tamizi's suggestive graphemes and phonemes. Pictograms and
+        tally marks act as placeholders and evolve to geometric signs by schematization and
+        acrophony; meaningful sound sequences emerge. The full methodology, used across the
+        author's books, is summarized in the upcoming book "Indus Scripts Research Keys" and
+        in the research paper hosted here.
       </P>
       <P>
-        The platform itself makes no claim that the script "has been decoded." It exists so
-        that other researchers can inspect every reading, trace it to the author's source
-        documents, reproduce the analysis, and disagree in public.
+        With nothing to decode or decipher, the research is presented for inspection: trace it
+        to the source documents, reproduce the analysis for added seal readings, and discuss
+        challenges in public. Falsification tests are indicated below.
       </P>
 
       <H>Method in brief</H>
       <P>
-        The reconstruction identifies 10 vowels and 18 consonants aligned with the later
-        Tamizi script. Three mechanisms carry most of the analytical weight:
-        the <b>"cow face" pictogram</b> (sign for the phoneme <i>aa</i>, an onomatopoeia
-        meaning cow, anchoring hundreds of animal-husbandry seals); <b>tally marks as
-        phonetic placeholders</b> (Tamil numeral names supply sounds the sign inventory
-        lacked — e.g. tally-4, <i>naa</i>, before sign 162 <i>y</i> spells <i>nay/ney</i>,
-        ghee); and <b>modifiers</b> — signs with form but no sound that alter adjacent
-        syllables, explaining many "singleton" signs. Seal motifs are read as urban
-        topology: the unicorn marks the Market Common, animal motifs name streets, and
-        motif-less seals carry city-wide ordinances.
+        The work identifies 10 vowels and 18 consonants suggestive of the later Tamizi
+        geometric script. Five mechanisms carry most of the research weight:
+        (1) the most frequent <b>"cow face" pictogram</b> (sign 342, phoneme <i>aa</i>, an
+        onomatopoeia meaning cow — as 'kaakkaa' means crow), anchoring hundreds of
+        animal-husbandry seals; (2) <b>tally marks as placeholders</b> evolving by acrophony
+        into geometric sign phonemes — tally-4 (<i>nanku</i>) acrophonically becomes
+        <i> na</i>, combines with the <i>y</i> sign (162) sounding <i>nay/ney</i>, ghee: a
+        four-sign word (seal 2950) evolves to two signs (1133) and then to a single sign (199)
+        <i> nay</i>; (3) <b>pictograms evolving by schematization or stylization</b> to
+        geometric signs (sign 83 evolves to 367; 326 to 324; signs 1, 10, 12, 14, 15 also
+        evolve by building upon signs); (4) <b>modifiers</b> — graphemes with form but no
+        phoneme that grammatically alter signs and syllables, explaining many "singleton"
+        signs with high information densities; and (5) <b>seal motifs read under the urban
+        topology hypothesis</b>: the unicorn marks a Market Common; some animal motifs name
+        streets; some motif-less seals indicate city-wide ordinances (some seals lack motifs
+        in the declining-cities phase); others appear as product markers, locating banners,
+        and jurisdictions.
       </P>
 
       <H>Falsification tests — the author's challenge</H>
       <P>
         The research stakes out testable ground rather than asking for belief. Three
         falsification routes are named in the paper: <b>script evolution</b> — the claim that
-        sign sequences compress over generations (four signs becoming two, becoming one, as
-        in seals 2949, 2950 → signs 1220, 1133) is checkable against stratigraphy, seriation
-        and relative dating: run the test and disprove it. <b>Chemistry</b> — the pottery
-        shard bearing the ghee reading (seal 2929) is a named GC-MS test piece: milk lipids
-        present or absent is an independent, binary verdict. <b>A blind read</b> — a held-out
-        page of Mahadevan's concordance (Fig. 7 of the paper) read cold with the published
-        phoneme table, reproducible by anyone.
+        sign sequences compress over generations (eight signs becoming four, becoming two,
+        becoming one, as in seals 2949, 2950 → signs 1220, 1133) is checkable against
+        stratigraphy, seriation and relative dating: run the test and disprove it.
+        <b> Chemistry</b> — the pottery shard bearing the ghee reading (seal 2929) is a named
+        GC-MS test piece: milk lipids present or absent is an independent, binary verdict.
+        <b> A blind read</b> — a held-out page of Mahadevan's concordance (Fig. 7 of the
+        paper) read cold with the published phoneme table, reproducible by anyone.
       </P>
 
       <H>What you can verify here</H>
       <P>
-        <b>194 seal readings</b> transcribed directly from the author's reading book, in
-        original Tamil with romanization — browse them under <a onClick={()=>go("seals")}
-        style={{color:"#c9963e",cursor:"pointer",textDecoration:"underline"}}>Readings</a>.
-        <b> 264 sign-to-phoneme mappings</b> with the author's glyph images under{" "}
-        <a onClick={()=>go("signs")} style={{color:"#c9963e",cursor:"pointer",textDecoration:"underline"}}>Signs</a>.
-        Competing hypotheses, frequency analysis and the open review log are under{" "}
-        <a onClick={()=>go("research")} style={{color:"#c9963e",cursor:"pointer",textDecoration:"underline"}}>Research</a>.
+        Seal readings transcribed directly from the author's reading book, in original Tamil
+        with romanization — browse them under <L id="seals">Readings</L>. Sign-to-phoneme
+        mappings with the author's glyph images under <L id="signs">Signs</L>. The research
+        paper and the author's books are under <L id="pubs">Publications</L>.
       </P>
       <P style={{fontSize:13}}>
-        Reading layers: Layer 1 (Tamil phonemes) is complete for all 204 readings shown;
-        Layer 2 (English meaning) is complete for 40 — sourced from the author's final
-        paper (Table 2) — and in progress for the rest — the
-        author notes English glosses were not required for the research itself but are
-        being added for non-Tamil readers.
+        Reading layers: the paper presents 46 signs (Table 1) and 32 seal readings (Table 2)
+        with English meanings — enough for researchers to read and find nine different uses
+        for seals. The full book corpus is larger: 264 sign mappings (~280 in the book) and
+        194 seal readings (220+ in the book), with English meanings being added
+        progressively.
       </P>
 
       <H>Data &amp; reproducibility</H>
       <P>
-        Canonical datasets (CSV, directly traceable to the source documents):{" "}
-        <a href={raw+"seals_master.csv"} target="_blank" rel="noreferrer" style={{color:"#c9963e"}}>seals_master.csv</a> (194 readings) ·{" "}
-        <a href={raw+"signs_master.csv"} target="_blank" rel="noreferrer" style={{color:"#c9963e"}}>signs_master.csv</a> (264 signs).
-        Five sign rows (39, 51, 52, 322, 391) that initially diverged between extractions
-        were resolved by cross-checking two independent renditions of the source document;
-        the resolution trail is recorded in the dataset. A validation suite runs every 4 hours;
-        results are committed to the repository.
+        Canonical datasets (CSV, traceable to source documents):{" "}
+        <a href={raw+"seals_master.csv"} target="_blank" rel="noreferrer" style={{color:"#c9963e"}}>seals_master.csv</a> (194 readings from the book) ·{" "}
+        <a href={raw+"signs_master.csv"} target="_blank" rel="noreferrer" style={{color:"#c9963e"}}>signs_master.csv</a> (264 sign mappings) ·{" "}
+        <a href={raw+"readings_paper_VER4.csv"} target="_blank" rel="noreferrer" style={{color:"#c9963e"}}>readings_paper_VER4.csv</a> (the paper's 40 readings with meanings).
+        A validation suite runs every 4 hours; results are committed to the repository.
+        Every read seal represents groups of similar seals (2, 20, 40, 60, 130, 160, up to
+        300), so the readable seal count is much higher.
       </P>
 
       <H>For reviewers</H>
       <P>
         The author welcomes critical review from researchers in archaeology, linguistics,
-        epigraphy and related fields. Contact:{" "}
+        epigraphy, anthropology, urban topology, AI and machine learning, and related
+        fields. Contact:{" "}
         <a href="mailto:ponmuthushanmugham@gmail.com" style={{color:"#c9963e"}}>ponmuthushanmugham@gmail.com</a>.
-        Objections and author responses are logged publicly in the Peer Review section.
-        Source code and data:{" "}
+        Questions, challenges and author responses are logged publicly. Source code and
+        data:{" "}
         <a href="https://github.com/premkumar2306/open-indus-lab" target="_blank" rel="noreferrer" style={{color:"#c9963e"}}>github.com/premkumar2306/open-indus-lab</a>.
       </P>
     </div>
