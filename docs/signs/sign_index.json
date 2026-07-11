@@ -1,1297 +1,1322 @@
 {
-  "1": {
-    "mahadevan_number": 1,
-    "tamil_phoneme": "க",
-    "image_file": "sign_0001.png"
-  },
-  "2": {
-    "mahadevan_number": 2,
-    "tamil_phoneme": "ரகர், கரர், காரர்",
-    "image_file": "sign_0002.png"
-  },
-  "3": {
-    "mahadevan_number": 3,
-    "tamil_phoneme": "க், கர்",
-    "image_file": "sign_0003.png"
-  },
-  "4": {
-    "mahadevan_number": 4,
-    "tamil_phoneme": "கண்",
-    "image_file": "sign_0004.png"
-  },
-  "5": {
-    "mahadevan_number": 5,
-    "tamil_phoneme": "கண்",
-    "image_file": "sign_0005.png"
-  },
-  "6": {
-    "mahadevan_number": 6,
-    "tamil_phoneme": "கி",
-    "image_file": "sign_0006.png"
-  },
-  "7": {
-    "mahadevan_number": 7,
-    "tamil_phoneme": "கீ",
-    "image_file": "sign_0007.png"
-  },
-  "8": {
-    "mahadevan_number": 8,
-    "tamil_phoneme": "கய்",
-    "image_file": "sign_0008.png"
-  },
-  "9": {
-    "mahadevan_number": 9,
-    "tamil_phoneme": "கய்ட்ட",
-    "image_file": "sign_0009.png"
-  },
-  "10": {
-    "mahadevan_number": 10,
-    "tamil_phoneme": "கா",
-    "image_file": "sign_0010.png"
-  },
-  "12": {
-    "mahadevan_number": 12,
-    "tamil_phoneme": "காவ்ெ,காெல்",
-    "image_file": "sign_0012.png"
-  },
-  "13": {
-    "mahadevan_number": 13,
-    "tamil_phoneme": "காவ்ெர்",
-    "image_file": "sign_0013.png"
-  },
-  "14": {
-    "mahadevan_number": 14,
-    "tamil_phoneme": "காவ்ென்",
-    "image_file": "sign_0014.png"
-  },
-  "15": {
-    "mahadevan_number": 15,
-    "tamil_phoneme": "ஆகாவ்ெ",
-    "image_file": "sign_0015.png"
-  },
-  "17": {
-    "mahadevan_number": 17,
-    "tamil_phoneme": "தெ (தெம்)",
-    "image_file": "sign_0017.png"
-  },
-  "18": {
-    "mahadevan_number": 18,
-    "tamil_phoneme": "கா",
-    "image_file": "sign_0018.png"
-  },
-  "19": {
-    "mahadevan_number": 19,
-    "tamil_phoneme": "கண(கண்ண)",
-    "image_file": "sign_0019.png"
-  },
-  "20": {
-    "mahadevan_number": 20,
-    "tamil_phoneme": "கண்ணர்",
-    "image_file": "sign_0020.png"
-  },
-  "21": {
-    "mahadevan_number": 21,
-    "tamil_phoneme": "கய",
-    "image_file": "sign_0021.png"
-  },
-  "22": {
-    "mahadevan_number": 22,
-    "tamil_phoneme": "கண",
-    "image_file": "sign_0022.png"
-  },
-  "23": {
-    "mahadevan_number": 23,
-    "tamil_phoneme": "கரி",
-    "image_file": "sign_0023.png"
-  },
-  "24": {
-    "mahadevan_number": 24,
-    "tamil_phoneme": "ரிகரி",
-    "image_file": "sign_0024.png"
-  },
-  "25": {
-    "mahadevan_number": 25,
-    "tamil_phoneme": "கர்",
-    "image_file": "sign_0025.png"
-  },
-  "53": {
-    "mahadevan_number": 53,
-    "tamil_phoneme": "ம",
-    "image_file": "sign_0053.png"
-  },
-  "57": {
-    "mahadevan_number": 57,
-    "tamil_phoneme": "'எறம்ப' = எருமம",
-    "image_file": "sign_0057.png"
-  },
-  "58": {
-    "mahadevan_number": 58,
-    "tamil_phoneme": "தெ (early form)",
-    "image_file": "sign_0058.png"
-  },
-  "59": {
-    "mahadevan_number": 59,
-    "tamil_phoneme": "ள், ள",
-    "image_file": "sign_0059.png"
-  },
-  "60": {
-    "mahadevan_number": 60,
-    "tamil_phoneme": "ளம்,ளன்,ளல்,ளர்",
-    "image_file": "sign_0060.png"
-  },
-  "61": {
-    "mahadevan_number": 61,
-    "tamil_phoneme": "நலம்,நலன்",
-    "image_file": "sign_0061.png"
-  },
-  "62": {
-    "mahadevan_number": 62,
-    "tamil_phoneme": "ட்டள்",
-    "image_file": "sign_0062.png"
-  },
-  "63": {
-    "mahadevan_number": 63,
-    "tamil_phoneme": "மயிலட்டள்",
-    "image_file": "sign_0063.png"
-  },
-  "64": {
-    "mahadevan_number": 64,
-    "tamil_phoneme": "மயிலட்டள்",
-    "image_file": "sign_0064.png"
-  },
-  "65": {
-    "mahadevan_number": 65,
-    "tamil_phoneme": "இள, இளம்",
-    "image_file": "sign_0065.png"
-  },
-  "66": {
-    "mahadevan_number": 66,
-    "tamil_phoneme": "இளம், இல்லம்",
-    "image_file": "sign_0066.png"
-  },
-  "67": {
-    "mahadevan_number": 67,
-    "tamil_phoneme": "லா",
-    "image_file": "sign_0067.png"
-  },
-  "68": {
-    "mahadevan_number": 68,
-    "tamil_phoneme": "லாம்,லான்,லால்,லார்",
-    "image_file": "sign_0068.png"
-  },
-  "69": {
-    "mahadevan_number": 69,
-    "tamil_phoneme": "லி",
-    "image_file": "sign_0069.png"
-  },
-  "70": {
-    "mahadevan_number": 70,
-    "tamil_phoneme": "ழ",
-    "image_file": "sign_0070.png"
-  },
-  "71": {
-    "mahadevan_number": 71,
-    "tamil_phoneme": "ழம்,ழன்,ழல்,ழர்",
-    "image_file": "sign_0071.png"
-  },
-  "72": {
-    "mahadevan_number": 72,
-    "tamil_phoneme": "ல",
-    "image_file": "sign_0072.png"
-  },
-  "73": {
-    "mahadevan_number": 73,
-    "tamil_phoneme": "லம்.லன்.லல்,லர்",
-    "image_file": "sign_0073.png"
-  },
-  "74": {
-    "mahadevan_number": 74,
-    "tamil_phoneme": "லி",
-    "image_file": "sign_0074.png"
-  },
-  "75": {
-    "mahadevan_number": 75,
-    "tamil_phoneme": "இலி",
-    "image_file": "sign_0075.png"
-  },
-  "76": {
-    "mahadevan_number": 76,
-    "tamil_phoneme": "ககாழி (ககாழியூர்)",
-    "image_file": "sign_0076.png"
-  },
-  "78": {
-    "mahadevan_number": 78,
-    "tamil_phoneme": "மயில்",
-    "image_file": "sign_0078.png"
-  },
-  "79": {
-    "mahadevan_number": 79,
-    "tamil_phoneme": "மயில்",
-    "image_file": "sign_0079.png"
-  },
-  "80": {
-    "mahadevan_number": 80,
-    "tamil_phoneme": "மயில்",
-    "image_file": "sign_0080.png"
-  },
-  "81": {
-    "mahadevan_number": 81,
-    "tamil_phoneme": "மயிலட்ட",
-    "image_file": "sign_0081.png"
-  },
-  "105": {
-    "mahadevan_number": 105,
-    "tamil_phoneme": "நான்கு,நா,ந",
-    "image_file": "sign_0105.png"
-  },
-  "106": {
-    "mahadevan_number": 106,
-    "tamil_phoneme": "அய்,அய்ந்து",
-    "image_file": "sign_0106.png"
-  },
-  "107": {
-    "mahadevan_number": 107,
-    "tamil_phoneme": "அய்,அய்ந்து",
-    "image_file": "sign_0107.png"
-  },
-  "108": {
-    "mahadevan_number": 108,
-    "tamil_phoneme": "ஆறு",
-    "image_file": "sign_0108.png"
-  },
-  "109": {
-    "mahadevan_number": 109,
-    "tamil_phoneme": "ஆறு, நதி",
-    "image_file": "sign_0109.png"
-  },
-  "110": {
-    "mahadevan_number": 110,
-    "tamil_phoneme": "ஏழு, ஏ,எ",
-    "image_file": "sign_0110.png"
-  },
-  "111": {
-    "mahadevan_number": 111,
-    "tamil_phoneme": "எழுட்ட",
-    "image_file": "sign_0111.png"
-  },
-  "112": {
-    "mahadevan_number": 112,
-    "tamil_phoneme": "ஏழு, ஏ,எ",
-    "image_file": "sign_0112.png"
-  },
-  "113": {
-    "mahadevan_number": 113,
-    "tamil_phoneme": "எழுட்ட",
-    "image_file": "sign_0113.png"
-  },
-  "114": {
-    "mahadevan_number": 114,
-    "tamil_phoneme": "எட்டு, எண்",
-    "image_file": "sign_0114.png"
-  },
-  "115": {
-    "mahadevan_number": 115,
-    "tamil_phoneme": "வதாண்டு",
-    "image_file": "sign_0115.png"
-  },
-  "116": {
-    "mahadevan_number": 116,
-    "tamil_phoneme": "பத்து",
-    "image_file": "sign_0116.png"
-  },
-  "117": {
-    "mahadevan_number": 117,
-    "tamil_phoneme": "வதாண்டுப",
-    "image_file": "sign_0117.png"
-  },
-  "121": {
-    "mahadevan_number": 121,
-    "tamil_phoneme": "பன்னிரு",
-    "image_file": "sign_0121.png"
-  },
-  "122": {
-    "mahadevan_number": 122,
-    "tamil_phoneme": "பன்னிருட்ட",
-    "image_file": "sign_0122.png"
-  },
-  "123": {
-    "mahadevan_number": 123,
-    "tamil_phoneme": "ட,த",
-    "image_file": "sign_0123.png"
-  },
-  "124": {
-    "mahadevan_number": 124,
-    "tamil_phoneme": "த",
-    "image_file": "sign_0124.png"
-  },
-  "125": {
-    "mahadevan_number": 125,
-    "tamil_phoneme": "த",
-    "image_file": "sign_0125.png"
-  },
-  "126": {
-    "mahadevan_number": 126,
-    "tamil_phoneme": "த",
-    "image_file": "sign_0126.png"
-  },
-  "127": {
-    "mahadevan_number": 127,
-    "tamil_phoneme": "ர",
-    "image_file": "sign_0127.png"
-  },
-  "128": {
-    "mahadevan_number": 128,
-    "tamil_phoneme": "ரி",
-    "image_file": "sign_0128.png"
-  },
-  "129": {
-    "mahadevan_number": 129,
-    "tamil_phoneme": "ர",
-    "image_file": "sign_0129.png"
-  },
-  "130": {
-    "mahadevan_number": 130,
-    "tamil_phoneme": "ற்,ற",
-    "image_file": "sign_0130.png"
-  },
-  "137": {
-    "mahadevan_number": 137,
-    "tamil_phoneme": "த",
-    "image_file": "sign_0137.png"
-  },
-  "177": {
-    "mahadevan_number": 177,
-    "tamil_phoneme": "ரீ",
-    "image_file": "sign_0177.png"
-  },
-  "182": {
-    "mahadevan_number": 182,
-    "tamil_phoneme": "பண்ணா",
-    "image_file": "sign_0182.png"
-  },
-  "190": {
-    "mahadevan_number": 190,
-    "tamil_phoneme": "'கெலி'=நில அளமெ",
-    "image_file": "sign_0190.png"
-  },
-  "194": {
-    "mahadevan_number": 194,
-    "tamil_phoneme": "ஞான் (இளஞன்)",
-    "image_file": "sign_0194.png"
-  },
-  "197": {
-    "mahadevan_number": 197,
-    "tamil_phoneme": "ந",
-    "image_file": "sign_0197.png"
-  },
-  "198": {
-    "mahadevan_number": 198,
-    "tamil_phoneme": "நண்",
-    "image_file": "sign_0198.png"
-  },
-  "210": {
-    "mahadevan_number": 210,
-    "tamil_phoneme": "ககாயில்",
-    "image_file": "sign_0210.png"
-  },
-  "209": {
-    "mahadevan_number": 209,
-    "tamil_phoneme": "ககாயில்",
-    "image_file": "sign_0209.png"
-  },
-  "204": {
-    "mahadevan_number": 204,
-    "tamil_phoneme": "ககாயில்",
-    "image_file": "sign_0204.png"
-  },
-  "206": {
-    "mahadevan_number": 206,
-    "tamil_phoneme": "ககாயில்ண்[ண]",
-    "image_file": "sign_0206.png"
-  },
-  "207": {
-    "mahadevan_number": 207,
-    "tamil_phoneme": "ககாயிலண்ணல்",
-    "image_file": "sign_0207.png"
-  },
-  "211": {
-    "mahadevan_number": 211,
-    "tamil_phoneme": "ன்,ன",
-    "image_file": "sign_0211.png"
-  },
-  "205": {
-    "mahadevan_number": 205,
-    "tamil_phoneme": "ண,ணய்",
-    "image_file": "sign_0205.png"
-  },
-  "212": {
-    "mahadevan_number": 212,
-    "tamil_phoneme": "பன்,பன",
-    "image_file": "sign_0212.png"
-  },
-  "213": {
-    "mahadevan_number": 213,
-    "tamil_phoneme": "யன்",
-    "image_file": "sign_0213.png"
-  },
-  "214": {
-    "mahadevan_number": 214,
-    "tamil_phoneme": "ச்,ச",
-    "image_file": "sign_0214.png"
-  },
-  "215": {
-    "mahadevan_number": 215,
-    "tamil_phoneme": "ஈசா",
-    "image_file": "sign_0215.png"
-  },
-  "216": {
-    "mahadevan_number": 216,
-    "tamil_phoneme": "ச",
-    "image_file": "sign_0216.png"
-  },
-  "217": {
-    "mahadevan_number": 217,
-    "tamil_phoneme": "ச்ச",
-    "image_file": "sign_0217.png"
-  },
-  "219": {
-    "mahadevan_number": 219,
-    "tamil_phoneme": "சி",
-    "image_file": "sign_0219.png"
-  },
-  "220": {
-    "mahadevan_number": 220,
-    "tamil_phoneme": "சிெம்,சிென்",
-    "image_file": "sign_0220.png"
-  },
-  "221": {
-    "mahadevan_number": 221,
-    "tamil_phoneme": "சா",
-    "image_file": "sign_0221.png"
-  },
-  "222": {
-    "mahadevan_number": 222,
-    "tamil_phoneme": "சா",
-    "image_file": "sign_0222.png"
-  },
-  "223": {
-    "mahadevan_number": 223,
-    "tamil_phoneme": "சங்ங",
-    "image_file": "sign_0223.png"
-  },
-  "224": {
-    "mahadevan_number": 224,
-    "tamil_phoneme": "சங்கரா (வெண்மம)",
-    "image_file": "sign_0224.png"
-  },
-  "264": {
-    "mahadevan_number": 264,
-    "tamil_phoneme": "தம,தம்",
-    "image_file": "sign_0264.png"
-  },
-  "266": {
-    "mahadevan_number": 266,
-    "tamil_phoneme": "மன",
-    "image_file": "sign_0266.png"
-  },
-  "267": {
-    "mahadevan_number": 267,
-    "tamil_phoneme": "மீ",
-    "image_file": "sign_0267.png"
-  },
-  "270": {
-    "mahadevan_number": 270,
-    "tamil_phoneme": "மீய",
-    "image_file": "sign_0270.png"
-  },
-  "284": {
-    "mahadevan_number": 284,
-    "tamil_phoneme": "தம், தமீ",
-    "image_file": "sign_0284.png"
-  },
-  "285": {
-    "mahadevan_number": 285,
-    "tamil_phoneme": "தமம்,தமன்,தமர்",
-    "image_file": "sign_0285.png"
-  },
-  "286": {
-    "mahadevan_number": 286,
-    "tamil_phoneme": "தெதம்",
-    "image_file": "sign_0286.png"
-  },
-  "287": {
-    "mahadevan_number": 287,
-    "tamil_phoneme": "ட",
-    "image_file": "sign_0287.png"
-  },
-  "288": {
-    "mahadevan_number": 288,
-    "tamil_phoneme": "ட்",
-    "image_file": "sign_0288.png"
-  },
-  "289": {
-    "mahadevan_number": 289,
-    "tamil_phoneme": "டஅம்அம்(அன்,அல்,அர்)",
-    "image_file": "sign_0289.png"
-  },
-  "290": {
-    "mahadevan_number": 290,
-    "tamil_phoneme": "டீ",
-    "image_file": "sign_0290.png"
-  },
-  "293": {
-    "mahadevan_number": 293,
-    "tamil_phoneme": "ட்",
-    "image_file": "sign_0293.png"
-  },
-  "294": {
-    "mahadevan_number": 294,
-    "tamil_phoneme": "ட்ட",
-    "image_file": "sign_0294.png"
-  },
-  "295": {
-    "mahadevan_number": 295,
-    "tamil_phoneme": "டட்",
-    "image_file": "sign_0295.png"
-  },
-  "296": {
-    "mahadevan_number": 296,
-    "tamil_phoneme": "ட்ட",
-    "image_file": "sign_0296.png"
-  },
-  "297": {
-    "mahadevan_number": 297,
-    "tamil_phoneme": "ட்டண்",
-    "image_file": "sign_0297.png"
-  },
-  "298": {
-    "mahadevan_number": 298,
-    "tamil_phoneme": "டட்டட்ட",
-    "image_file": "sign_0298.png"
-  },
-  "299": {
-    "mahadevan_number": 299,
-    "tamil_phoneme": "ட",
-    "image_file": "sign_0299.png"
-  },
-  "300": {
-    "mahadevan_number": 300,
-    "tamil_phoneme": "ட்,டி",
-    "image_file": "sign_0300.png"
-  },
-  "391": {
-    "mahadevan_number": 391,
-    "tamil_phoneme": "தெ",
-    "image_file": "sign_0391.png"
-  },
-  "302": {
-    "mahadevan_number": 302,
-    "tamil_phoneme": "டர்",
-    "image_file": "sign_0302.png"
-  },
-  "303": {
-    "mahadevan_number": 303,
-    "tamil_phoneme": "ட்ட,டட்",
-    "image_file": "sign_0303.png"
-  },
-  "304": {
-    "mahadevan_number": 304,
-    "tamil_phoneme": "ம,ம்",
-    "image_file": "sign_0304.png"
-  },
-  "305": {
-    "mahadevan_number": 305,
-    "tamil_phoneme": "வம",
-    "image_file": "sign_0305.png"
-  },
-  "306": {
-    "mahadevan_number": 306,
-    "tamil_phoneme": "மீர்",
-    "image_file": "sign_0306.png"
-  },
-  "352": {
-    "mahadevan_number": 352,
-    "tamil_phoneme": "ஆய,யா",
-    "image_file": "sign_0352.png"
-  },
-  "351": {
-    "mahadevan_number": 351,
-    "tamil_phoneme": "யவ்ெ,ெவ்ய",
-    "image_file": "sign_0351.png"
-  },
-  "355": {
-    "mahadevan_number": 355,
-    "tamil_phoneme": "தெய்ய",
-    "image_file": "sign_0355.png"
-  },
-  "356": {
-    "mahadevan_number": 356,
-    "tamil_phoneme": "இதய்ய",
-    "image_file": "sign_0356.png"
-  },
-  "357": {
-    "mahadevan_number": 357,
-    "tamil_phoneme": "தய்ய",
-    "image_file": "sign_0357.png"
-  },
-  "358": {
-    "mahadevan_number": 358,
-    "tamil_phoneme": "ண்ண",
-    "image_file": "sign_0358.png"
-  },
-  "363": {
-    "mahadevan_number": 363,
-    "tamil_phoneme": "மன்னனன்",
-    "image_file": "sign_0363.png"
-  },
-  "367": {
-    "mahadevan_number": 367,
-    "tamil_phoneme": "ெவ்யெ",
-    "image_file": "sign_0367.png"
-  },
-  "372": {
-    "mahadevan_number": 372,
-    "tamil_phoneme": "வ்ெவ்யய்",
-    "image_file": "sign_0372.png"
-  },
-  "373": {
-    "mahadevan_number": 373,
-    "tamil_phoneme": "ெ",
-    "image_file": "sign_0373.png"
-  },
-  "382": {
-    "mahadevan_number": 382,
-    "tamil_phoneme": "ெண்ண",
-    "image_file": "sign_0382.png"
-  },
-  "381": {
-    "mahadevan_number": 381,
-    "tamil_phoneme": "ெண்,ெண",
-    "image_file": "sign_0381.png"
-  },
-  "385": {
-    "mahadevan_number": 385,
-    "tamil_phoneme": "ென",
-    "image_file": "sign_0385.png"
-  },
-  "387": {
-    "mahadevan_number": 387,
-    "tamil_phoneme": "ெய",
-    "image_file": "sign_0387.png"
-  },
-  "388": {
-    "mahadevan_number": 388,
-    "tamil_phoneme": "ெயல்",
-    "image_file": "sign_0388.png"
-  },
-  "389": {
-    "mahadevan_number": 389,
-    "tamil_phoneme": "ென",
-    "image_file": "sign_0389.png"
-  },
-  "390": {
-    "mahadevan_number": 390,
-    "tamil_phoneme": "ெனம்",
-    "image_file": "sign_0390.png"
-  },
-  "392": {
-    "mahadevan_number": 392,
-    "tamil_phoneme": "தெஇருென்(ர்)",
-    "image_file": "sign_0392.png"
-  },
-  "393": {
-    "mahadevan_number": 393,
-    "tamil_phoneme": "தெஅவ்",
-    "image_file": "sign_0393.png"
-  },
-  "402": {
-    "mahadevan_number": 402,
-    "tamil_phoneme": "ஆர்",
-    "image_file": "sign_0402.png"
-  },
-  "403": {
-    "mahadevan_number": 403,
-    "tamil_phoneme": "வ்ெ,ெவ்",
-    "image_file": "sign_0403.png"
-  },
-  "404": {
-    "mahadevan_number": 404,
-    "tamil_phoneme": "வ்ென்,வ்ெர்",
-    "image_file": "sign_0404.png"
-  },
-  "26": {
-    "mahadevan_number": 26,
-    "tamil_phoneme": "கரர், காரர்",
-    "image_file": "sign_0026.png"
-  },
-  "27": {
-    "mahadevan_number": 27,
-    "tamil_phoneme": "கட",
-    "image_file": "sign_0027.png"
-  },
-  "28": {
-    "mahadevan_number": 28,
-    "tamil_phoneme": "கம",
-    "image_file": "sign_0028.png"
-  },
-  "29": {
-    "mahadevan_number": 29,
-    "tamil_phoneme": "மகம, கமகம",
-    "image_file": "sign_0029.png"
-  },
-  "30": {
-    "mahadevan_number": 30,
-    "tamil_phoneme": "கம",
-    "image_file": "sign_0030.png"
-  },
-  "31": {
-    "mahadevan_number": 31,
-    "tamil_phoneme": "கவ்ெ",
-    "image_file": "sign_0031.png"
-  },
-  "32": {
-    "mahadevan_number": 32,
-    "tamil_phoneme": "கவ் (வகௌ)",
-    "image_file": "sign_0032.png"
-  },
-  "33": {
-    "mahadevan_number": 33,
-    "tamil_phoneme": "அகெ",
-    "image_file": "sign_0033.png"
-  },
-  "34": {
-    "mahadevan_number": 34,
-    "tamil_phoneme": "கய்",
-    "image_file": "sign_0034.png"
-  },
-  "35": {
-    "mahadevan_number": 35,
-    "tamil_phoneme": "கண",
-    "image_file": "sign_0035.png"
-  },
-  "36": {
-    "mahadevan_number": 36,
-    "tamil_phoneme": "கச",
-    "image_file": "sign_0036.png"
-  },
-  "37": {
-    "mahadevan_number": 37,
-    "tamil_phoneme": "கமண",
-    "image_file": "sign_0037.png"
-  },
-  "38": {
-    "mahadevan_number": 38,
-    "tamil_phoneme": "கண்,கண்ண",
-    "image_file": "sign_0038.png"
-  },
-  "39": {
-    "mahadevan_number": 39,
-    "tamil_phoneme": "வக, கக",
-    "image_file": "sign_0039.png"
-  },
-  "40": {
-    "mahadevan_number": 40,
-    "tamil_phoneme": "கண,கண்ண",
-    "image_file": "sign_0040.png"
-  },
-  "41": {
-    "mahadevan_number": 41,
-    "tamil_phoneme": "கர், கர",
-    "image_file": "sign_0041.png"
-  },
-  "42": {
-    "mahadevan_number": 42,
-    "tamil_phoneme": "தெகதெ",
-    "image_file": "sign_0042.png"
-  },
-  "43": {
-    "mahadevan_number": 43,
-    "tamil_phoneme": "கண",
-    "image_file": "sign_0043.png"
-  },
-  "47": {
-    "mahadevan_number": 47,
-    "tamil_phoneme": "ெர, ெர்",
-    "image_file": "sign_0047.png"
-  },
-  "48": {
-    "mahadevan_number": 48,
-    "tamil_phoneme": "ளார்",
-    "image_file": "sign_0048.png"
-  },
-  "49": {
-    "mahadevan_number": 49,
-    "tamil_phoneme": "முக'",
-    "image_file": "sign_0049.png"
-  },
-  "50": {
-    "mahadevan_number": 50,
-    "tamil_phoneme": "\"ணாய்\"",
-    "image_file": "sign_0050.png"
-  },
-  "51": {
-    "mahadevan_number": 51,
-    "tamil_phoneme": "'கதளணஅ'",
-    "image_file": "sign_0051.png"
-  },
-  "52": {
-    "mahadevan_number": 52,
-    "tamil_phoneme": "'கதளனர்'",
-    "image_file": "sign_0052.png"
-  },
-  "82": {
-    "mahadevan_number": 82,
-    "tamil_phoneme": "ெ அன்னம்=ெனம்",
-    "image_file": "sign_0082.png"
-  },
-  "84": {
-    "mahadevan_number": 84,
-    "tamil_phoneme": "கால் = காற்று",
-    "image_file": "sign_0084.png"
-  },
-  "86": {
-    "mahadevan_number": 86,
-    "tamil_phoneme": "ஒன்று,ஓர்,ஒ,ஓ,ர்",
-    "image_file": "sign_0086.png"
-  },
-  "87": {
-    "mahadevan_number": 87,
-    "tamil_phoneme": "இரு. ஈர்",
-    "image_file": "sign_0087.png"
-  },
-  "88": {
-    "mahadevan_number": 88,
-    "tamil_phoneme": "இரும்",
-    "image_file": "sign_0088.png"
-  },
-  "89": {
-    "mahadevan_number": 89,
-    "tamil_phoneme": "மூன்று,மு,மூ",
-    "image_file": "sign_0089.png"
-  },
-  "90": {
-    "mahadevan_number": 90,
-    "tamil_phoneme": "மூய=எருது",
-    "image_file": "sign_0090.png"
-  },
-  "91": {
-    "mahadevan_number": 91,
-    "tamil_phoneme": "முரா=கமார்",
-    "image_file": "sign_0091.png"
-  },
-  "92": {
-    "mahadevan_number": 92,
-    "tamil_phoneme": "இமூ",
-    "image_file": "sign_0092.png"
-  },
-  "93": {
-    "mahadevan_number": 93,
-    "tamil_phoneme": "ஓரிரு",
-    "image_file": "sign_0093.png"
-  },
-  "95": {
-    "mahadevan_number": 95,
-    "tamil_phoneme": "நான்கு,ந,நா",
-    "image_file": "sign_0095.png"
-  },
-  "96": {
-    "mahadevan_number": 96,
-    "tamil_phoneme": "அய்,அய்ந்து",
-    "image_file": "sign_0096.png"
-  },
-  "97": {
-    "mahadevan_number": 97,
-    "tamil_phoneme": "ஓர்",
-    "image_file": "sign_0097.png"
-  },
-  "98": {
-    "mahadevan_number": 98,
-    "tamil_phoneme": "கமற்ப்டி -ஒரு",
-    "image_file": "sign_0098.png"
-  },
-  "99": {
-    "mahadevan_number": 99,
-    "tamil_phoneme": "கமற்படி- இரு",
-    "image_file": "sign_0099.png"
-  },
-  "100": {
-    "mahadevan_number": 100,
-    "tamil_phoneme": "இரு",
-    "image_file": "sign_0100.png"
-  },
-  "101": {
-    "mahadevan_number": 101,
-    "tamil_phoneme": "இரு",
-    "image_file": "sign_0101.png"
-  },
-  "102": {
-    "mahadevan_number": 102,
-    "tamil_phoneme": "மூன்று,மு,மூ",
-    "image_file": "sign_0102.png"
-  },
-  "138": {
-    "mahadevan_number": 138,
-    "tamil_phoneme": "இத",
-    "image_file": "sign_0138.png"
-  },
-  "139": {
-    "mahadevan_number": 139,
-    "tamil_phoneme": "பத",
-    "image_file": "sign_0139.png"
-  },
-  "140": {
-    "mahadevan_number": 140,
-    "tamil_phoneme": "தஅம்அம், தஅன்அன்",
-    "image_file": "sign_0140.png"
-  },
-  "141": {
-    "mahadevan_number": 141,
-    "tamil_phoneme": "இருத",
-    "image_file": "sign_0141.png"
-  },
-  "142": {
-    "mahadevan_number": 142,
-    "tamil_phoneme": "இருதப",
-    "image_file": "sign_0142.png"
-  },
-  "143": {
-    "mahadevan_number": 143,
-    "tamil_phoneme": "இருதஅம் அம்(ன்,ல்,ர்)",
-    "image_file": "sign_0143.png"
-  },
-  "144": {
-    "mahadevan_number": 144,
-    "tamil_phoneme": "இருதட்ட",
-    "image_file": "sign_0144.png"
-  },
-  "145": {
-    "mahadevan_number": 145,
-    "tamil_phoneme": "இருதண்",
-    "image_file": "sign_0145.png"
-  },
-  "153": {
-    "mahadevan_number": 153,
-    "tamil_phoneme": "ன,ன்",
-    "image_file": "sign_0153.png"
-  },
-  "155": {
-    "mahadevan_number": 155,
-    "tamil_phoneme": "ன,ன்",
-    "image_file": "sign_0155.png"
-  },
-  "156": {
-    "mahadevan_number": 156,
-    "tamil_phoneme": "னட்ட",
-    "image_file": "sign_0156.png"
-  },
-  "158": {
-    "mahadevan_number": 158,
-    "tamil_phoneme": "தர், இன்",
-    "image_file": "sign_0158.png"
-  },
-  "159": {
-    "mahadevan_number": 159,
-    "tamil_phoneme": "இயன்",
-    "image_file": "sign_0159.png"
-  },
-  "160": {
-    "mahadevan_number": 160,
-    "tamil_phoneme": "தண்ன,தன்ண",
-    "image_file": "sign_0160.png"
-  },
-  "161": {
-    "mahadevan_number": 161,
-    "tamil_phoneme": "ன",
-    "image_file": "sign_0161.png"
-  },
-  "162": {
-    "mahadevan_number": 162,
-    "tamil_phoneme": "ய்,ய",
-    "image_file": "sign_0162.png"
-  },
-  "163": {
-    "mahadevan_number": 163,
-    "tamil_phoneme": "இய",
-    "image_file": "sign_0163.png"
-  },
-  "164": {
-    "mahadevan_number": 164,
-    "tamil_phoneme": "யஅம்அம்,(அன்,ல்,ர்)",
-    "image_file": "sign_0164.png"
-  },
-  "167": {
-    "mahadevan_number": 167,
-    "tamil_phoneme": "ய்ய",
-    "image_file": "sign_0167.png"
-  },
-  "169": {
-    "mahadevan_number": 169,
-    "tamil_phoneme": "னி",
-    "image_file": "sign_0169.png"
-  },
-  "171": {
-    "mahadevan_number": 171,
-    "tamil_phoneme": "ண,ணா",
-    "image_file": "sign_0171.png"
-  },
-  "172": {
-    "mahadevan_number": 172,
-    "tamil_phoneme": "ணண்",
-    "image_file": "sign_0172.png"
-  },
-  "173": {
-    "mahadevan_number": 173,
-    "tamil_phoneme": "ண்ண",
-    "image_file": "sign_0173.png"
-  },
-  "175": {
-    "mahadevan_number": 175,
-    "tamil_phoneme": "ெய",
-    "image_file": "sign_0175.png"
-  },
-  "176": {
-    "mahadevan_number": 176,
-    "tamil_phoneme": "ண்,ண,மண",
-    "image_file": "sign_0176.png"
-  },
-  "225": {
-    "mahadevan_number": 225,
-    "tamil_phoneme": "ச,ச்",
-    "image_file": "sign_0225.png"
-  },
-  "226": {
-    "mahadevan_number": 226,
-    "tamil_phoneme": "சி",
-    "image_file": "sign_0226.png"
-  },
-  "227": {
-    "mahadevan_number": 227,
-    "tamil_phoneme": "சரி",
-    "image_file": "sign_0227.png"
-  },
-  "228": {
-    "mahadevan_number": 228,
-    "tamil_phoneme": "சச்",
-    "image_file": "sign_0228.png"
-  },
-  "229": {
-    "mahadevan_number": 229,
-    "tamil_phoneme": "ஈ",
-    "image_file": "sign_0229.png"
-  },
-  "230": {
-    "mahadevan_number": 230,
-    "tamil_phoneme": "'மலய்'",
-    "image_file": "sign_0230.png"
-  },
-  "231": {
-    "mahadevan_number": 231,
-    "tamil_phoneme": "'மலயமலய்'",
-    "image_file": "sign_0231.png"
-  },
-  "232": {
-    "mahadevan_number": 232,
-    "tamil_phoneme": "\"மலய் அரச'",
-    "image_file": "sign_0232.png"
-  },
-  "233": {
-    "mahadevan_number": 233,
-    "tamil_phoneme": "மு, மூ",
-    "image_file": "sign_0233.png"
-  },
-  "235": {
-    "mahadevan_number": 235,
-    "tamil_phoneme": "மூய",
-    "image_file": "sign_0235.png"
-  },
-  "242": {
-    "mahadevan_number": 242,
-    "tamil_phoneme": "வதாழு",
-    "image_file": "sign_0242.png"
-  },
-  "243": {
-    "mahadevan_number": 243,
-    "tamil_phoneme": "அ வதாழு",
-    "image_file": "sign_0243.png"
-  },
-  "244": {
-    "mahadevan_number": 244,
-    "tamil_phoneme": "பண்ண",
-    "image_file": "sign_0244.png"
-  },
-  "245": {
-    "mahadevan_number": 245,
-    "tamil_phoneme": "'இட'",
-    "image_file": "sign_0245.png"
-  },
-  "246": {
-    "mahadevan_number": 246,
-    "tamil_phoneme": "'இடர்'",
-    "image_file": "sign_0246.png"
-  },
-  "249": {
-    "mahadevan_number": 249,
-    "tamil_phoneme": "ப",
-    "image_file": "sign_0249.png"
-  },
-  "250": {
-    "mahadevan_number": 250,
-    "tamil_phoneme": "பம்,பன்,பல்,பர்",
-    "image_file": "sign_0250.png"
-  },
-  "251": {
-    "mahadevan_number": 251,
-    "tamil_phoneme": "பச",
-    "image_file": "sign_0251.png"
-  },
-  "252": {
-    "mahadevan_number": 252,
-    "tamil_phoneme": "பண",
-    "image_file": "sign_0252.png"
-  },
-  "254": {
-    "mahadevan_number": 254,
-    "tamil_phoneme": "ண, ணி",
-    "image_file": "sign_0254.png"
-  },
-  "257": {
-    "mahadevan_number": 257,
-    "tamil_phoneme": "பண்ணய்",
-    "image_file": "sign_0257.png"
-  },
-  "258": {
-    "mahadevan_number": 258,
-    "tamil_phoneme": "பண்ணய்",
-    "image_file": "sign_0258.png"
-  },
-  "259": {
-    "mahadevan_number": 259,
-    "tamil_phoneme": "பண்ணய்",
-    "image_file": "sign_0259.png"
-  },
-  "261": {
-    "mahadevan_number": 261,
-    "tamil_phoneme": "ம",
-    "image_file": "sign_0261.png"
-  },
-  "262": {
-    "mahadevan_number": 262,
-    "tamil_phoneme": "மய",
-    "image_file": "sign_0262.png"
-  },
-  "307": {
-    "mahadevan_number": 307,
-    "tamil_phoneme": "ம",
-    "image_file": "sign_0307.png"
-  },
-  "308": {
-    "mahadevan_number": 308,
-    "tamil_phoneme": "மஅம்அம்(அன்,அல்,அர்)",
-    "image_file": "sign_0308.png"
-  },
-  "309": {
-    "mahadevan_number": 309,
-    "tamil_phoneme": "ஈ",
-    "image_file": "sign_0309.png"
-  },
-  "311": {
-    "mahadevan_number": 311,
-    "tamil_phoneme": "'யாழ்'",
-    "image_file": "sign_0311.png"
-  },
-  "321": {
-    "mahadevan_number": 321,
-    "tamil_phoneme": "ெவ்,வ்ெ",
-    "image_file": "sign_0321.png"
-  },
-  "322": {
-    "mahadevan_number": 322,
-    "tamil_phoneme": "ெென்,வ்ென்",
-    "image_file": "sign_0322.png"
-  },
-  "323": {
-    "mahadevan_number": 323,
-    "tamil_phoneme": "அரச",
-    "image_file": "sign_0323.png"
-  },
-  "326": {
-    "mahadevan_number": 326,
-    "tamil_phoneme": "வ்ய",
-    "image_file": "sign_0326.png"
-  },
-  "327": {
-    "mahadevan_number": 327,
-    "tamil_phoneme": "'அரச ண அ",
-    "image_file": "sign_0327.png"
-  },
-  "324": {
-    "mahadevan_number": 324,
-    "tamil_phoneme": "அரசன",
-    "image_file": "sign_0324.png"
-  },
-  "325": {
-    "mahadevan_number": 325,
-    "tamil_phoneme": "அரச",
-    "image_file": "sign_0325.png"
-  },
-  "328": {
-    "mahadevan_number": 328,
-    "tamil_phoneme": "அ",
-    "image_file": "sign_0328.png"
-  },
-  "329": {
-    "mahadevan_number": 329,
-    "tamil_phoneme": "அவ்",
-    "image_file": "sign_0329.png"
-  },
-  "330": {
-    "mahadevan_number": 330,
-    "tamil_phoneme": "அமூ",
-    "image_file": "sign_0330.png"
-  },
-  "331": {
-    "mahadevan_number": 331,
-    "tamil_phoneme": "அன",
-    "image_file": "sign_0331.png"
-  },
-  "340": {
-    "mahadevan_number": 340,
-    "tamil_phoneme": "அய் (old form)",
-    "image_file": "sign_0340.png"
-  },
-  "342": {
-    "mahadevan_number": 342,
-    "tamil_phoneme": "ஆ",
-    "image_file": "sign_0342.png"
-  },
-  "343": {
-    "mahadevan_number": 343,
-    "tamil_phoneme": "அய்",
-    "image_file": "sign_0343.png"
-  },
-  "344": {
-    "mahadevan_number": 344,
-    "tamil_phoneme": "அவ்",
-    "image_file": "sign_0344.png"
-  },
-  "345": {
-    "mahadevan_number": 345,
-    "tamil_phoneme": "ஆமூ",
-    "image_file": "sign_0345.png"
-  },
-  "347": {
-    "mahadevan_number": 347,
-    "tamil_phoneme": "ய்ய",
-    "image_file": "sign_0347.png"
-  },
-  "348": {
-    "mahadevan_number": 348,
-    "tamil_phoneme": "யண்ண,ண்மண",
-    "image_file": "sign_0348.png"
-  },
-  "349": {
-    "mahadevan_number": 349,
-    "tamil_phoneme": "ய்யர்",
-    "image_file": "sign_0349.png"
-  }
+ "1": {
+  "mahadevan_number": 1,
+  "tamil_phoneme": "க",
+  "image_file": "sign_0001.png"
+ },
+ "2": {
+  "mahadevan_number": 2,
+  "tamil_phoneme": "ரகர், கரர், காரர்",
+  "image_file": "sign_0002.png"
+ },
+ "3": {
+  "mahadevan_number": 3,
+  "tamil_phoneme": "க், கர்",
+  "image_file": "sign_0003.png"
+ },
+ "4": {
+  "mahadevan_number": 4,
+  "tamil_phoneme": "கண்",
+  "image_file": "sign_0004.png"
+ },
+ "5": {
+  "mahadevan_number": 5,
+  "tamil_phoneme": "கண்",
+  "image_file": "sign_0005.png"
+ },
+ "6": {
+  "mahadevan_number": 6,
+  "tamil_phoneme": "கி",
+  "image_file": "sign_0006.png"
+ },
+ "7": {
+  "mahadevan_number": 7,
+  "tamil_phoneme": "கீ",
+  "image_file": "sign_0007.png"
+ },
+ "8": {
+  "mahadevan_number": 8,
+  "tamil_phoneme": "கய்",
+  "image_file": "sign_0008.png"
+ },
+ "9": {
+  "mahadevan_number": 9,
+  "tamil_phoneme": "கய்ட்ட",
+  "image_file": "sign_0009.png"
+ },
+ "10": {
+  "mahadevan_number": 10,
+  "tamil_phoneme": "கா",
+  "image_file": "sign_0010.png"
+ },
+ "11": {
+  "mahadevan_number": 11,
+  "tamil_phoneme": "கற்ற",
+  "image_file": "sign_0011.png"
+ },
+ "12": {
+  "mahadevan_number": 12,
+  "tamil_phoneme": "காவ்வ,காவல்",
+  "image_file": "sign_0012.png"
+ },
+ "13": {
+  "mahadevan_number": 13,
+  "tamil_phoneme": "காவ்வர்",
+  "image_file": "sign_0013.png"
+ },
+ "14": {
+  "mahadevan_number": 14,
+  "tamil_phoneme": "காவ்வன்",
+  "image_file": "sign_0014.png"
+ },
+ "15": {
+  "mahadevan_number": 15,
+  "tamil_phoneme": "ஆகாவ்வ",
+  "image_file": "sign_0015.png"
+ },
+ "17": {
+  "mahadevan_number": 17,
+  "tamil_phoneme": "தவ (தவம்)",
+  "image_file": "sign_0017.png"
+ },
+ "18": {
+  "mahadevan_number": 18,
+  "tamil_phoneme": "கா",
+  "image_file": "sign_0018.png"
+ },
+ "19": {
+  "mahadevan_number": 19,
+  "tamil_phoneme": "கண(கண்ண)",
+  "image_file": "sign_0019.png"
+ },
+ "20": {
+  "mahadevan_number": 20,
+  "tamil_phoneme": "கண்ணர்",
+  "image_file": "sign_0020.png"
+ },
+ "21": {
+  "mahadevan_number": 21,
+  "tamil_phoneme": "கய",
+  "image_file": "sign_0021.png"
+ },
+ "22": {
+  "mahadevan_number": 22,
+  "tamil_phoneme": "கண",
+  "image_file": "sign_0022.png"
+ },
+ "23": {
+  "mahadevan_number": 23,
+  "tamil_phoneme": "கரி",
+  "image_file": "sign_0023.png"
+ },
+ "24": {
+  "mahadevan_number": 24,
+  "tamil_phoneme": "ரிகரி",
+  "image_file": "sign_0024.png"
+ },
+ "25": {
+  "mahadevan_number": 25,
+  "tamil_phoneme": "கர்",
+  "image_file": "sign_0025.png"
+ },
+ "53": {
+  "mahadevan_number": 53,
+  "tamil_phoneme": "ம",
+  "image_file": "sign_0053.png"
+ },
+ "57": {
+  "mahadevan_number": 57,
+  "tamil_phoneme": "'எறம்ப' = எருமம",
+  "image_file": "sign_0057.png"
+ },
+ "58": {
+  "mahadevan_number": 58,
+  "tamil_phoneme": "தவ (early form)",
+  "image_file": "sign_0058.png"
+ },
+ "59": {
+  "mahadevan_number": 59,
+  "tamil_phoneme": "ள், ள",
+  "image_file": "sign_0059.png"
+ },
+ "60": {
+  "mahadevan_number": 60,
+  "tamil_phoneme": "ளம்,ளன்,ளல்,ளர்",
+  "image_file": "sign_0060.png"
+ },
+ "61": {
+  "mahadevan_number": 61,
+  "tamil_phoneme": "நலம்,நலன்",
+  "image_file": "sign_0061.png"
+ },
+ "62": {
+  "mahadevan_number": 62,
+  "tamil_phoneme": "ட்டள்",
+  "image_file": "sign_0062.png"
+ },
+ "63": {
+  "mahadevan_number": 63,
+  "tamil_phoneme": "மயிலட்டள்",
+  "image_file": "sign_0063.png"
+ },
+ "64": {
+  "mahadevan_number": 64,
+  "tamil_phoneme": "மயிலட்டள்",
+  "image_file": "sign_0064.png"
+ },
+ "65": {
+  "mahadevan_number": 65,
+  "tamil_phoneme": "இள, இளம்",
+  "image_file": "sign_0065.png"
+ },
+ "66": {
+  "mahadevan_number": 66,
+  "tamil_phoneme": "இளம், இல்லம்",
+  "image_file": "sign_0066.png"
+ },
+ "67": {
+  "mahadevan_number": 67,
+  "tamil_phoneme": "லா",
+  "image_file": "sign_0067.png"
+ },
+ "68": {
+  "mahadevan_number": 68,
+  "tamil_phoneme": "லாம்,லான்,லால்,லார்",
+  "image_file": "sign_0068.png"
+ },
+ "69": {
+  "mahadevan_number": 69,
+  "tamil_phoneme": "லி",
+  "image_file": "sign_0069.png"
+ },
+ "70": {
+  "mahadevan_number": 70,
+  "tamil_phoneme": "ழ",
+  "image_file": "sign_0070.png"
+ },
+ "71": {
+  "mahadevan_number": 71,
+  "tamil_phoneme": "ழம்,ழன்,ழல்,ழர்",
+  "image_file": "sign_0071.png"
+ },
+ "72": {
+  "mahadevan_number": 72,
+  "tamil_phoneme": "ல",
+  "image_file": "sign_0072.png"
+ },
+ "73": {
+  "mahadevan_number": 73,
+  "tamil_phoneme": "லம்.லன்.லல்,லர்",
+  "image_file": "sign_0073.png"
+ },
+ "74": {
+  "mahadevan_number": 74,
+  "tamil_phoneme": "லி",
+  "image_file": "sign_0074.png"
+ },
+ "75": {
+  "mahadevan_number": 75,
+  "tamil_phoneme": "இலி",
+  "image_file": "sign_0075.png"
+ },
+ "76": {
+  "mahadevan_number": 76,
+  "tamil_phoneme": "கோழி (கோழியூர்)",
+  "image_file": "sign_0076.png"
+ },
+ "78": {
+  "mahadevan_number": 78,
+  "tamil_phoneme": "மயில்",
+  "image_file": "sign_0078.png"
+ },
+ "79": {
+  "mahadevan_number": 79,
+  "tamil_phoneme": "மயில்",
+  "image_file": "sign_0079.png"
+ },
+ "80": {
+  "mahadevan_number": 80,
+  "tamil_phoneme": "மயில்",
+  "image_file": "sign_0080.png"
+ },
+ "81": {
+  "mahadevan_number": 81,
+  "tamil_phoneme": "மயிலட்ட",
+  "image_file": "sign_0081.png"
+ },
+ "105": {
+  "mahadevan_number": 105,
+  "tamil_phoneme": "நான்கு,நா,ந",
+  "image_file": "sign_0105.png"
+ },
+ "106": {
+  "mahadevan_number": 106,
+  "tamil_phoneme": "அய்,அய்ந்து",
+  "image_file": "sign_0106.png"
+ },
+ "107": {
+  "mahadevan_number": 107,
+  "tamil_phoneme": "அய்,அய்ந்து",
+  "image_file": "sign_0107.png"
+ },
+ "108": {
+  "mahadevan_number": 108,
+  "tamil_phoneme": "ஆறு",
+  "image_file": "sign_0108.png"
+ },
+ "109": {
+  "mahadevan_number": 109,
+  "tamil_phoneme": "ஆறு, நதி",
+  "image_file": "sign_0109.png"
+ },
+ "110": {
+  "mahadevan_number": 110,
+  "tamil_phoneme": "ஏழு, ஏ,எ",
+  "image_file": "sign_0110.png"
+ },
+ "111": {
+  "mahadevan_number": 111,
+  "tamil_phoneme": "எழுட்ட",
+  "image_file": "sign_0111.png"
+ },
+ "112": {
+  "mahadevan_number": 112,
+  "tamil_phoneme": "ஏழு, ஏ,எ",
+  "image_file": "sign_0112.png"
+ },
+ "113": {
+  "mahadevan_number": 113,
+  "tamil_phoneme": "எழுட்ட",
+  "image_file": "sign_0113.png"
+ },
+ "114": {
+  "mahadevan_number": 114,
+  "tamil_phoneme": "எட்டு, எண்",
+  "image_file": "sign_0114.png"
+ },
+ "115": {
+  "mahadevan_number": 115,
+  "tamil_phoneme": "தொண்டு",
+  "image_file": "sign_0115.png"
+ },
+ "116": {
+  "mahadevan_number": 116,
+  "tamil_phoneme": "தொண்டு",
+  "image_file": "sign_0116.png"
+ },
+ "117": {
+  "mahadevan_number": 117,
+  "tamil_phoneme": "தொண்டுப",
+  "image_file": "sign_0117.png"
+ },
+ "121": {
+  "mahadevan_number": 121,
+  "tamil_phoneme": "பன்னிரு",
+  "image_file": "sign_0121.png"
+ },
+ "122": {
+  "mahadevan_number": 122,
+  "tamil_phoneme": "பன்னிருட்ட",
+  "image_file": "sign_0122.png"
+ },
+ "123": {
+  "mahadevan_number": 123,
+  "tamil_phoneme": "ட,த",
+  "image_file": "sign_0123.png"
+ },
+ "124": {
+  "mahadevan_number": 124,
+  "tamil_phoneme": "த",
+  "image_file": "sign_0124.png"
+ },
+ "125": {
+  "mahadevan_number": 125,
+  "tamil_phoneme": "த",
+  "image_file": "sign_0125.png"
+ },
+ "126": {
+  "mahadevan_number": 126,
+  "tamil_phoneme": "த",
+  "image_file": "sign_0126.png"
+ },
+ "127": {
+  "mahadevan_number": 127,
+  "tamil_phoneme": "ர",
+  "image_file": "sign_0127.png"
+ },
+ "128": {
+  "mahadevan_number": 128,
+  "tamil_phoneme": "ரி",
+  "image_file": "sign_0128.png"
+ },
+ "129": {
+  "mahadevan_number": 129,
+  "tamil_phoneme": "ர",
+  "image_file": "sign_0129.png"
+ },
+ "130": {
+  "mahadevan_number": 130,
+  "tamil_phoneme": "ற்,ற",
+  "image_file": "sign_0130.png"
+ },
+ "137": {
+  "mahadevan_number": 137,
+  "tamil_phoneme": "த",
+  "image_file": "sign_0137.png"
+ },
+ "177": {
+  "mahadevan_number": 177,
+  "tamil_phoneme": "ரீ",
+  "image_file": "sign_0177.png"
+ },
+ "182": {
+  "mahadevan_number": 182,
+  "tamil_phoneme": "பண்ணா",
+  "image_file": "sign_0182.png"
+ },
+ "190": {
+  "mahadevan_number": 190,
+  "tamil_phoneme": "'வேலி'=நில அளவை",
+  "image_file": "sign_0190.png"
+ },
+ "194": {
+  "mahadevan_number": 194,
+  "tamil_phoneme": "ஞான் (இளஞன்)",
+  "image_file": "sign_0194.png"
+ },
+ "197": {
+  "mahadevan_number": 197,
+  "tamil_phoneme": "ந",
+  "image_file": "sign_0197.png"
+ },
+ "198": {
+  "mahadevan_number": 198,
+  "tamil_phoneme": "நண்",
+  "image_file": "sign_0198.png"
+ },
+ "210": {
+  "mahadevan_number": 210,
+  "tamil_phoneme": "கோயில்",
+  "image_file": "sign_0210.png"
+ },
+ "209": {
+  "mahadevan_number": 209,
+  "tamil_phoneme": "கோயில்",
+  "image_file": "sign_0209.png"
+ },
+ "204": {
+  "mahadevan_number": 204,
+  "tamil_phoneme": "கோயில்",
+  "image_file": "sign_0204.png"
+ },
+ "206": {
+  "mahadevan_number": 206,
+  "tamil_phoneme": "கோயிலண்ண",
+  "image_file": "sign_0206.png"
+ },
+ "207": {
+  "mahadevan_number": 207,
+  "tamil_phoneme": "கோயிலண்ணல்",
+  "image_file": "sign_0207.png"
+ },
+ "211": {
+  "mahadevan_number": 211,
+  "tamil_phoneme": "ன்,ன",
+  "image_file": "sign_0211.png"
+ },
+ "205": {
+  "mahadevan_number": 205,
+  "tamil_phoneme": "ண,ணய்",
+  "image_file": "sign_0205.png"
+ },
+ "212": {
+  "mahadevan_number": 212,
+  "tamil_phoneme": "பன்,பன",
+  "image_file": "sign_0212.png"
+ },
+ "213": {
+  "mahadevan_number": 213,
+  "tamil_phoneme": "யன்",
+  "image_file": "sign_0213.png"
+ },
+ "214": {
+  "mahadevan_number": 214,
+  "tamil_phoneme": "ச்,ச",
+  "image_file": "sign_0214.png"
+ },
+ "215": {
+  "mahadevan_number": 215,
+  "tamil_phoneme": "ஈசா",
+  "image_file": "sign_0215.png"
+ },
+ "216": {
+  "mahadevan_number": 216,
+  "tamil_phoneme": "ச",
+  "image_file": "sign_0216.png"
+ },
+ "217": {
+  "mahadevan_number": 217,
+  "tamil_phoneme": "ச்ச",
+  "image_file": "sign_0217.png"
+ },
+ "219": {
+  "mahadevan_number": 219,
+  "tamil_phoneme": "சி",
+  "image_file": "sign_0219.png"
+ },
+ "220": {
+  "mahadevan_number": 220,
+  "tamil_phoneme": "சிவம்,சிவன்",
+  "image_file": "sign_0220.png"
+ },
+ "221": {
+  "mahadevan_number": 221,
+  "tamil_phoneme": "சா",
+  "image_file": "sign_0221.png"
+ },
+ "222": {
+  "mahadevan_number": 222,
+  "tamil_phoneme": "சா",
+  "image_file": "sign_0222.png"
+ },
+ "223": {
+  "mahadevan_number": 223,
+  "tamil_phoneme": "சங்ங",
+  "image_file": "sign_0223.png"
+ },
+ "224": {
+  "mahadevan_number": 224,
+  "tamil_phoneme": "சங்கரா (வெண்மை)",
+  "image_file": "sign_0224.png"
+ },
+ "264": {
+  "mahadevan_number": 264,
+  "tamil_phoneme": "தம,தம்",
+  "image_file": "sign_0264.png"
+ },
+ "266": {
+  "mahadevan_number": 266,
+  "tamil_phoneme": "மன",
+  "image_file": "sign_0266.png"
+ },
+ "267": {
+  "mahadevan_number": 267,
+  "tamil_phoneme": "மீ",
+  "image_file": "sign_0267.png"
+ },
+ "270": {
+  "mahadevan_number": 270,
+  "tamil_phoneme": "மீய",
+  "image_file": "sign_0270.png"
+ },
+ "284": {
+  "mahadevan_number": 284,
+  "tamil_phoneme": "தம், தமீ",
+  "image_file": "sign_0284.png"
+ },
+ "285": {
+  "mahadevan_number": 285,
+  "tamil_phoneme": "தமம்,தமன்,தமர்",
+  "image_file": "sign_0285.png"
+ },
+ "286": {
+  "mahadevan_number": 286,
+  "tamil_phoneme": "தவதம்",
+  "image_file": "sign_0286.png"
+ },
+ "287": {
+  "mahadevan_number": 287,
+  "tamil_phoneme": "ட",
+  "image_file": "sign_0287.png"
+ },
+ "288": {
+  "mahadevan_number": 288,
+  "tamil_phoneme": "ட்",
+  "image_file": "sign_0288.png"
+ },
+ "289": {
+  "mahadevan_number": 289,
+  "tamil_phoneme": "டஅம்அம்(அன்,அல்,அர்)",
+  "image_file": "sign_0289.png"
+ },
+ "290": {
+  "mahadevan_number": 290,
+  "tamil_phoneme": "டீ",
+  "image_file": "sign_0290.png"
+ },
+ "293": {
+  "mahadevan_number": 293,
+  "tamil_phoneme": "ட்",
+  "image_file": "sign_0293.png"
+ },
+ "294": {
+  "mahadevan_number": 294,
+  "tamil_phoneme": "ட்ட",
+  "image_file": "sign_0294.png"
+ },
+ "295": {
+  "mahadevan_number": 295,
+  "tamil_phoneme": "டட்",
+  "image_file": "sign_0295.png"
+ },
+ "296": {
+  "mahadevan_number": 296,
+  "tamil_phoneme": "ட்ட",
+  "image_file": "sign_0296.png"
+ },
+ "297": {
+  "mahadevan_number": 297,
+  "tamil_phoneme": "ட்டண்",
+  "image_file": "sign_0297.png"
+ },
+ "298": {
+  "mahadevan_number": 298,
+  "tamil_phoneme": "டட்டட்ட",
+  "image_file": "sign_0298.png"
+ },
+ "299": {
+  "mahadevan_number": 299,
+  "tamil_phoneme": "ட",
+  "image_file": "sign_0299.png"
+ },
+ "300": {
+  "mahadevan_number": 300,
+  "tamil_phoneme": "ட்,டி",
+  "image_file": "sign_0300.png"
+ },
+ "391": {
+  "mahadevan_number": 391,
+  "tamil_phoneme": "தவ",
+  "image_file": "sign_0391.png"
+ },
+ "302": {
+  "mahadevan_number": 302,
+  "tamil_phoneme": "டர்",
+  "image_file": "sign_0302.png"
+ },
+ "303": {
+  "mahadevan_number": 303,
+  "tamil_phoneme": "ட்ட,டட்",
+  "image_file": "sign_0303.png"
+ },
+ "304": {
+  "mahadevan_number": 304,
+  "tamil_phoneme": "ம,ம்",
+  "image_file": "sign_0304.png"
+ },
+ "305": {
+  "mahadevan_number": 305,
+  "tamil_phoneme": "வம",
+  "image_file": "sign_0305.png"
+ },
+ "306": {
+  "mahadevan_number": 306,
+  "tamil_phoneme": "மீர்",
+  "image_file": "sign_0306.png"
+ },
+ "352": {
+  "mahadevan_number": 352,
+  "tamil_phoneme": "ஆய,யா",
+  "image_file": "sign_0352.png"
+ },
+ "351": {
+  "mahadevan_number": 351,
+  "tamil_phoneme": "யவ்வ,வவ்ய",
+  "image_file": "sign_0351.png"
+ },
+ "355": {
+  "mahadevan_number": 355,
+  "tamil_phoneme": "தவய்ய",
+  "image_file": "sign_0355.png"
+ },
+ "356": {
+  "mahadevan_number": 356,
+  "tamil_phoneme": "இதய்ய",
+  "image_file": "sign_0356.png"
+ },
+ "357": {
+  "mahadevan_number": 357,
+  "tamil_phoneme": "தய்ய",
+  "image_file": "sign_0357.png"
+ },
+ "358": {
+  "mahadevan_number": 358,
+  "tamil_phoneme": "ண்ண",
+  "image_file": "sign_0358.png"
+ },
+ "363": {
+  "mahadevan_number": 363,
+  "tamil_phoneme": "மன்ன",
+  "image_file": "sign_0363.png"
+ },
+ "367": {
+  "mahadevan_number": 367,
+  "tamil_phoneme": "வவ்யவ",
+  "image_file": "sign_0367.png"
+ },
+ "372": {
+  "mahadevan_number": 372,
+  "tamil_phoneme": "வ்வவ்யய்",
+  "image_file": "sign_0372.png"
+ },
+ "373": {
+  "mahadevan_number": 373,
+  "tamil_phoneme": "ெ",
+  "image_file": "sign_0373.png"
+ },
+ "382": {
+  "mahadevan_number": 382,
+  "tamil_phoneme": "ெண்ண",
+  "image_file": "sign_0382.png"
+ },
+ "381": {
+  "mahadevan_number": 381,
+  "tamil_phoneme": "ெண்,ெண",
+  "image_file": "sign_0381.png"
+ },
+ "385": {
+  "mahadevan_number": 385,
+  "tamil_phoneme": "ென",
+  "image_file": "sign_0385.png"
+ },
+ "387": {
+  "mahadevan_number": 387,
+  "tamil_phoneme": "ெய",
+  "image_file": "sign_0387.png"
+ },
+ "388": {
+  "mahadevan_number": 388,
+  "tamil_phoneme": "ெயல்",
+  "image_file": "sign_0388.png"
+ },
+ "389": {
+  "mahadevan_number": 389,
+  "tamil_phoneme": "ென",
+  "image_file": "sign_0389.png"
+ },
+ "390": {
+  "mahadevan_number": 390,
+  "tamil_phoneme": "ெனம்",
+  "image_file": "sign_0390.png"
+ },
+ "392": {
+  "mahadevan_number": 392,
+  "tamil_phoneme": "தவஇருவன்(ர்)",
+  "image_file": "sign_0392.png"
+ },
+ "393": {
+  "mahadevan_number": 393,
+  "tamil_phoneme": "தவஅவ்",
+  "image_file": "sign_0393.png"
+ },
+ "402": {
+  "mahadevan_number": 402,
+  "tamil_phoneme": "ஆர்",
+  "image_file": "sign_0402.png"
+ },
+ "403": {
+  "mahadevan_number": 403,
+  "tamil_phoneme": "வ்வ,வவ்",
+  "image_file": "sign_0403.png"
+ },
+ "404": {
+  "mahadevan_number": 404,
+  "tamil_phoneme": "வ்வன்,வ்வர்",
+  "image_file": "sign_0404.png"
+ },
+ "26": {
+  "mahadevan_number": 26,
+  "tamil_phoneme": "கரர், காரர்",
+  "image_file": "sign_0026.png"
+ },
+ "27": {
+  "mahadevan_number": 27,
+  "tamil_phoneme": "கட",
+  "image_file": "sign_0027.png"
+ },
+ "28": {
+  "mahadevan_number": 28,
+  "tamil_phoneme": "கம",
+  "image_file": "sign_0028.png"
+ },
+ "29": {
+  "mahadevan_number": 29,
+  "tamil_phoneme": "மகம, கமகம",
+  "image_file": "sign_0029.png"
+ },
+ "30": {
+  "mahadevan_number": 30,
+  "tamil_phoneme": "கம",
+  "image_file": "sign_0030.png"
+ },
+ "31": {
+  "mahadevan_number": 31,
+  "tamil_phoneme": "கவ்வ",
+  "image_file": "sign_0031.png"
+ },
+ "32": {
+  "mahadevan_number": 32,
+  "tamil_phoneme": "கவ் (வகௌ)",
+  "image_file": "sign_0032.png"
+ },
+ "33": {
+  "mahadevan_number": 33,
+  "tamil_phoneme": "அகவ",
+  "image_file": "sign_0033.png"
+ },
+ "34": {
+  "mahadevan_number": 34,
+  "tamil_phoneme": "கய்",
+  "image_file": "sign_0034.png"
+ },
+ "35": {
+  "mahadevan_number": 35,
+  "tamil_phoneme": "கண",
+  "image_file": "sign_0035.png"
+ },
+ "36": {
+  "mahadevan_number": 36,
+  "tamil_phoneme": "கச",
+  "image_file": "sign_0036.png"
+ },
+ "37": {
+  "mahadevan_number": 37,
+  "tamil_phoneme": "கமண",
+  "image_file": "sign_0037.png"
+ },
+ "38": {
+  "mahadevan_number": 38,
+  "tamil_phoneme": "கண்,கண்ண",
+  "image_file": "sign_0038.png"
+ },
+ "39": {
+  "mahadevan_number": 39,
+  "tamil_phoneme": "கெ, கே",
+  "image_file": "sign_0039.png"
+ },
+ "40": {
+  "mahadevan_number": 40,
+  "tamil_phoneme": "கண,கண்ண",
+  "image_file": "sign_0040.png"
+ },
+ "41": {
+  "mahadevan_number": 41,
+  "tamil_phoneme": "கர், கர",
+  "image_file": "sign_0041.png"
+ },
+ "42": {
+  "mahadevan_number": 42,
+  "tamil_phoneme": "தவகதவ",
+  "image_file": "sign_0042.png"
+ },
+ "43": {
+  "mahadevan_number": 43,
+  "tamil_phoneme": "கண",
+  "image_file": "sign_0043.png"
+ },
+ "47": {
+  "mahadevan_number": 47,
+  "tamil_phoneme": "வர, வர்",
+  "image_file": "sign_0047.png"
+ },
+ "48": {
+  "mahadevan_number": 48,
+  "tamil_phoneme": "ளார்",
+  "image_file": "sign_0048.png"
+ },
+ "49": {
+  "mahadevan_number": 49,
+  "tamil_phoneme": "முக'",
+  "image_file": "sign_0049.png"
+ },
+ "50": {
+  "mahadevan_number": 50,
+  "tamil_phoneme": "\"ணாய்\"",
+  "image_file": "sign_0050.png"
+ },
+ "51": {
+  "mahadevan_number": 51,
+  "tamil_phoneme": "தேளணஅ",
+  "image_file": "sign_0051.png"
+ },
+ "52": {
+  "mahadevan_number": 52,
+  "tamil_phoneme": "தேளனர்",
+  "image_file": "sign_0052.png"
+ },
+ "82": {
+  "mahadevan_number": 82,
+  "tamil_phoneme": "வ அன்னம்=வனம்",
+  "image_file": "sign_0082.png"
+ },
+ "84": {
+  "mahadevan_number": 84,
+  "tamil_phoneme": "கால் = காற்று",
+  "image_file": "sign_0084.png"
+ },
+ "86": {
+  "mahadevan_number": 86,
+  "tamil_phoneme": "ஒன்று,ஓர்,ஒ,ஓ,ர்",
+  "image_file": "sign_0086.png"
+ },
+ "87": {
+  "mahadevan_number": 87,
+  "tamil_phoneme": "இரு. ஈர்",
+  "image_file": "sign_0087.png"
+ },
+ "88": {
+  "mahadevan_number": 88,
+  "tamil_phoneme": "இரும்",
+  "image_file": "sign_0088.png"
+ },
+ "89": {
+  "mahadevan_number": 89,
+  "tamil_phoneme": "மூன்று,மு,மூ",
+  "image_file": "sign_0089.png"
+ },
+ "90": {
+  "mahadevan_number": 90,
+  "tamil_phoneme": "மூய=எருது",
+  "image_file": "sign_0090.png"
+ },
+ "91": {
+  "mahadevan_number": 91,
+  "tamil_phoneme": "முரா=மோர்",
+  "image_file": "sign_0091.png"
+ },
+ "92": {
+  "mahadevan_number": 92,
+  "tamil_phoneme": "இமூ",
+  "image_file": "sign_0092.png"
+ },
+ "93": {
+  "mahadevan_number": 93,
+  "tamil_phoneme": "ஓரிரு",
+  "image_file": "sign_0093.png"
+ },
+ "94": {
+  "mahadevan_number": 94,
+  "tamil_phoneme": "இருஓர்",
+  "image_file": "sign_0094.png"
+ },
+ "95": {
+  "mahadevan_number": 95,
+  "tamil_phoneme": "நான்கு,ந,நா",
+  "image_file": "sign_0095.png"
+ },
+ "96": {
+  "mahadevan_number": 96,
+  "tamil_phoneme": "அய்,அய்ந்து",
+  "image_file": "sign_0096.png"
+ },
+ "97": {
+  "mahadevan_number": 97,
+  "tamil_phoneme": "ஓர்",
+  "image_file": "sign_0097.png"
+ },
+ "98": {
+  "mahadevan_number": 98,
+  "tamil_phoneme": "மேற்படி -ஒரு",
+  "image_file": "sign_0098.png"
+ },
+ "99": {
+  "mahadevan_number": 99,
+  "tamil_phoneme": "மேற்படி- இரு",
+  "image_file": "sign_0099.png"
+ },
+ "100": {
+  "mahadevan_number": 100,
+  "tamil_phoneme": "இரு",
+  "image_file": "sign_0100.png"
+ },
+ "101": {
+  "mahadevan_number": 101,
+  "tamil_phoneme": "இரு",
+  "image_file": "sign_0101.png"
+ },
+ "102": {
+  "mahadevan_number": 102,
+  "tamil_phoneme": "மூன்று,மு,மூ",
+  "image_file": "sign_0102.png"
+ },
+ "103": {
+  "mahadevan_number": 103,
+  "tamil_phoneme": "மூன்று,மு,மூ",
+  "image_file": "sign_0103.png"
+ },
+ "104": {
+  "mahadevan_number": 104,
+  "tamil_phoneme": "நான்கு,ந,நா",
+  "image_file": "sign_0104.png"
+ },
+ "138": {
+  "mahadevan_number": 138,
+  "tamil_phoneme": "இத",
+  "image_file": "sign_0138.png"
+ },
+ "139": {
+  "mahadevan_number": 139,
+  "tamil_phoneme": "பத",
+  "image_file": "sign_0139.png"
+ },
+ "140": {
+  "mahadevan_number": 140,
+  "tamil_phoneme": "தஅம்அம், தஅன்அன்",
+  "image_file": "sign_0140.png"
+ },
+ "141": {
+  "mahadevan_number": 141,
+  "tamil_phoneme": "இருத",
+  "image_file": "sign_0141.png"
+ },
+ "142": {
+  "mahadevan_number": 142,
+  "tamil_phoneme": "இருதப",
+  "image_file": "sign_0142.png"
+ },
+ "143": {
+  "mahadevan_number": 143,
+  "tamil_phoneme": "இருதஅம் அம்(ன்,ல்,ர்)",
+  "image_file": "sign_0143.png"
+ },
+ "144": {
+  "mahadevan_number": 144,
+  "tamil_phoneme": "இருதட்ட",
+  "image_file": "sign_0144.png"
+ },
+ "145": {
+  "mahadevan_number": 145,
+  "tamil_phoneme": "இருதண்",
+  "image_file": "sign_0145.png"
+ },
+ "153": {
+  "mahadevan_number": 153,
+  "tamil_phoneme": "ன,ன்",
+  "image_file": "sign_0153.png"
+ },
+ "155": {
+  "mahadevan_number": 155,
+  "tamil_phoneme": "ன,ன்",
+  "image_file": "sign_0155.png"
+ },
+ "156": {
+  "mahadevan_number": 156,
+  "tamil_phoneme": "னட்ட",
+  "image_file": "sign_0156.png"
+ },
+ "158": {
+  "mahadevan_number": 158,
+  "tamil_phoneme": "தர், இன்",
+  "image_file": "sign_0158.png"
+ },
+ "159": {
+  "mahadevan_number": 159,
+  "tamil_phoneme": "இயன்",
+  "image_file": "sign_0159.png"
+ },
+ "160": {
+  "mahadevan_number": 160,
+  "tamil_phoneme": "தண்ன,தன்ண",
+  "image_file": "sign_0160.png"
+ },
+ "161": {
+  "mahadevan_number": 161,
+  "tamil_phoneme": "ன",
+  "image_file": "sign_0161.png"
+ },
+ "162": {
+  "mahadevan_number": 162,
+  "tamil_phoneme": "ய்,ய",
+  "image_file": "sign_0162.png"
+ },
+ "163": {
+  "mahadevan_number": 163,
+  "tamil_phoneme": "இய",
+  "image_file": "sign_0163.png"
+ },
+ "164": {
+  "mahadevan_number": 164,
+  "tamil_phoneme": "யஅம்அம்,(அன்,ல்,ர்)",
+  "image_file": "sign_0164.png"
+ },
+ "167": {
+  "mahadevan_number": 167,
+  "tamil_phoneme": "ய்ய",
+  "image_file": "sign_0167.png"
+ },
+ "169": {
+  "mahadevan_number": 169,
+  "tamil_phoneme": "னி",
+  "image_file": "sign_0169.png"
+ },
+ "171": {
+  "mahadevan_number": 171,
+  "tamil_phoneme": "ண,ணா",
+  "image_file": "sign_0171.png"
+ },
+ "172": {
+  "mahadevan_number": 172,
+  "tamil_phoneme": "ணண்",
+  "image_file": "sign_0172.png"
+ },
+ "173": {
+  "mahadevan_number": 173,
+  "tamil_phoneme": "ண்ண",
+  "image_file": "sign_0173.png"
+ },
+ "175": {
+  "mahadevan_number": 175,
+  "tamil_phoneme": "ெய",
+  "image_file": "sign_0175.png"
+ },
+ "176": {
+  "mahadevan_number": 176,
+  "tamil_phoneme": "ண்,ண,மண",
+  "image_file": "sign_0176.png"
+ },
+ "225": {
+  "mahadevan_number": 225,
+  "tamil_phoneme": "ச,ச்",
+  "image_file": "sign_0225.png"
+ },
+ "226": {
+  "mahadevan_number": 226,
+  "tamil_phoneme": "சி",
+  "image_file": "sign_0226.png"
+ },
+ "227": {
+  "mahadevan_number": 227,
+  "tamil_phoneme": "சரி",
+  "image_file": "sign_0227.png"
+ },
+ "228": {
+  "mahadevan_number": 228,
+  "tamil_phoneme": "சச்",
+  "image_file": "sign_0228.png"
+ },
+ "229": {
+  "mahadevan_number": 229,
+  "tamil_phoneme": "ஈ",
+  "image_file": "sign_0229.png"
+ },
+ "230": {
+  "mahadevan_number": 230,
+  "tamil_phoneme": "'மலய்'",
+  "image_file": "sign_0230.png"
+ },
+ "231": {
+  "mahadevan_number": 231,
+  "tamil_phoneme": "'மலயமலய்'",
+  "image_file": "sign_0231.png"
+ },
+ "232": {
+  "mahadevan_number": 232,
+  "tamil_phoneme": "\"மலய் அரச'",
+  "image_file": "sign_0232.png"
+ },
+ "233": {
+  "mahadevan_number": 233,
+  "tamil_phoneme": "மு, மூ",
+  "image_file": "sign_0233.png"
+ },
+ "235": {
+  "mahadevan_number": 235,
+  "tamil_phoneme": "மூய",
+  "image_file": "sign_0235.png"
+ },
+ "242": {
+  "mahadevan_number": 242,
+  "tamil_phoneme": "தொழு",
+  "image_file": "sign_0242.png"
+ },
+ "243": {
+  "mahadevan_number": 243,
+  "tamil_phoneme": "அ தொழு",
+  "image_file": "sign_0243.png"
+ },
+ "244": {
+  "mahadevan_number": 244,
+  "tamil_phoneme": "பண்ண",
+  "image_file": "sign_0244.png"
+ },
+ "245": {
+  "mahadevan_number": 245,
+  "tamil_phoneme": "'இட'",
+  "image_file": "sign_0245.png"
+ },
+ "246": {
+  "mahadevan_number": 246,
+  "tamil_phoneme": "'இடர்'",
+  "image_file": "sign_0246.png"
+ },
+ "249": {
+  "mahadevan_number": 249,
+  "tamil_phoneme": "ப",
+  "image_file": "sign_0249.png"
+ },
+ "250": {
+  "mahadevan_number": 250,
+  "tamil_phoneme": "பம்,பன்,பல்,பர்",
+  "image_file": "sign_0250.png"
+ },
+ "251": {
+  "mahadevan_number": 251,
+  "tamil_phoneme": "பச",
+  "image_file": "sign_0251.png"
+ },
+ "252": {
+  "mahadevan_number": 252,
+  "tamil_phoneme": "பண",
+  "image_file": "sign_0252.png"
+ },
+ "254": {
+  "mahadevan_number": 254,
+  "tamil_phoneme": "ண, ணி",
+  "image_file": "sign_0254.png"
+ },
+ "257": {
+  "mahadevan_number": 257,
+  "tamil_phoneme": "பண்ணய்",
+  "image_file": "sign_0257.png"
+ },
+ "258": {
+  "mahadevan_number": 258,
+  "tamil_phoneme": "பண்ணய்",
+  "image_file": "sign_0258.png"
+ },
+ "259": {
+  "mahadevan_number": 259,
+  "tamil_phoneme": "பண்ணய்",
+  "image_file": "sign_0259.png"
+ },
+ "261": {
+  "mahadevan_number": 261,
+  "tamil_phoneme": "ம",
+  "image_file": "sign_0261.png"
+ },
+ "262": {
+  "mahadevan_number": 262,
+  "tamil_phoneme": "மய",
+  "image_file": "sign_0262.png"
+ },
+ "307": {
+  "mahadevan_number": 307,
+  "tamil_phoneme": "ம",
+  "image_file": "sign_0307.png"
+ },
+ "308": {
+  "mahadevan_number": 308,
+  "tamil_phoneme": "மஅம்அம்(அன்,அல்,அர்)",
+  "image_file": "sign_0308.png"
+ },
+ "309": {
+  "mahadevan_number": 309,
+  "tamil_phoneme": "ஈ",
+  "image_file": "sign_0309.png"
+ },
+ "311": {
+  "mahadevan_number": 311,
+  "tamil_phoneme": "'யாழ்'",
+  "image_file": "sign_0311.png"
+ },
+ "321": {
+  "mahadevan_number": 321,
+  "tamil_phoneme": "வவ்,வ்வ",
+  "image_file": "sign_0321.png"
+ },
+ "322": {
+  "mahadevan_number": 322,
+  "tamil_phoneme": "வன்,வ்வன்",
+  "image_file": "sign_0322.png"
+ },
+ "323": {
+  "mahadevan_number": 323,
+  "tamil_phoneme": "அரச",
+  "image_file": "sign_0323.png"
+ },
+ "326": {
+  "mahadevan_number": 326,
+  "tamil_phoneme": "அரச",
+  "image_file": "sign_0326.png"
+ },
+ "327": {
+  "mahadevan_number": 327,
+  "tamil_phoneme": "'அரச ண அ",
+  "image_file": "sign_0327.png"
+ },
+ "324": {
+  "mahadevan_number": 324,
+  "tamil_phoneme": "அரசன",
+  "image_file": "sign_0324.png"
+ },
+ "325": {
+  "mahadevan_number": 325,
+  "tamil_phoneme": "அரச",
+  "image_file": "sign_0325.png"
+ },
+ "328": {
+  "mahadevan_number": 328,
+  "tamil_phoneme": "அ",
+  "image_file": "sign_0328.png"
+ },
+ "329": {
+  "mahadevan_number": 329,
+  "tamil_phoneme": "அவ்",
+  "image_file": "sign_0329.png"
+ },
+ "330": {
+  "mahadevan_number": 330,
+  "tamil_phoneme": "அமூ",
+  "image_file": "sign_0330.png"
+ },
+ "331": {
+  "mahadevan_number": 331,
+  "tamil_phoneme": "அன",
+  "image_file": "sign_0331.png"
+ },
+ "340": {
+  "mahadevan_number": 340,
+  "tamil_phoneme": "அய் (old form)",
+  "image_file": "sign_0340.png"
+ },
+ "341": {
+  "mahadevan_number": 341,
+  "tamil_phoneme": "பண், பண",
+  "image_file": "sign_0341.png"
+ },
+ "342": {
+  "mahadevan_number": 342,
+  "tamil_phoneme": "ஆ",
+  "image_file": "sign_0342.png"
+ },
+ "343": {
+  "mahadevan_number": 343,
+  "tamil_phoneme": "அய்",
+  "image_file": "sign_0343.png"
+ },
+ "344": {
+  "mahadevan_number": 344,
+  "tamil_phoneme": "அவ்",
+  "image_file": "sign_0344.png"
+ },
+ "345": {
+  "mahadevan_number": 345,
+  "tamil_phoneme": "ஆமூ",
+  "image_file": "sign_0345.png"
+ },
+ "347": {
+  "mahadevan_number": 347,
+  "tamil_phoneme": "ய்ய",
+  "image_file": "sign_0347.png"
+ },
+ "348": {
+  "mahadevan_number": 348,
+  "tamil_phoneme": "யண்ண,ண்மண",
+  "image_file": "sign_0348.png"
+ },
+ "349": {
+  "mahadevan_number": 349,
+  "tamil_phoneme": "ய்யர்",
+  "image_file": "sign_0349.png"
+ }
 }

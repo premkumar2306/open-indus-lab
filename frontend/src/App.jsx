@@ -1713,7 +1713,7 @@ export default function App() {
         </div>
 
         <span className="oi-badge" style={{fontSize:10,color:"#2a3040",letterSpacing:"0.05em",whiteSpace:"nowrap"}}>
-          VPS · 2024
+          VPS · data 2026-07-10
         </span>
       </div>
 
