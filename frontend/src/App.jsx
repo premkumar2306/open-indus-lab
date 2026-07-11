@@ -1652,7 +1652,7 @@ function PeerReview() {
         <div style={S.statCard}><div style={S.statNum}>8</div><div style={S.statLabel}>Evidence Links</div></div>
       </div>
       <div style={{background:"#1a1612",border:"1px solid #3a2518",padding:"10px 14px",fontSize:12,color:"#8b6914",marginBottom:20}}>
-        📬 Platform is accepting peer reviewers. Contact: ponmuthushanmugham@gmail.com · All reviews logged publicly.
+        📬 Platform is accepting peer reviewers — <a href="https://github.com/premkumar2306/open-indus-lab/discussions" target="_blank" rel="noreferrer" style={{color:"#c9963e"}}>review or challenge a reading ↗</a> · or email ponmuthushanmugham@gmail.com
       </div>
       {[{id:1,claim:"Tally-4 = phoneme 'na' via numeral name",obj:"Onomatopoeic derivation from numeral names is speculative.",rev:"Reviewer A",status:"addressed",resp:"Derivation is systematic: all 12 Tamil numeral names embed first syllable as phoneme. Documented in Research Keys §2.40–2.60 with 20+ seal examples."},{id:2,claim:"Unicorn motif = Market Common jurisdiction",obj:"Urban topology interpretation lacks archaeological corroboration.",rev:"Reviewer B",status:"open",resp:""},{id:3,claim:"Brevity = purpose (rebuttal of FSW2004)",obj:"Average of 5 signs per seal is consistent with non-linguistic emblems.",rev:"Reviewer C",status:"open",resp:""}].map(obj=>(
         <div key={obj.id} style={{...S.hypCard,marginBottom:12}}>
@@ -1855,7 +1855,7 @@ function AboutPage({go}) {
         epigraphy, anthropology, urban topology, AI and machine learning, and related
         fields. Contact:{" "}
         <a href="mailto:ponmuthushanmugham@gmail.com" style={{color:"#c9963e"}}>ponmuthushanmugham@gmail.com</a>.
-        Questions, challenges and author responses are logged publicly. Source code and
+        Questions, challenges and author responses are logged publicly in the{" "}<a href="https://github.com/premkumar2306/open-indus-lab/discussions" target="_blank" rel="noreferrer" style={{color:"#c9963e"}}>open review discussions</a>{" "}— concur, challenge, or question any reading there. Source code and
         data:{" "}
         <a href="https://github.com/premkumar2306/open-indus-lab" target="_blank" rel="noreferrer" style={{color:"#c9963e"}}>github.com/premkumar2306/open-indus-lab</a>.
       </P>
