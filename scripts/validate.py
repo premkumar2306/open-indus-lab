@@ -150,6 +150,26 @@ for fname, (key_col, min_rows) in EXPECTED_CSVS.items():
     else:
         ok(f"{fname}", f"{len(rows)} rows")
 
+
+# ── Kombu-corruption guard (author-confirmed tokens must never appear) ──
+import glob as _glob
+_KOMBU = ["ககாயில்","ககாழி","சிெம்","சிென்","வதாண்டு","வதாழு","கமற்","கமார்","கெலி","அளமெ","வெண்மம"]
+_dirty = []
+for _f in _glob.glob("data/seed/*.csv") + _glob.glob("frontend/public/signs/*.json"):
+    _t = open(_f, encoding="utf-8").read()
+    if _f.endswith("signs_master.csv"):
+        # only the corrected column matters; source column preserves provenance
+        import csv as _csv
+        for _r in _csv.DictReader(open(_f, encoding="utf-8-sig")):
+            if any(k in _r["tamil_phoneme_corrected"] for k in _KOMBU):
+                _dirty.append(_f); break
+    elif any(k in _t for k in _KOMBU):
+        _dirty.append(_f)
+if _dirty:
+    fail("Kombu corruption tokens found", ", ".join(sorted(set(_dirty))))
+else:
+    ok("Kombu-corruption guard", "no corrupted vowel-sign tokens in any served data file")
+
 # ── 5. Author-direct architecture checks ──────────────────
 # External Parpola corpus (M-xxx seals + guessed sign bridge) removed.
 # All readings now sourced directly from the author's documents.
