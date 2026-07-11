@@ -1,6 +1,6 @@
 # Open Indus Lab — Validation Report
-**Last run**: 2026-07-11 01:54 UTC
-**Score**: 100% (16 passed / 2 warnings / 0 failed)
+**Last run**: 2026-07-11 01:58 UTC
+**Score**: 100% (17 passed / 2 warnings / 0 failed)
 
 ---
 
@@ -22,6 +22,7 @@
 ✅ tally_mark_rules.csv — 11 rows
 ✅ evidence_links.csv — 9 rows
 ✅ motifs.csv — 8 rows
+✅ Kombu-corruption guard — no corrupted vowel-sign tokens in any served data file
 ✅ Five previously-flagged sign rows resolved — 39/51/52/322/391 confirmed via fresh source copy (visual-order vowel-sign corruption); '391 ட்' = numbering typo for 301
 ⚠️  Layer 2 translations — Layer 1 (phonemes) complete for all readings; English meaning in progress
 
@@ -31,7 +32,7 @@
 
 | Category | Count |
 |---|---|
-| ✅ Passed | 16 |
+| ✅ Passed | 17 |
 | ⚠️  Warnings | 2 |
 | ❌ Failed | 0 |
 
