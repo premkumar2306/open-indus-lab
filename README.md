@@ -2,7 +2,7 @@
 
 **An open computational framework for testing and comparing Indus-Harappan script decipherment hypotheses.**
 
-**Live platform:** https://premkumar2306.github.io/open-indus-lab/ · **Paper (final draft, PDF):** [download](./docs/paper/Indus-Harappan-Script_Shanmugham_2026.pdf) · **Citable dataset:** [v1.0.0 release](https://github.com/premkumar2306/open-indus-lab/releases/tag/v1.0.0)
+**Project history:** [CHANGELOG.md](./CHANGELOG.md) · **Live platform:** https://premkumar2306.github.io/open-indus-lab/ · **Paper (final draft, PDF):** [download](./docs/paper/Indus-Harappan-Script_Shanmugham_2026.pdf) · **Citable dataset:** [v1.0.0 release](https://github.com/premkumar2306/open-indus-lab/releases/tag/v1.0.0)
 
 
 ## Current Reading Layer Status
