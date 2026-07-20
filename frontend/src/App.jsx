@@ -1886,7 +1886,7 @@ function PublicationsPage() {
 
       <H>Research paper</H>
       <Item title="Indus-Harappan Script: A Multi-Disciplinary Analysis of Linguistic Continuity and Urban Topology"
-        meta="V.P. (Ponmuthu) Shanmugham · Final draft, 2026">
+        meta="V.P. (Ponmuthu) Shanmugham · Final version, July 2026">
         Reading the Indus-Harappan script with tools of a new paradigm — sound-first
         reconstruction, tally-mark acrophony, modifiers, and the urban-topology reading of
         seal motifs, with falsification tests.{" "}

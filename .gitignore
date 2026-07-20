@@ -23,3 +23,7 @@ Thumbs.db
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Exception: the author's own paper, hosted at his request
+!frontend/public/paper/*.pdf
+!docs/paper/*.pdf

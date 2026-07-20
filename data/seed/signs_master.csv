@@ -131,11 +131,11 @@ mahadevan_number,tamil_phoneme_source,tamil_phoneme_corrected,correction_note,so
 363,மன்ன,மன்ன,,Indus_Signs_Reading.pdf
 367,ெவ்யெ,வவ்யவ,font-corruption fix (va recovered),Indus_Signs_Reading.pdf
 372,வ்ெவ்யய்,வ்வவ்யய்,font-corruption fix (va recovered),Indus_Signs_Reading.pdf
-373,ெ,ெ,,Indus_Signs_Reading.pdf
+373,ெ,வ,ெ→வ swap (word-initial); corroborated by final paper Table 1 (va),Indus_Signs_Reading.pdf
 382,ெண்ண,ெண்ண,,Indus_Signs_Reading.pdf
 381,"ெண்,ெண","ெண்,ெண",,Indus_Signs_Reading.pdf
 385,ென,ென,,Indus_Signs_Reading.pdf
-387,ெய,ெய,,Indus_Signs_Reading.pdf
+387,ெய,வய,ெ→வ swap (word-initial); corroborated by final paper Table 1 (vaya),Indus_Signs_Reading.pdf
 388,ெயல்,ெயல்,,Indus_Signs_Reading.pdf
 389,ென,ென,,Indus_Signs_Reading.pdf
 390,ெனம்,ெனம்,,Indus_Signs_Reading.pdf
