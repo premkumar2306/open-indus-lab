@@ -13,7 +13,7 @@
 ⚠️  Seal meanings may have changed — #2082: expected 'Carer of Isa', got 'Carer of three cows of Isaa (Shiva)'
 ✅ seals_master.csv — 194 rows
 ✅ signs_master.csv — 264 rows
-✅ phoneme_mappings_author_full.csv — 267 rows
+✅ phoneme_mappings_author_full.csv — 268 rows
 ✅ readings_author_full.csv — 206 rows
 ✅ readings_VPS2024.csv — 24 rows
 ✅ hypotheses.csv — 6 rows
