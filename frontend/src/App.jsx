@@ -766,6 +766,7 @@ const ALL_SIGNS = [
   {m:393,tamil:"தவஅவ்",type:"geometric",freq:0},
   {m:341,tamil:"பண், பண",type:"geometric",freq:0},
   {m:199,tamil:"நெய்",type:"geometric",freq:0},
+  {m:292,tamil:"திடீர்",type:"geometric",freq:0},
   {m:256,tamil:"ண்",type:"geometric",freq:0},
 ];
 
